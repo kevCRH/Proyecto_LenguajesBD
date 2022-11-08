@@ -61,11 +61,41 @@ namespace proyectoLBD.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon AOES_ico {
+            get {
+                object obj = ResourceManager.GetObject("AOES_ico", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap AOES_PNG {
             get {
                 object obj = ResourceManager.GetObject("AOES_PNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DonaciónDinero {
+            get {
+                object obj = ResourceManager.GetObject("DonaciónDinero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DonaciónEspecies {
+            get {
+                object obj = ResourceManager.GetObject("DonaciónEspecies", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -9,3 +9,4 @@ C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.pdb
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_tipo_Donacion.resources

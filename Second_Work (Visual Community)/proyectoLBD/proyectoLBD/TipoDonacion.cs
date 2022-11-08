@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proyectoLBD
 {
-    public partial class Form2 : Form
+    public partial class frm_tipo_Donacion : Form
     {
-        public Form2()
+        public frm_tipo_Donacion()
         {
             InitializeComponent();
         }

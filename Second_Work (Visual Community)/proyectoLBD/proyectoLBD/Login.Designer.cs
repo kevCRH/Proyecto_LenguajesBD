@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_login));
             this.panel_fondoCeleste = new System.Windows.Forms.Panel();
+            this.txt_pass = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.bt_login = new System.Windows.Forms.Button();
             this.txt_inicial = new System.Windows.Forms.Label();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
-            this.txt_navBar = new System.Windows.Forms.Label();
             this.image_logo = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_email = new System.Windows.Forms.TextBox();
-            this.txt_pass = new System.Windows.Forms.TextBox();
+            this.txt_navBar = new System.Windows.Forms.Label();
             this.panel_fondoCeleste.SuspendLayout();
             this.panel_fondoRojo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_logo)).BeginInit();
@@ -48,8 +48,8 @@
             // panel_fondoCeleste
             // 
             this.panel_fondoCeleste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
-            this.panel_fondoCeleste.Controls.Add(this.txt_pass);
             this.panel_fondoCeleste.Controls.Add(this.txt_email);
+            this.panel_fondoCeleste.Controls.Add(this.txt_pass);
             this.panel_fondoCeleste.Controls.Add(this.label5);
             this.panel_fondoCeleste.Controls.Add(this.label4);
             this.panel_fondoCeleste.Controls.Add(this.label3);
@@ -57,6 +57,42 @@
             resources.ApplyResources(this.panel_fondoCeleste, "panel_fondoCeleste");
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
             this.panel_fondoCeleste.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txt_pass
+            // 
+            this.txt_pass.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_pass, "txt_pass");
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
+            this.txt_pass.Enter += new System.EventHandler(this.txt_pass_Enter);
+            this.txt_pass.Leave += new System.EventHandler(this.txt_pass_Leave);
+            // 
+            // txt_email
+            // 
+            this.txt_email.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_email, "txt_email");
+            this.txt_email.Name = "txt_email";
+            this.txt_email.TextChanged += new System.EventHandler(this.txt_email_TextChanged);
+            this.txt_email.Enter += new System.EventHandler(this.txt_email_Enter);
+            this.txt_email.Leave += new System.EventHandler(this.txt_email_Leave);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // bt_login
             // 
@@ -82,13 +118,6 @@
             resources.ApplyResources(this.panel_fondoRojo, "panel_fondoRojo");
             this.panel_fondoRojo.Name = "panel_fondoRojo";
             // 
-            // txt_navBar
-            // 
-            resources.ApplyResources(this.txt_navBar, "txt_navBar");
-            this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Click += new System.EventHandler(this.label2_Click);
-            // 
             // image_logo
             // 
             this.image_logo.BackColor = System.Drawing.Color.Transparent;
@@ -97,35 +126,12 @@
             this.image_logo.Name = "image_logo";
             this.image_logo.TabStop = false;
             // 
-            // label3
+            // txt_navBar
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // txt_email
-            // 
-            this.txt_email.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.txt_email, "txt_email");
-            this.txt_email.Name = "txt_email";
-            this.txt_email.TextChanged += new System.EventHandler(this.txt_email_TextChanged);
-            // 
-            // txt_pass
-            // 
-            this.txt_pass.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.txt_pass, "txt_pass");
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
+            resources.ApplyResources(this.txt_navBar, "txt_navBar");
+            this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
+            this.txt_navBar.Name = "txt_navBar";
+            this.txt_navBar.Click += new System.EventHandler(this.label2_Click);
             // 
             // frm_login
             // 
