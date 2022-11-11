@@ -32,18 +32,18 @@
             this.txt_navBar = new System.Windows.Forms.Label();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
             this.panel_fondoCeleste = new System.Windows.Forms.Panel();
+            this.bt_donacion_especies = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.image_logo = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bt_donacion_especies = new System.Windows.Forms.Button();
             this.bt_donacion_dinero = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.image_logo = new System.Windows.Forms.PictureBox();
             this.panel_fondoRojo.SuspendLayout();
             this.panel_fondoCeleste.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.image_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.image_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_navBar
@@ -77,48 +77,6 @@
             this.panel_fondoCeleste.Size = new System.Drawing.Size(288, 316);
             this.panel_fondoCeleste.TabIndex = 4;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::proyectoLBD.Properties.Resources.DonaciónEspecies;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 224);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
-            this.panel1.Controls.Add(this.bt_donacion_dinero);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Location = new System.Drawing.Point(409, 97);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(287, 316);
-            this.panel1.TabIndex = 5;
-            // 
-            // image_logo
-            // 
-            this.image_logo.BackColor = System.Drawing.Color.Transparent;
-            this.image_logo.Image = global::proyectoLBD.Properties.Resources.AOES_PNG;
-            this.image_logo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.image_logo.Location = new System.Drawing.Point(677, 394);
-            this.image_logo.Name = "image_logo";
-            this.image_logo.Size = new System.Drawing.Size(117, 45);
-            this.image_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.image_logo.TabIndex = 1;
-            this.image_logo.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::proyectoLBD.Properties.Resources.DonaciónDinero;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(259, 224);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // bt_donacion_especies
             // 
             this.bt_donacion_especies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
@@ -133,6 +91,27 @@
             this.bt_donacion_especies.Text = "Donación en Especies";
             this.bt_donacion_especies.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::proyectoLBD.Properties.Resources.DonaciónEspecies;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(259, 224);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
+            this.panel1.Controls.Add(this.bt_donacion_dinero);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Location = new System.Drawing.Point(409, 97);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(287, 316);
+            this.panel1.TabIndex = 5;
+            // 
             // bt_donacion_dinero
             // 
             this.bt_donacion_dinero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
@@ -146,6 +125,28 @@
             this.bt_donacion_dinero.TabIndex = 7;
             this.bt_donacion_dinero.Text = "Donación Dinero";
             this.bt_donacion_dinero.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::proyectoLBD.Properties.Resources.DonaciónDinero;
+            this.pictureBox2.Location = new System.Drawing.Point(14, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(259, 224);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // image_logo
+            // 
+            this.image_logo.BackColor = System.Drawing.Color.Transparent;
+            this.image_logo.Image = global::proyectoLBD.Properties.Resources.AOES_PNG;
+            this.image_logo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.image_logo.Location = new System.Drawing.Point(677, 394);
+            this.image_logo.Name = "image_logo";
+            this.image_logo.Size = new System.Drawing.Size(117, 45);
+            this.image_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.image_logo.TabIndex = 1;
+            this.image_logo.TabStop = false;
             // 
             // frm_tipo_Donacion
             // 
@@ -164,8 +165,8 @@
             this.panel_fondoCeleste.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.image_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.image_logo)).EndInit();
             this.ResumeLayout(false);
 
         }

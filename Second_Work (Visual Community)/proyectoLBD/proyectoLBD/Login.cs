@@ -35,7 +35,7 @@ namespace proyectoLBD
 
         private void bt_login_Click(object sender, EventArgs e)
         {
-            
+            jkjkjkjkjk
             database.Open();
             OracleCommand comando = new OracleCommand("SELECT * FROM TBCORREO WHERE ATCORREO = :email AND ATCONTRASENNA = :pass", database);
 
