@@ -30,10 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_login));
             this.panel_fondoCeleste = new System.Windows.Forms.Panel();
+            this.txt_user = new System.Windows.Forms.TextBox();
             this.txt_pass = new System.Windows.Forms.TextBox();
-            this.txt_email = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bt_login = new System.Windows.Forms.Button();
             this.txt_inicial = new System.Windows.Forms.Label();
@@ -48,15 +46,23 @@
             // panel_fondoCeleste
             // 
             this.panel_fondoCeleste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
-            this.panel_fondoCeleste.Controls.Add(this.txt_email);
+            this.panel_fondoCeleste.Controls.Add(this.txt_user);
             this.panel_fondoCeleste.Controls.Add(this.txt_pass);
-            this.panel_fondoCeleste.Controls.Add(this.label5);
-            this.panel_fondoCeleste.Controls.Add(this.label4);
             this.panel_fondoCeleste.Controls.Add(this.label3);
             this.panel_fondoCeleste.Controls.Add(this.bt_login);
             resources.ApplyResources(this.panel_fondoCeleste, "panel_fondoCeleste");
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
             this.panel_fondoCeleste.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txt_user
+            // 
+            this.txt_user.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.txt_user, "txt_user");
+            this.txt_user.Name = "txt_user";
+            this.txt_user.TextChanged += new System.EventHandler(this.txt_email_TextChanged);
+            this.txt_user.Enter += new System.EventHandler(this.txt_email_Enter);
+            this.txt_user.Leave += new System.EventHandler(this.txt_email_Leave);
             // 
             // txt_pass
             // 
@@ -67,26 +73,6 @@
             this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
             this.txt_pass.Enter += new System.EventHandler(this.txt_pass_Enter);
             this.txt_pass.Leave += new System.EventHandler(this.txt_pass_Leave);
-            // 
-            // txt_email
-            // 
-            this.txt_email.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.txt_email, "txt_email");
-            this.txt_email.Name = "txt_email";
-            this.txt_email.TextChanged += new System.EventHandler(this.txt_email_TextChanged);
-            this.txt_email.Enter += new System.EventHandler(this.txt_email_Enter);
-            this.txt_email.Leave += new System.EventHandler(this.txt_email_Leave);
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
             // 
             // label3
             // 
@@ -164,10 +150,8 @@
         private System.Windows.Forms.Label txt_navBar;
         private System.Windows.Forms.PictureBox image_logo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_pass;
-        private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.TextBox txt_user;
     }
 }
 

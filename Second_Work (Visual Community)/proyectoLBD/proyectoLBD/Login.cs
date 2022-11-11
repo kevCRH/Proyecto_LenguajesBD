@@ -16,7 +16,7 @@ namespace proyectoLBD
     public partial class frm_login : Form
     {
         //Se inicializan variables para poder crear placeholders en los textbox de email y pass
-        string ph_email = "";
+        string ph_user = "";
         string ph_pass = "";
 
         public frm_login()
@@ -32,13 +32,12 @@ namespace proyectoLBD
           Crearla en ORCL, NO en XE o otro
           SI NO COINCIDEN LOS DATOS LA BASE DE DATOS NO SE LES ABRIRA*/
         OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
-
         private void bt_login_Click(object sender, EventArgs e)
         {
             database.Open();
-            OracleCommand comando = new OracleCommand("SELECT * FROM TBCORREO WHERE ATCORREO = :email AND ATCONTRASENNA = :pass", database);
+            OracleCommand comando = new OracleCommand("SELECT * FROM TBUSUARIOS WHERE ATUSUARIO = :usuario AND ATCONTRASENNA = :pass", database);
 
-            comando.Parameters.AddWithValue(":email", txt_email.Text);
+            comando.Parameters.AddWithValue(":usuario", txt_user.Text);
             comando.Parameters.AddWithValue(":pass", txt_pass.Text);
 
             OracleDataReader lectura = comando.ExecuteReader();
@@ -68,8 +67,8 @@ namespace proyectoLBD
         private void frm_login_Load(object sender, EventArgs e)
         {
         //Se cargan los textbox con los textos que se quieren mostrar, abajo se configura cada uno de los textbox
-            txt_email.Text = "Correo electronico";
-            txt_email.ForeColor = Color.Gray;
+            txt_user.Text = "Usuario";
+            txt_user.ForeColor = Color.Gray;
             txt_pass.PasswordChar = '\0';
             txt_pass.Text = "Contraseña";
             txt_pass.ForeColor = Color.Gray;
@@ -100,28 +99,28 @@ namespace proyectoLBD
 
         }
 
-        //Configuracion del boton Email, tanto entrada como salida
+        //Configuracion del boton User, tanto entrada como salida
         private void txt_email_Enter(object sender, EventArgs e)
         {
-            txt_email.Text = "";
-            txt_email.ForeColor = Color.Black;
+            txt_user.Text = "";
+            txt_user.ForeColor = Color.Black;
         }
 
         private void txt_email_Leave(object sender, EventArgs e)
         {
-            ph_email = txt_email.Text;
-            if (ph_email.Equals("Correo electronico")){
-                txt_email.Text = "Correo electronico";
-                txt_email.ForeColor = Color.Gray;
+            ph_user = txt_user.Text;
+            if (ph_user.Equals("Usuario")){
+                txt_user.Text = "Usuario";
+                txt_user.ForeColor = Color.Gray;
             }
             else {
-                if (ph_email.Equals("")) {
-                    txt_email.Text = "Correo electronico";
-                    txt_email.ForeColor = Color.Gray;
+                if (ph_user.Equals("")) {
+                    txt_user.Text = "Usuario";
+                    txt_user.ForeColor = Color.Gray;
                 }
                 else {
-                    txt_email.Text = ph_email;
-                    txt_email.ForeColor = Color.Black;
+                    txt_user.Text = ph_user;
+                    txt_user.ForeColor = Color.Black;
                 }
             }
         }
@@ -144,7 +143,7 @@ namespace proyectoLBD
             }
             else
             {
-                if (ph_email.Equals(""))
+                if (ph_user.Equals(""))
                 {
                     txt_pass.PasswordChar = '\0';
                     txt_pass.Text = "Contraseña";
@@ -157,6 +156,11 @@ namespace proyectoLBD
                     txt_pass.ForeColor = Color.Black;
                 }
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
