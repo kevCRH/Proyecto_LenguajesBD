@@ -21,5 +21,10 @@ namespace proyectoLBD
         {
 
         }
+
+        private void btnNuevoUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

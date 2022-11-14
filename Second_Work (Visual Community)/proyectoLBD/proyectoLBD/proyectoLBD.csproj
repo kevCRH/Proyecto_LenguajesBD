@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -58,12 +64,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="NuevoUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NuevoUsuario.Designer.cs">
-      <DependentUpon>NuevoUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="TipoDonacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,11 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NuevoUsuario.resx">
-      <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TipoDonacion.resx">
       <DependentUpon>TipoDonacion.cs</DependentUpon>

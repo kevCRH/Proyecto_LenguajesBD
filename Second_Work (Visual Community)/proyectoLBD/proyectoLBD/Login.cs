@@ -25,7 +25,7 @@ namespace proyectoLBD
         }
 
         //IMPORTANTE
-        /*Cada uno debe crear su base de datos, basandose en el SCRIPT 4
+        /*Cada uno debe crear su base de datos, basandose en el SCRIPT 6
           que esta en el repositorio en su SQL DEVELOPER.
           Nombre del usuario "PROYECTO"
           Password: 1234
@@ -49,7 +49,7 @@ namespace proyectoLBD
                 //MessageBox.Show("Conectado"); //Msj para confirmar que todo este bien
                 formulario.Show();
                 this.Hide(); //Oculta la ventana si el login es exitoso
-                
+
             }
             else {
                 MessageBox.Show("Usuario o Contraseña incorrecta"); //Esto se puede mejorar
@@ -161,6 +161,12 @@ namespace proyectoLBD
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AgregarUsuario AgregarUsario = new AgregarUsuario();
+            AgregarUsario.Show();
         }
     }
 }

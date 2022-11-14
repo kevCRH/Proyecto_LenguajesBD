@@ -38,6 +38,7 @@
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
             this.image_logo = new System.Windows.Forms.PictureBox();
             this.txt_navBar = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel_fondoCeleste.SuspendLayout();
             this.panel_fondoRojo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_logo)).BeginInit();
@@ -119,11 +120,19 @@
             this.txt_navBar.Name = "txt_navBar";
             this.txt_navBar.Click += new System.EventHandler(this.label2_Click);
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frm_login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.txt_inicial);
             this.Controls.Add(this.panel_fondoCeleste);
@@ -152,6 +161,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_pass;
         private System.Windows.Forms.TextBox txt_user;
+        private System.Windows.Forms.Button button1;
     }
 }
 
