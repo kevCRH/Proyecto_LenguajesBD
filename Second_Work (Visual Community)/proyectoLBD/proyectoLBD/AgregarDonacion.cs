@@ -92,6 +92,8 @@ namespace proyectoLBD
             {
                 MessageBox.Show("Algo fallo");
             }
+
+
             database.Close();
         }
 
