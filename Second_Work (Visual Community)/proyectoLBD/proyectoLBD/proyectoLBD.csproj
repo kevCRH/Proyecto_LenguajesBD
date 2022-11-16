@@ -58,6 +58,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DonacionesDinero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonacionesDinero.Designer.cs">
+      <DependentUpon>DonacionesDinero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonacionesEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonacionesEspecie.Designer.cs">
+      <DependentUpon>DonacionesEspecie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonacionesDinero.resx">
+      <DependentUpon>DonacionesDinero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonacionesEspecie.resx">
+      <DependentUpon>DonacionesEspecie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
