@@ -18,13 +18,8 @@ namespace proyectoLBD
             InitializeComponent();
         }
 
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
+        [Obsolete]
+        private void Button1_Click(object sender, EventArgs e)
         {
             int total = 0;
             int total2 = 0;
@@ -35,11 +30,8 @@ namespace proyectoLBD
                 database.Open();
                 OracleCommand comando = new OracleCommand("INSERTAR_DONACION", database);
                 comando.CommandType = System.Data.CommandType.StoredProcedure;
-
                 comando.Parameters.Add("pFecha", OracleType.DateTime).Value = dateTimePicker1;
                 comando.Parameters.Add("pProcedencia", OracleType.VarChar).Value = textBox1;
-                comando.Parameters.Add("pProcedencia", OracleType.VarChar).Value = textBox1;
-
                 if (checkBox1.Checked == true)
                 {
                     total = 2;
@@ -53,9 +45,7 @@ namespace proyectoLBD
                     MessageBox.Show("Seleccione la sede");
                 }
                 comando.Parameters.Add("pTipoDonacion", OracleType.Number).Value = total;
-
                 comando.Parameters.Add("pUsuario", OracleType.Number).Value = textBox2;
-
                 if (checkBox3.Checked == true)
                 {
                     total2 = 1;
@@ -65,10 +55,8 @@ namespace proyectoLBD
                     MessageBox.Show("Seleccione la sede");
                 }
                 comando.Parameters.Add("pSede", OracleType.Number).Value = total2;
-
                 comando.Parameters.Add("pCantidad", OracleType.Number).Value = textBox4;
                 comando.Parameters.Add("pDescripcion", OracleType.VarChar).Value = textBox3;
-
                 if (checkBox4.Checked == true)
                 {
                     total3 = "N/A";
@@ -86,6 +74,8 @@ namespace proyectoLBD
                     MessageBox.Show("Seleccione la sede");
                 }
                 comando.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = total3;
+                comando.ExecuteNonQuery();
+                MessageBox.Show("La donacion se agrego");
             }
 
             catch (Exception)
@@ -96,9 +86,11 @@ namespace proyectoLBD
             database.Close();
         }
 
+        private void AgregarDonacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
-    internal class oracleNumber
-    {
-    }
+    
 }

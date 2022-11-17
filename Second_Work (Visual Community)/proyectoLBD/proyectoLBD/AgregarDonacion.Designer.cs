@@ -41,12 +41,12 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -57,7 +57,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "AGREGAR DONACION";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // dateTimePicker1
             // 
@@ -165,17 +165,6 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "DESCRIPCION";
             // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(375, 142);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(46, 17);
-            this.checkBox4.TabIndex = 13;
-            this.checkBox4.Text = "N/A";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
-            // 
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
@@ -222,17 +211,27 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "CANTIDAD";
             // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(375, 142);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(46, 17);
+            this.checkBox4.TabIndex = 19;
+            this.checkBox4.Text = "N/A";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
             // AgregarDonacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 593);
+            this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.checkBox6);
             this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.checkBox3);
@@ -248,6 +247,7 @@
             this.Controls.Add(this.button1);
             this.Name = "AgregarDonacion";
             this.Text = "AgregarDonacion";
+            this.Load += new System.EventHandler(this.AgregarDonacion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,11 +268,11 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox checkBox4;
     }
 }

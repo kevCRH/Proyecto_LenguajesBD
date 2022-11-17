@@ -37,7 +37,7 @@ namespace proyectoLBD
                 comandoAgregar.Parameters.Add("apellido_1", OracleType.VarChar).Value = txtPrimerApellido.Text;
                 comandoAgregar.Parameters.Add("apellido_2", OracleType.VarChar).Value = txtSegundoApellido.Text;
                 comandoAgregar.Parameters.Add("cedula", OracleType.VarChar).Value = txtCedula.Text;
-                comandoAgregar.Parameters.Add("activo", OracleType.Char).Value = ddmEstado.SelectedItem;
+                comandoAgregar.Parameters.Add("activo", OracleType.VarChar).Value = ddmEstado.SelectedItem;
                 comandoAgregar.Parameters.Add("rol", OracleType.Number).Value = ddmRol.SelectedItem;
                 comandoAgregar.Parameters.Add("correo", OracleType.VarChar).Value = txtCorreo.Text;
                 comandoAgregar.Parameters.Add("telefono", OracleType.VarChar).Value = txtTelefono.Text;
