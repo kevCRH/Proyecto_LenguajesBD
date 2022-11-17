@@ -18,7 +18,7 @@ namespace proyectoLBD
             InitializeComponent();
         }
 
-        [Obsolete]
+     
         private void Button1_Click(object sender, EventArgs e)
         {
             int total = 0;

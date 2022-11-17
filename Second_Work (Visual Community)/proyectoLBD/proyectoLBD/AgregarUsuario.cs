@@ -49,6 +49,10 @@ namespace proyectoLBD
             }
             database.Close();
         }
-        
+
+        private void panel_fondoCeleste_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
