@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarDonacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarDonacion.Designer.cs">
+      <DependentUpon>AgregarDonacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarDonacion.resx">
+      <DependentUpon>AgregarDonacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>

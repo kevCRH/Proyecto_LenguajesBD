@@ -31,6 +31,7 @@ namespace proyectoLBD
           Password: 1234
           Crearla en ORCL, NO en XE o otro
           SI NO COINCIDEN LOS DATOS LA BASE DE DATOS NO SE LES ABRIRA*/
+
         OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
         private void bt_login_Click(object sender, EventArgs e)
         {
@@ -167,6 +168,12 @@ namespace proyectoLBD
         {
             AgregarUsuario AgregarUsario = new AgregarUsuario();
             AgregarUsario.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AgregarDonacion donacion = new AgregarDonacion();
+            donacion.Show();
         }
     }
 }
