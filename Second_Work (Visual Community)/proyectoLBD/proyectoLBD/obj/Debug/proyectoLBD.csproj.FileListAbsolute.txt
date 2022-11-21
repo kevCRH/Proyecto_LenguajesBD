@@ -56,3 +56,6 @@ C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Commun
 >>>>>>> f2a05d61423fd7e9e7b2176db5091ce757c7963b
 C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesDinero.resources
 C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesEspecie.resources
+C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacion.resources
+C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesDinero.resources
+C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesEspecie.resources

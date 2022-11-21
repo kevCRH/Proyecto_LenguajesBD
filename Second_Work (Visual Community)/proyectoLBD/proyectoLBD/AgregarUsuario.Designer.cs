@@ -34,8 +34,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.ddmRol = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.ddmEstado = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,7 +61,7 @@
             this.txtTelefono.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTelefono.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtTelefono.Location = new System.Drawing.Point(45, 324);
+            this.txtTelefono.Location = new System.Drawing.Point(45, 231);
             this.txtTelefono.Multiline = true;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(248, 54);
@@ -74,7 +72,7 @@
             this.txtCorreo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCorreo.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtCorreo.Location = new System.Drawing.Point(600, 231);
+            this.txtCorreo.Location = new System.Drawing.Point(324, 231);
             this.txtCorreo.Multiline = true;
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(248, 54);
@@ -85,7 +83,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label10.Location = new System.Drawing.Point(47, 301);
+            this.label10.Location = new System.Drawing.Point(41, 208);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 20);
             this.label10.TabIndex = 23;
@@ -96,7 +94,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label9.Location = new System.Drawing.Point(596, 208);
+            this.label9.Location = new System.Drawing.Point(320, 208);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(66, 20);
             this.label9.TabIndex = 21;
@@ -107,7 +105,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label8.Location = new System.Drawing.Point(320, 208);
+            this.label8.Location = new System.Drawing.Point(596, 208);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 20);
             this.label8.TabIndex = 19;
@@ -124,40 +122,12 @@
             this.ddmRol.ItemHeight = 48;
             this.ddmRol.Items.AddRange(new object[] {
             "Administrador",
-            "Empleado",
-            "Donante"});
-            this.ddmRol.Location = new System.Drawing.Point(324, 231);
+            "Empleado"});
+            this.ddmRol.Location = new System.Drawing.Point(600, 231);
             this.ddmRol.Name = "ddmRol";
             this.ddmRol.Size = new System.Drawing.Size(248, 54);
             this.ddmRol.TabIndex = 18;
             this.ddmRol.SelectedIndexChanged += new System.EventHandler(this.ddmRol_SelectedIndexChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label7.Location = new System.Drawing.Point(46, 208);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 20);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Estado";
-            // 
-            // ddmEstado
-            // 
-            this.ddmEstado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.ddmEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ddmEstado.FormatString = "N0";
-            this.ddmEstado.FormattingEnabled = true;
-            this.ddmEstado.IntegralHeight = false;
-            this.ddmEstado.ItemHeight = 48;
-            this.ddmEstado.Items.AddRange(new object[] {
-            "Activo",
-            "Inactivo"});
-            this.ddmEstado.Location = new System.Drawing.Point(45, 231);
-            this.ddmEstado.Name = "ddmEstado";
-            this.ddmEstado.Size = new System.Drawing.Size(248, 54);
-            this.ddmEstado.TabIndex = 16;
             // 
             // label6
             // 
@@ -298,7 +268,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAgregar.Location = new System.Drawing.Point(633, 387);
+            this.btnAgregar.Location = new System.Drawing.Point(633, 327);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(215, 50);
             this.btnAgregar.TabIndex = 0;
@@ -339,8 +309,6 @@
             this.panel_fondoCeleste.Controls.Add(this.label9);
             this.panel_fondoCeleste.Controls.Add(this.label8);
             this.panel_fondoCeleste.Controls.Add(this.ddmRol);
-            this.panel_fondoCeleste.Controls.Add(this.label7);
-            this.panel_fondoCeleste.Controls.Add(this.ddmEstado);
             this.panel_fondoCeleste.Controls.Add(this.label6);
             this.panel_fondoCeleste.Controls.Add(this.txtCedula);
             this.panel_fondoCeleste.Controls.Add(this.label5);
@@ -354,9 +322,9 @@
             this.panel_fondoCeleste.Controls.Add(this.txtUsario);
             this.panel_fondoCeleste.Controls.Add(this.txtContrasenna);
             this.panel_fondoCeleste.Controls.Add(this.btnAgregar);
-            this.panel_fondoCeleste.Location = new System.Drawing.Point(25, 99);
+            this.panel_fondoCeleste.Location = new System.Drawing.Point(63, 103);
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
-            this.panel_fondoCeleste.Size = new System.Drawing.Size(963, 450);
+            this.panel_fondoCeleste.Size = new System.Drawing.Size(899, 433);
             this.panel_fondoCeleste.TabIndex = 6;
             this.panel_fondoCeleste.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_fondoCeleste_Paint);
             // 
@@ -396,8 +364,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox ddmRol;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox ddmEstado;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label label5;
