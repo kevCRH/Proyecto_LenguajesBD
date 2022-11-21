@@ -37,3 +37,5 @@ C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Commun
 C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
 C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe
 C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.pdb
+C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesDinero.resources
+C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesEspecie.resources
