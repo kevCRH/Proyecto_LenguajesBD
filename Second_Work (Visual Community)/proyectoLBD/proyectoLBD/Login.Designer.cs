@@ -54,7 +54,7 @@
             this.panel_fondoCeleste.Controls.Add(this.bt_login);
             resources.ApplyResources(this.panel_fondoCeleste, "panel_fondoCeleste");
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
-            this.panel_fondoCeleste.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            //this.panel_fondoCeleste.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txt_user
             // 

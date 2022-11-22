@@ -36,10 +36,17 @@ namespace proyectoLBD
         private void bt_login_Click(object sender, EventArgs e)
         {
             database.Open();
-            OracleCommand comando = new OracleCommand("SELECT * FROM TBUSUARIOS WHERE ATUSUARIO = :usuario AND ATCONTRASENNA = :pass", database);
+            /* --------------LOGIN CON STORED PROCEDURE--------------
+            OracleCommand comando = new OracleCommand("USUARIO_LOGIN", database);
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.Add("pATUSUARIO", OracleType.VarChar).Value = txt_user.Text;
+            comando.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;*/
 
+            /* --------------LOGIN CON SELECT-------------- */
+            OracleCommand comando = new OracleCommand("SELECT * FROM TBUSUARIOS WHERE ATUSUARIO = :usuario AND ATCONTRASENNA = :pass", database);
             comando.Parameters.AddWithValue(":usuario", txt_user.Text);
             comando.Parameters.AddWithValue(":pass", txt_pass.Text);
+
 
             OracleDataReader lectura = comando.ExecuteReader();
 
@@ -56,12 +63,6 @@ namespace proyectoLBD
                 MessageBox.Show("Usuario o Contraseña incorrecta"); //Esto se puede mejorar
                 database.Close();
             }
-            
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 

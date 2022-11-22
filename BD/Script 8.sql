@@ -124,14 +124,5 @@ BEGIN
     VALUES (pFecha,pProcedencia,pTipoDonacion,pCedulaUsuario,pSede,pCantidad,pDescripcion,pMetodoPago,pMonto);
 END;
     
-
-    
-    
-    
-    
-    
-    
-    
-    
     
     
