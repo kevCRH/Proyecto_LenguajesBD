@@ -36,22 +36,26 @@ namespace proyectoLBD
         private void bt_login_Click(object sender, EventArgs e)
         {
             database.Open();
-            /* --------------LOGIN CON STORED PROCEDURE--------------
+            /* --------------LOGIN CON STORED PROCEDURE--------------*/
             OracleCommand comando = new OracleCommand("USUARIO_LOGIN", database);
             comando.CommandType = CommandType.StoredProcedure;
+            
+            /*Se envian los datos al procedimiento almacenado para que sean verificados*/
             comando.Parameters.Add("pATUSUARIO", OracleType.VarChar).Value = txt_user.Text;
-            comando.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;*/
+            comando.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;
+            
+            /*Forma larga de obtener variable del procedimiento almacenado*/
+            //comando.Parameters.Add("pVERIFICAR", OracleType.VarChar, 120);
+            //comando.Parameters["pVERIFICAR"].Direction = ParameterDirection.Output;
+            
+            /*Forma corta de obtener variable del procedimiento almacenado*/
+            comando.Parameters.Add("pVERIFICAR", OracleType.Number).Direction = ParameterDirection.Output;
+            
+            //Se ejecuta los datos obtenidos para poder leerlos posteriormente
+            comando.ExecuteNonQuery();
 
-            /* --------------LOGIN CON SELECT-------------- */
-            OracleCommand comando = new OracleCommand("SELECT * FROM TBUSUARIOS WHERE ATUSUARIO = :usuario AND ATCONTRASENNA = :pass", database);
-            comando.Parameters.AddWithValue(":usuario", txt_user.Text);
-            comando.Parameters.AddWithValue(":pass", txt_pass.Text);
-
-
-            OracleDataReader lectura = comando.ExecuteReader();
-
-            if (lectura.Read())
-            {
+            if (comando.Parameters["pVERIFICAR"].Value.ToString().Equals("1"))
+            {   
                 frm_tipo_Donacion formulario = new frm_tipo_Donacion();
                 database.Close();
                 //MessageBox.Show("Conectado"); //Msj para confirmar que todo este bien
@@ -59,16 +63,37 @@ namespace proyectoLBD
                 this.Hide(); //Oculta la ventana si el login es exitoso
 
             }
+            else
+            {
+                MessageBox.Show("Usuario o Contraseña incorrecta"); //Esta vista se puede mejorar (Diseño)
+                database.Close();
+            }
+            
+            /* --------------LOGIN CON SELECT-------------- 
+            OracleCommand comando = new OracleCommand("SELECT * FROM TBUSUARIOS WHERE ATUSUARIO = :usuario AND ATCONTRASENNA = :pass", database);
+            comando.Parameters.AddWithValue(":usuario", txt_user.Text);
+            comando.Parameters.AddWithValue(":pass", txt_pass.Text);*/
+
+            /*OracleDataReader lectura = comando.ExecuteReader();
+
+            if (lectura.Read())
+            {
+                frm_tipo_Donacion formulario = new frm_tipo_Donacion();
+                database.Close();
+                MessageBox.Show("Conectado"); //Msj para confirmar que todo este bien
+                formulario.Show();
+                this.Hide(); //Oculta la ventana si el login es exitoso
+            }
             else {
                 MessageBox.Show("Usuario o Contraseña incorrecta"); //Esto se puede mejorar
                 database.Close();
-            }
-
+            }*/
         }
 
         private void frm_login_Load(object sender, EventArgs e)
         {
-        //Se cargan los textbox con los textos que se quieren mostrar, abajo se configura cada uno de los textbox
+        /*Se cargan los textbox con los textos que se quieren mostrar, abajo se
+        configura cada uno de los textbox*/
             txt_user.Text = "Usuario";
             txt_user.ForeColor = Color.Gray;
             txt_pass.PasswordChar = '\0';

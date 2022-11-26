@@ -114,6 +114,19 @@ INSERT INTO TBUsuarios (ATUsuario,ATContrasenna,ATNombre, ATApellido_1,ATApellid
     '12',
     1,
     1);
+    
+INSERT INTO TBUsuarios (ATUsuario,ATContrasenna,ATNombre, ATApellido_1,ATApellido_2,ATCedula,ATActivo,ATRol) VALUES
+(   'UsuarioPrueba2',
+    '12345',
+    'NombrePrueba2',
+    'Apellido1Prueba2',
+    'Apellido2Prueba2',
+    '123',
+    1,
+    2);
+    
+delete from TBUsuarios
+ where ATUSUARIO='UsuarioPrueba2';
 
 --procedimiento almacenado para ingresar donaciones
 CREATE OR REPLACE PROCEDURE INSERTAR_DONACION 
@@ -123,6 +136,64 @@ BEGIN
     INSERT INTO TBDonacion (ATFecha,ATProcedencia,ATId_TDonacion,ATCedulaUsuario,ATId_Sede,ATCantidad,ATDescripcion,ATMetodoPago,ATMonto)
     VALUES (pFecha,pProcedencia,pTipoDonacion,pCedulaUsuario,pSede,pCantidad,pDescripcion,pMetodoPago,pMonto);
 END;
-    
-    
-    
+
+
+--Procedimiento Almacenado para Login
+CREATE OR REPLACE PROCEDURE USUARIO_LOGIN (pATUSUARIO IN VARCHAR2, pATCONTRASENNA IN VARCHAR2, pATROL OUT NUMBER, RESULTADO OUT BOOLEAN)
+AS
+    ROL NUMBER := 0;
+    dATUsuario VARCHAR2(50);
+    dATContrasenna VARCHAR2(150);
+BEGIN
+    SELECT ATUSUARIO, ATCONTRASENNA
+    INTO dATUsuario, dATContrasenna
+    FROM TBUSUARIOS
+    WHERE pATUSUARIO = ATUSUARIO AND pATCONTRASENNA = ATCONTRASENNA;
+    IF dATUsuario = pATUSUARIO AND dATContrasenna = pATCONTRASENNA THEN
+        SELECT ATROL INTO ROL FROM TBUSUARIOS;
+        RESULTADO := TRUE;
+        IF ROL = 1 THEN
+            pATROL := 1;
+        ELSE
+            pATROL := 2;
+    END IF;
+    ELSE 
+        pATROL := 0;
+        RESULTADO := FALSE;
+    END IF;
+END;
+
+SET SERVEROUTPUT ON;
+
+DECLARE
+ROL NUMBER;
+RESULTADO BOOLEAN;
+BEGIN
+    USUARIO_LOGIN('UsuarioPrueba','12345',ROL,RESULTADO);
+    DBMS_OUTPUT.PUT_LINE(ROL);
+COMMIT;
+END;
+
+
+CREATE OR REPLACE PROCEDURE USUARIO_LOGIN (pATUSUARIO IN VARCHAR2, pATCONTRASENNA IN VARCHAR2, pVERIFICAR OUT NUMBER)
+AS
+VERIFICAR NUMBER;
+BEGIN
+    SELECT COUNT(1)
+    INTO VERIFICAR
+    FROM TBUSUARIOS
+    WHERE pATUSUARIO = ATUSUARIO AND pATCONTRASENNA = ATCONTRASENNA;
+    IF VERIFICAR = 1 THEN
+        pVERIFICAR := 1;
+    ELSE
+        pVERIFICAR := 0;
+    END IF;
+END;
+
+DECLARE
+ROL NUMBER;
+BEGIN
+    USUARIO_LOGIN('UsuarioPrueba','12345',ROL);
+    DBMS_OUTPUT.PUT_LINE(ROL);
+COMMIT;
+END;
