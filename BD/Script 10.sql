@@ -233,6 +233,19 @@ BEGIN
     INSERT INTO TBTelefonos(ATTelefono,ATDuenoTelefono,ATCategoriaTelefono)
     VALUES (pTelefono,pDuenoTelefono,pCategoriaTelefono);
 END;
+--Ver usuarios
+CREATE OR REPLACE PROCEDURE Ver_Usuarios(registros out sys_refcursor)
+AS
+BEGIN
+    OPEN registros FOR SELECT * FROM TBUSUARIOS;
+END;
+--Cargar cada dato de usuario por separado
+CREATE OR REPLACE PROCEDURE Ver_Datos_Usuario(nombre out sys_refcursor,apellido_1 out sys_refcursor, pCedula in Varchar2)
+AS
+BEGIN
+    OPEN nombre FOR SELECT ATNOMBRE FROM TBUSUARIOS WHERE ATCEDULA = pCedula;
+    OPEN apellido_1 FOR SELECT ATAPELLIDO_1 FROM TBUSUARIOS WHERE ATCEDULA = pCedula;
+END;
 
 /*SI QUIERO SABER EL NUMERO DE UN USUARIO EN ESPECIFICO SOLO HAGO UN SELECT CON INNER JOIN*/
 

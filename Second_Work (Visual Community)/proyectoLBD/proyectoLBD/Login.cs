@@ -201,5 +201,17 @@ namespace proyectoLBD
             AgregarDonacion donacion = new AgregarDonacion();
             donacion.Show();
         }
+
+        private void CargarUsuarios_Click(object sender, EventArgs e)
+        {
+            ListarUsuarios listarUsuarios =   new ListarUsuarios();
+            listarUsuarios.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ActualizarUsuario actualizarUsuario = new ActualizarUsuario(); 
+            actualizarUsuario.Show();
+        }
     }
 }
