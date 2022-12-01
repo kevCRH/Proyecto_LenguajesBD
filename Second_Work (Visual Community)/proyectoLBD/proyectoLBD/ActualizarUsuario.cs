@@ -16,5 +16,10 @@ namespace proyectoLBD
         {
             InitializeComponent();
         }
+
+        private void Cargar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

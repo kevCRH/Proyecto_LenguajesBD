@@ -239,7 +239,7 @@ AS
 BEGIN
     OPEN registros FOR SELECT * FROM TBUSUARIOS;
 END;
---Cargar cada dato de usuario por separado
+--Cargar cada dato de usuario por separado ---!!!!!!!IGNORAR ERA PUERBA!!!!!!!!
 CREATE OR REPLACE PROCEDURE Ver_Datos_Usuario(nombre out sys_refcursor,apellido_1 out sys_refcursor, pCedula in Varchar2)
 AS
 BEGIN

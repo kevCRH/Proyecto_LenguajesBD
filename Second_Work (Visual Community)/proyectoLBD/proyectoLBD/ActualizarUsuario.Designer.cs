@@ -59,6 +59,7 @@
             this.Cargar.TabIndex = 2;
             this.Cargar.Text = "button1";
             this.Cargar.UseVisualStyleBackColor = true;
+            this.Cargar.Click += new System.EventHandler(this.Cargar_Click);
             // 
             // textBox3
             // 
