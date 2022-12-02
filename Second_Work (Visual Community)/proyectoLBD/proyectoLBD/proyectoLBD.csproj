@@ -53,6 +53,12 @@
     <Compile Include="AgregarDonacion.Designer.cs">
       <DependentUpon>AgregarDonacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgregarSede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarSede.Designer.cs">
+      <DependentUpon>AgregarSede.cs</DependentUpon>
+    </Compile>
     <Compile Include="AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarDonacion.resx">
       <DependentUpon>AgregarDonacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarSede.resx">
+      <DependentUpon>AgregarSede.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>

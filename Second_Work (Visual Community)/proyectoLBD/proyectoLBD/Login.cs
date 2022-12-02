@@ -213,5 +213,11 @@ namespace proyectoLBD
             ActualizarUsuario actualizarUsuario = new ActualizarUsuario(); 
             actualizarUsuario.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AgregarSede agregarSede = new AgregarSede();
+            agregarSede.Show();
+        }
     }
 }

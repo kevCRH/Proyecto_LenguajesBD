@@ -65,3 +65,4 @@ C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesEspecie.resources
 C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsuarios.resources
 C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarUsuario.resources
+C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarSede.resources
