@@ -215,15 +215,18 @@ namespace proyectoLBD
             actualizarUsuario.Show();
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ActualizarDonacion actualizarDonacion = new ActualizarDonacion();
+            actualizarDonacion.Show();
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-           ActualizarDonacion actualizarDonacion = new ActualizarDonacion();   
-            actualizarDonacion.Show();
-=======
+
             AgregarSede agregarSede = new AgregarSede();
             agregarSede.Show();
->>>>>>> 7d4aa092ccbbcc91538554d5a431cec24871b116
+
         }
     }
 }
