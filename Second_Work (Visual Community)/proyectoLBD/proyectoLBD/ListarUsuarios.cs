@@ -74,5 +74,12 @@ namespace proyectoLBD
 
             database.Close();//Cerramos conexion de db
         }
+
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // hacer un if
+            // Aqui se hace la logica donde tenemos que abrir el form y enviar los datos de la celda por parametro de la fila seleccionada
+            // string nombre = dataTable.Rows[0]["Nombre"].ToString();
+        }
     }
 }

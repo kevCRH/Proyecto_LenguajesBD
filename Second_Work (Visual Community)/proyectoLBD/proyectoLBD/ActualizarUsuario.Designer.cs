@@ -67,6 +67,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 3;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label1
             // 
@@ -109,6 +110,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "ActualizarUsuario";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.ActualizarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

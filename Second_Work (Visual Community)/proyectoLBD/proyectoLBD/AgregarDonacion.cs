@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace proyectoLBD
 {
@@ -21,63 +23,126 @@ namespace proyectoLBD
      
         private void Button1_Click(object sender, EventArgs e)
         {
-            int total = 0;
-            int total2 = 0;
-            string total3 = "";
+            
             OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
 
             database.Open();
-            OracleCommand comando = new OracleCommand("INSERTAR_DONACION", database);
-            comando.CommandType = System.Data.CommandType.StoredProcedure;
-            comando.Parameters.Add("pFecha", OracleType.DateTime).Value = dateTimePicker1.Value;
-            comando.Parameters.Add("pProcedencia", OracleType.VarChar).Value = textBox1.Text;
+            //Declaramos los procedimientos almacenados
+            OracleCommand usuario = new OracleCommand("AGREGAR_USUARIO", database);
+            OracleCommand correo = new OracleCommand("AGREGAR_CORREO", database);
+            OracleCommand telefono = new OracleCommand("AGREGAR_TELEFONO", database);
+            OracleCommand donacion = new OracleCommand("INSERTAR_DONACION", database);
 
-            if (checkBox1.Checked == true)
+            //Registramos la persona que hizo la donacion en la tabla usuarios como roll de donante
+            usuario.CommandType = System.Data.CommandType.StoredProcedure;
+            usuario.Parameters.Add("pNombre", OracleType.VarChar).Value = txt_user.Text;
+            usuario.Parameters.Add("pApellido_1", OracleType.VarChar).Value = textBox2.Text;
+            usuario.Parameters.Add("pApellido_2", OracleType.VarChar).Value = textBox4.Text;
+            usuario.Parameters.Add("pCedula", OracleType.VarChar).Value = textBox8.Text;
+            usuario.Parameters.Add("pRol", OracleType.VarChar).Value = "Donante";
+            
+            //Registramos el correo de la persona
+            
+            correo.CommandType = System.Data.CommandType.StoredProcedure;
+            correo.Parameters.Add("pCorreo", OracleType.VarChar).Value = textBox6.Text;
+            correo.Parameters.Add("pDuenoCorreo", OracleType.VarChar).Value = textBox8.Text;
+            correo.Parameters.Add("pCategoriaCorreo", OracleType.VarChar).Value = "Usuario";
+            
+            //Registramos el telefono de la persona
+            
+            telefono.CommandType = System.Data.CommandType.StoredProcedure;
+            telefono.Parameters.Add("pTelefono", OracleType.VarChar).Value = textBox7.Text;
+            telefono.Parameters.Add("pDuenoTelefono", OracleType.VarChar).Value = textBox8.Text;
+            telefono.Parameters.Add("pCategoriaTelefono", OracleType.VarChar).Value = "Usuario";
+            
+            //Registramos la donacion
+            
+            donacion.CommandType = System.Data.CommandType.StoredProcedure;
+            donacion.Parameters.Add("pFecha", OracleType.DateTime).Value = dateTimePicker1.Value;
+            donacion.Parameters.Add("pProcedencia", OracleType.VarChar).Value = textBox1.Text;
+            donacion.Parameters.Add("pNumeroRecibo", OracleType.Number).Value = numericUpDown3.Value;
+            donacion.Parameters.Add("pCedulaUsuario", OracleType.VarChar).Value = textBox8.Text;
+            donacion.Parameters.Add("pCedulaUsuarioCaptacion", OracleType.VarChar).Value = textBox13.Text;
+
+            if (checkBox3.Checked == true)
             {
-                total = 2;
+                donacion.Parameters.Add("pSede", OracleType.VarChar).Value = "San Jose";
             }
-            else if (checkBox2.Checked == true)
+            else if (checkBox7.Checked == true)
             {
-                total = 1;
+                donacion.Parameters.Add("pSede", OracleType.VarChar).Value = "Alajuela";
+            }
+            else if (checkBox8.Checked == true)
+            {
+                donacion.Parameters.Add("pSede", OracleType.VarChar).Value = "Puntarenas";
             }
             else
             {
                 MessageBox.Show("Seleccione la sede");
             }
-            comando.Parameters.Add("pTipoDonacion", OracleType.Number).Value = total;
-            comando.Parameters.Add("pUsuario", OracleType.Number).Value = numericUpDown1.Value;
-            if (checkBox3.Checked == true)
+            
+            if (checkBox1.Checked == true)
             {
-                total2 = 1;
+                donacion.Parameters.Add("pTipoDonacion", OracleType.Number).Value = 1;
             }
-            else if (checkBox3.Checked == false)
+            else if (checkBox2.Checked == true)
             {
-                MessageBox.Show("Seleccione la sede");
+                donacion.Parameters.Add("pTipoDonacion", OracleType.Number).Value = 2;
             }
-            comando.Parameters.Add("pSede", OracleType.Number).Value = total2;
-            comando.Parameters.Add("pCantidad", OracleType.Number).Value = numericUpDown2.Value;
-            comando.Parameters.Add("pDescripcion", OracleType.VarChar).Value = textBox3.Text;
+            else
+            {
+                MessageBox.Show("Seleccione el tipo de donacion");
+            }
+         
+  
+            donacion.Parameters.Add("pCantidad", OracleType.Number).Value = numericUpDown2.Value;
+            donacion.Parameters.Add("pDescripcion", OracleType.VarChar).Value = textBox3.Text;
             if (checkBox4.Checked == true)
             {
-                total3 = "N/A";
+                donacion.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = "N/A";
             }
             else if (checkBox5.Checked == true)
             {
-                total3 = "Tarjeta";
+                donacion.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = "Efectivo";
             }
             else if (checkBox6.Checked == true)
             {
-                total3 = "Efectivo";
+                donacion.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = "Tarjeta";
+            }
+            else if (checkBox9.Checked == true)
+            {
+                donacion.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = "Cheque";
             }
             else
             {
                 MessageBox.Show("Seleccione el metodo de pago");
             }
-            comando.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = total3;
-            comando.ExecuteNonQuery();
+            donacion.Parameters.Add("pMonto", OracleType.Number).Value = numericUpDown1.Value;
+            usuario.ExecuteNonQuery();
+            correo.ExecuteNonQuery();
+            telefono.ExecuteNonQuery();
+            donacion.ExecuteNonQuery();
             MessageBox.Show("La donacion se agrego");
-
+            txt_user.Clear();
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox8.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox13.Clear();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            checkBox5.Checked = false;
+            checkBox6.Checked = false;
+            checkBox7.Checked = false;
+            checkBox8.Checked = false;
+            checkBox9.Checked = false;
             database.Close();
+
         }
 
         private void AgregarDonacion_Load(object sender, EventArgs e)
