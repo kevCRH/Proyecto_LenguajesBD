@@ -65,7 +65,7 @@ namespace proyectoLBD
             OracleCommand comando = new OracleCommand("Ver_Usuarios",database); //Instanciamos
             comando.CommandType = System.Data.CommandType.StoredProcedure;//Definimos comando, que tipo de comando es
             comando.Parameters.Add("registros",OracleType.Cursor).Direction=ParameterDirection.Output; //parametro que recibira, que tipo es y definimos una direccion
-            
+          
             OracleDataAdapter adaptador = new OracleDataAdapter();
             adaptador.SelectCommand = comando;//Comando que tiene el procedimiento almacenado
             DataTable tabla = new DataTable();//Creamos un data table
