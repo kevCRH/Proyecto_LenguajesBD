@@ -51,6 +51,9 @@
             this.txt_navBar = new System.Windows.Forms.Label();
             this.panel_fondoCeleste = new System.Windows.Forms.Panel();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
+            this.bt_logout = new System.Windows.Forms.Button();
+            this.bt_atrás = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.image_logo)).BeginInit();
             this.panel_fondoCeleste.SuspendLayout();
             this.panel_fondoRojo.SuspendLayout();
@@ -264,14 +267,14 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
+            this.btnAgregar.BackColor = System.Drawing.Color.Chartreuse;
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAgregar.Location = new System.Drawing.Point(633, 327);
+            this.btnAgregar.Location = new System.Drawing.Point(878, 364);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(215, 50);
+            this.btnAgregar.Size = new System.Drawing.Size(137, 37);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -282,9 +285,9 @@
             this.image_logo.BackColor = System.Drawing.Color.Transparent;
             this.image_logo.Image = global::proyectoLBD.Properties.Resources.AOES_PNG;
             this.image_logo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.image_logo.Location = new System.Drawing.Point(797, 5);
+            this.image_logo.Location = new System.Drawing.Point(882, 112);
             this.image_logo.Name = "image_logo";
-            this.image_logo.Size = new System.Drawing.Size(146, 68);
+            this.image_logo.Size = new System.Drawing.Size(130, 68);
             this.image_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.image_logo.TabIndex = 1;
             this.image_logo.TabStop = false;
@@ -322,30 +325,76 @@
             this.panel_fondoCeleste.Controls.Add(this.txtNombre);
             this.panel_fondoCeleste.Controls.Add(this.txtUsario);
             this.panel_fondoCeleste.Controls.Add(this.txtContrasenna);
-            this.panel_fondoCeleste.Controls.Add(this.btnAgregar);
-            this.panel_fondoCeleste.Location = new System.Drawing.Point(63, 103);
+            this.panel_fondoCeleste.Location = new System.Drawing.Point(12, 94);
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
-            this.panel_fondoCeleste.Size = new System.Drawing.Size(899, 433);
+            this.panel_fondoCeleste.Size = new System.Drawing.Size(860, 307);
             this.panel_fondoCeleste.TabIndex = 6;
             this.panel_fondoCeleste.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_fondoCeleste_Paint);
             // 
             // panel_fondoRojo
             // 
             this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.panel_fondoRojo.Controls.Add(this.image_logo);
+            this.panel_fondoRojo.Controls.Add(this.bt_logout);
+            this.panel_fondoRojo.Controls.Add(this.bt_atrás);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
             this.panel_fondoRojo.Location = new System.Drawing.Point(1, 2);
             this.panel_fondoRojo.Name = "panel_fondoRojo";
             this.panel_fondoRojo.Size = new System.Drawing.Size(1031, 73);
             this.panel_fondoRojo.TabIndex = 5;
             // 
+            // bt_logout
+            // 
+            this.bt_logout.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_logout.FlatAppearance.BorderSize = 0;
+            this.bt_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
+            this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.bt_logout.Location = new System.Drawing.Point(942, 16);
+            this.bt_logout.Name = "bt_logout";
+            this.bt_logout.Size = new System.Drawing.Size(55, 40);
+            this.bt_logout.TabIndex = 27;
+            this.bt_logout.UseVisualStyleBackColor = false;
+            this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
+            // 
+            // bt_atrás
+            // 
+            this.bt_atrás.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bt_atrás.Location = new System.Drawing.Point(881, 16);
+            this.bt_atrás.Name = "bt_atrás";
+            this.bt_atrás.Size = new System.Drawing.Size(55, 40);
+            this.bt_atrás.TabIndex = 55;
+            this.bt_atrás.Text = "<<";
+            this.bt_atrás.UseVisualStyleBackColor = false;
+            this.bt_atrás.Click += new System.EventHandler(this.bt_atrás_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button3.Location = new System.Drawing.Point(878, 302);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(137, 34);
+            this.button3.TabIndex = 42;
+            this.button3.Text = "VER USUARIOS";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // AgregarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 572);
+            this.ClientSize = new System.Drawing.Size(1022, 419);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.image_logo);
             this.Controls.Add(this.panel_fondoCeleste);
             this.Controls.Add(this.panel_fondoRojo);
+            this.Controls.Add(this.btnAgregar);
             this.Name = "AgregarUsuario";
             this.Text = "AgregarUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.image_logo)).EndInit();
@@ -382,5 +431,8 @@
         private System.Windows.Forms.Label txt_navBar;
         private System.Windows.Forms.Panel panel_fondoCeleste;
         private System.Windows.Forms.Panel panel_fondoRojo;
+        private System.Windows.Forms.Button bt_atrás;
+        public System.Windows.Forms.Button bt_logout;
+        private System.Windows.Forms.Button button3;
     }
 }

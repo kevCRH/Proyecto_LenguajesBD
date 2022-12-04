@@ -53,6 +53,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -71,13 +73,12 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
+            this.bt_logout = new System.Windows.Forms.Button();
+            this.bt_atrás = new System.Windows.Forms.Button();
             this.txt_navBar = new System.Windows.Forms.Label();
             this.image_logo = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel_fondoCeleste.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -88,11 +89,11 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
+            this.button1.BackColor = System.Drawing.Color.Chartreuse;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(878, 368);
+            this.button1.Location = new System.Drawing.Point(878, 599);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 64);
             this.button1.TabIndex = 0;
@@ -353,6 +354,26 @@
             this.panel2.Size = new System.Drawing.Size(371, 209);
             this.panel2.TabIndex = 41;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(127, 176);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(19, 17);
+            this.label17.TabIndex = 50;
+            this.label17.Text = "₡:";
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.textBox10.Location = new System.Drawing.Point(152, 168);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(205, 25);
+            this.textBox10.TabIndex = 49;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -539,11 +560,42 @@
             // panel_fondoRojo
             // 
             this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.panel_fondoRojo.Controls.Add(this.bt_logout);
+            this.panel_fondoRojo.Controls.Add(this.bt_atrás);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
             this.panel_fondoRojo.Location = new System.Drawing.Point(1, 0);
             this.panel_fondoRojo.Name = "panel_fondoRojo";
             this.panel_fondoRojo.Size = new System.Drawing.Size(1076, 87);
             this.panel_fondoRojo.TabIndex = 23;
+            // 
+            // bt_logout
+            // 
+            this.bt_logout.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_logout.FlatAppearance.BorderSize = 0;
+            this.bt_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
+            this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.bt_logout.Location = new System.Drawing.Point(990, 21);
+            this.bt_logout.Name = "bt_logout";
+            this.bt_logout.Size = new System.Drawing.Size(55, 40);
+            this.bt_logout.TabIndex = 42;
+            this.bt_logout.UseVisualStyleBackColor = false;
+            this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
+            // 
+            // bt_atrás
+            // 
+            this.bt_atrás.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bt_atrás.Location = new System.Drawing.Point(929, 21);
+            this.bt_atrás.Name = "bt_atrás";
+            this.bt_atrás.Size = new System.Drawing.Size(55, 40);
+            this.bt_atrás.TabIndex = 56;
+            this.bt_atrás.Text = "<<";
+            this.bt_atrás.UseVisualStyleBackColor = false;
+            this.bt_atrás.Click += new System.EventHandler(this.bt_atrás_Click);
             // 
             // txt_navBar
             // 
@@ -551,7 +603,7 @@
             this.txt_navBar.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold);
             this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
             this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txt_navBar.Location = new System.Drawing.Point(299, 21);
+            this.txt_navBar.Location = new System.Drawing.Point(23, 21);
             this.txt_navBar.Name = "txt_navBar";
             this.txt_navBar.Size = new System.Drawing.Size(544, 40);
             this.txt_navBar.TabIndex = 0;
@@ -575,7 +627,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(878, 459);
+            this.button2.Location = new System.Drawing.Point(878, 511);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 64);
             this.button2.TabIndex = 40;
@@ -589,7 +641,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(878, 545);
+            this.button3.Location = new System.Drawing.Point(878, 424);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(140, 64);
             this.button3.TabIndex = 41;
@@ -597,46 +649,11 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox10.Location = new System.Drawing.Point(152, 168);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(205, 25);
-            this.textBox10.TabIndex = 49;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(127, 176);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(19, 17);
-            this.label17.TabIndex = 50;
-            this.label17.Text = "₡:";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button4.Location = new System.Drawing.Point(890, 637);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(118, 45);
-            this.button4.TabIndex = 53;
-            this.button4.Text = "< ATRAS";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // AgregarDonacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1073, 694);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.image_logo);
@@ -712,6 +729,7 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button bt_atrás;
+        public System.Windows.Forms.Button bt_logout;
     }
 }

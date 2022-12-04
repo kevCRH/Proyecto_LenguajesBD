@@ -38,11 +38,8 @@
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
             this.image_logo = new System.Windows.Forms.PictureBox();
             this.txt_navBar = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.CargarUsuarios = new System.Windows.Forms.Button();
+            this.bt_loggin_quemado = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel_fondoCeleste.SuspendLayout();
             this.panel_fondoRojo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_logo)).BeginInit();
@@ -123,51 +120,31 @@
             this.txt_navBar.Name = "txt_navBar";
             this.txt_navBar.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button1
+            // bt_loggin_quemado
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // CargarUsuarios
-            // 
-            resources.ApplyResources(this.CargarUsuarios, "CargarUsuarios");
-            this.CargarUsuarios.Name = "CargarUsuarios";
-            this.CargarUsuarios.UseVisualStyleBackColor = true;
-            this.CargarUsuarios.Click += new System.EventHandler(this.CargarUsuarios_Click);
+            this.bt_loggin_quemado.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_loggin_quemado.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.bt_loggin_quemado, "bt_loggin_quemado");
+            this.bt_loggin_quemado.Name = "bt_loggin_quemado";
+            this.bt_loggin_quemado.UseVisualStyleBackColor = false;
+            this.bt_loggin_quemado.Click += new System.EventHandler(this.bt_loggin_quemado_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.DarkRed;
+            this.button3.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // frm_login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.CargarUsuarios);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt_loggin_quemado);
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.txt_inicial);
             this.Controls.Add(this.panel_fondoCeleste);
@@ -193,14 +170,11 @@
         private System.Windows.Forms.Panel panel_fondoRojo;
         private System.Windows.Forms.Label txt_navBar;
         private System.Windows.Forms.PictureBox image_logo;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_pass;
         private System.Windows.Forms.TextBox txt_user;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button CargarUsuarios;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Button bt_loggin_quemado;
+        public System.Windows.Forms.Button button3;
     }
 }
 

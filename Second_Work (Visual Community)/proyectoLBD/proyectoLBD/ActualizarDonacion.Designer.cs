@@ -32,24 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.panel_fondoRojo = new System.Windows.Forms.Panel();
-            this.txt_navBar = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -68,14 +51,32 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.panel_fondoRojo = new System.Windows.Forms.Panel();
+            this.bt_atrás = new System.Windows.Forms.Button();
+            this.txt_navBar = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.bt_logout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel_fondoRojo.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel_fondoRojo.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -113,7 +114,6 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
@@ -134,193 +134,13 @@
             this.panel1.Size = new System.Drawing.Size(1146, 545);
             this.panel1.TabIndex = 5;
             // 
-            // button2
+            // textBox5
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(1014, 474);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 45);
-            this.button2.TabIndex = 49;
-            this.button2.Text = "ACTUALIZAR DONACION";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(743, 164);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 17);
-            this.label9.TabIndex = 48;
-            this.label9.Text = "FECHA :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(353, 29);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(454, 28);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "INGRESE LOS NUEVOS DATOS DE LA DONACION";
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.checkBox8.Location = new System.Drawing.Point(513, 206);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(111, 21);
-            this.checkBox8.TabIndex = 44;
-            this.checkBox8.Text = "PUNTARENAS";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.checkBox7.Location = new System.Drawing.Point(393, 206);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(90, 21);
-            this.checkBox7.TabIndex = 43;
-            this.checkBox7.Text = "ALAJUELA";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.checkBox3.Location = new System.Drawing.Point(273, 205);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(87, 21);
-            this.checkBox3.TabIndex = 42;
-            this.checkBox3.Text = "SAN JOSE";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(197, 164);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(209, 17);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "SELECCIONE UNA NUEVA  SEDE :";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(795, 116);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 20);
-            this.textBox3.TabIndex = 40;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(792, 96);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(190, 17);
-            this.label13.TabIndex = 39;
-            this.label13.Text = "ENCARGADO DE CAPTACIÒN:\r\n";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(591, 116);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 20);
-            this.textBox2.TabIndex = 38;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(588, 96);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(151, 17);
-            this.label10.TabIndex = 37;
-            this.label10.Text = "CEDULA DE DONANTE:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(385, 116);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 36;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(382, 96);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 17);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "PROCEDENCIA:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(176, 96);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(138, 17);
-            this.label12.TabIndex = 34;
-            this.label12.Text = "NUMERO DE RECIBO:\r\n";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(821, 203);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 0;
-            // 
-            // panel_fondoRojo
-            // 
-            this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.panel_fondoRojo.Controls.Add(this.txt_navBar);
-            this.panel_fondoRojo.Location = new System.Drawing.Point(0, -2);
-            this.panel_fondoRojo.Name = "panel_fondoRojo";
-            this.panel_fondoRojo.Size = new System.Drawing.Size(1205, 87);
-            this.panel_fondoRojo.TabIndex = 24;
-            // 
-            // txt_navBar
-            // 
-            this.txt_navBar.AutoSize = true;
-            this.txt_navBar.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold);
-            this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txt_navBar.Location = new System.Drawing.Point(334, 20);
-            this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Size = new System.Drawing.Size(546, 40);
-            this.txt_navBar.TabIndex = 0;
-            this.txt_navBar.Text = "SISTEMA DE ACTUALIZAR DONACIONES";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(15, 474);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 45);
-            this.button3.TabIndex = 52;
-            this.button3.Text = "< ATRAS";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.textBox5.Location = new System.Drawing.Point(179, 116);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(167, 20);
+            this.textBox5.TabIndex = 56;
             // 
             // panel2
             // 
@@ -508,13 +328,195 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "TIPO DONACION:";
             // 
-            // textBox5
+            // button2
             // 
-            this.textBox5.Location = new System.Drawing.Point(179, 116);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 20);
-            this.textBox5.TabIndex = 56;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.Location = new System.Drawing.Point(1007, 467);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(118, 45);
+            this.button2.TabIndex = 49;
+            this.button2.Text = "ACTUALIZAR DONACION";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(743, 164);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 17);
+            this.label9.TabIndex = 48;
+            this.label9.Text = "FECHA :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.SystemColors.Control;
+            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label8.Location = new System.Drawing.Point(353, 29);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(454, 28);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "INGRESE LOS NUEVOS DATOS DE LA DONACION";
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.checkBox8.Location = new System.Drawing.Point(513, 206);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(111, 21);
+            this.checkBox8.TabIndex = 44;
+            this.checkBox8.Text = "PUNTARENAS";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.checkBox7.Location = new System.Drawing.Point(393, 206);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(90, 21);
+            this.checkBox7.TabIndex = 43;
+            this.checkBox7.Text = "ALAJUELA";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.checkBox3.Location = new System.Drawing.Point(273, 205);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(87, 21);
+            this.checkBox3.TabIndex = 42;
+            this.checkBox3.Text = "SAN JOSE";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(197, 164);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(209, 17);
+            this.label4.TabIndex = 41;
+            this.label4.Text = "SELECCIONE UNA NUEVA  SEDE :";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(795, 116);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(167, 20);
+            this.textBox3.TabIndex = 40;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label13.Location = new System.Drawing.Point(792, 96);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(190, 17);
+            this.label13.TabIndex = 39;
+            this.label13.Text = "ENCARGADO DE CAPTACIÒN:\r\n";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(591, 116);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(167, 20);
+            this.textBox2.TabIndex = 38;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label10.Location = new System.Drawing.Point(588, 96);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(151, 17);
+            this.label10.TabIndex = 37;
+            this.label10.Text = "CEDULA DE DONANTE:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(385, 116);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(167, 20);
+            this.textBox1.TabIndex = 36;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(382, 96);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 17);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "PROCEDENCIA:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label12.Location = new System.Drawing.Point(176, 96);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(138, 17);
+            this.label12.TabIndex = 34;
+            this.label12.Text = "NUMERO DE RECIBO:\r\n";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(821, 203);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 0;
+            // 
+            // panel_fondoRojo
+            // 
+            this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.panel_fondoRojo.Controls.Add(this.bt_logout);
+            this.panel_fondoRojo.Controls.Add(this.bt_atrás);
+            this.panel_fondoRojo.Controls.Add(this.txt_navBar);
+            this.panel_fondoRojo.Location = new System.Drawing.Point(0, -2);
+            this.panel_fondoRojo.Name = "panel_fondoRojo";
+            this.panel_fondoRojo.Size = new System.Drawing.Size(1205, 87);
+            this.panel_fondoRojo.TabIndex = 24;
+            // 
+            // bt_atrás
+            // 
+            this.bt_atrás.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bt_atrás.Location = new System.Drawing.Point(1056, 23);
+            this.bt_atrás.Name = "bt_atrás";
+            this.bt_atrás.Size = new System.Drawing.Size(55, 40);
+            this.bt_atrás.TabIndex = 57;
+            this.bt_atrás.Text = "<<";
+            this.bt_atrás.UseVisualStyleBackColor = false;
+            this.bt_atrás.Click += new System.EventHandler(this.bt_atrás_Click);
+            // 
+            // txt_navBar
+            // 
+            this.txt_navBar.AutoSize = true;
+            this.txt_navBar.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold);
+            this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
+            this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txt_navBar.Location = new System.Drawing.Point(22, 23);
+            this.txt_navBar.Name = "txt_navBar";
+            this.txt_navBar.Size = new System.Drawing.Size(546, 40);
+            this.txt_navBar.TabIndex = 0;
+            this.txt_navBar.Text = "SISTEMA DE ACTUALIZAR DONACIONES";
             // 
             // textBox6
             // 
@@ -524,11 +526,26 @@
             this.textBox6.Size = new System.Drawing.Size(167, 20);
             this.textBox6.TabIndex = 57;
             // 
+            // bt_logout
+            // 
+            this.bt_logout.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_logout.FlatAppearance.BorderSize = 0;
+            this.bt_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
+            this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.bt_logout.Location = new System.Drawing.Point(1117, 23);
+            this.bt_logout.Name = "bt_logout";
+            this.bt_logout.Size = new System.Drawing.Size(55, 40);
+            this.bt_logout.TabIndex = 58;
+            this.bt_logout.UseVisualStyleBackColor = false;
+            this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
+            // 
             // ActualizarDonacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1204, 817);
+            this.ClientSize = new System.Drawing.Size(1204, 749);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.panel1);
@@ -540,14 +557,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel_fondoRojo.ResumeLayout(false);
-            this.panel_fondoRojo.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel_fondoRojo.ResumeLayout(false);
+            this.panel_fondoRojo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -575,7 +592,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox10;
@@ -596,5 +612,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button bt_atrás;
+        public System.Windows.Forms.Button bt_logout;
     }
 }

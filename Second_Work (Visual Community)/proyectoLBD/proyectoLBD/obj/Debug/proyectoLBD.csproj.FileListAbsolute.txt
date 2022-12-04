@@ -96,3 +96,5 @@ C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Resources.BuscarDonacion.resources
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdmin.resources
 C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdministrador.resources

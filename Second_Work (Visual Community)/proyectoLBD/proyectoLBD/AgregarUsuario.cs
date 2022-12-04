@@ -89,5 +89,26 @@ namespace proyectoLBD
         {
 
         }
+
+        private void bt_atrás_Click(object sender, EventArgs e)
+        {
+            MenuAdministrador formulario = new MenuAdministrador();
+            formulario.Show();
+            this.Hide();
+        }
+
+        private void bt_logout_Click(object sender, EventArgs e)
+        {
+            frm_login formulario = new frm_login();
+            formulario.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ListarUsuarios listarUsuarios = new ListarUsuarios();
+            listarUsuarios.Show();
+            this.Hide();
+        }
     }
 }

@@ -43,5 +43,24 @@ namespace proyectoLBD
             agregarDonacion.Show();
             this.Hide();
         }
+
+        private void bt_atrás_Click(object sender, EventArgs e)
+        {
+            AgregarDonacion agregarDonacion = new AgregarDonacion();
+            agregarDonacion.Show();
+            this.Hide();
+        }
+
+        private void txt_navBar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_logout_Click(object sender, EventArgs e)
+        {
+            frm_login formulario = new frm_login();
+            formulario.Show();
+            this.Hide();
+        }
     }
 }

@@ -38,6 +38,7 @@
             this.bt_donacion_dinero = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.image_logo = new System.Windows.Forms.PictureBox();
+            this.bt_logout = new System.Windows.Forms.Button();
             this.panel_fondoRojo.SuspendLayout();
             this.panel_fondoCeleste.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +62,7 @@
             // panel_fondoRojo
             // 
             this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.panel_fondoRojo.Controls.Add(this.bt_logout);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
             this.panel_fondoRojo.Location = new System.Drawing.Point(0, 0);
             this.panel_fondoRojo.Name = "panel_fondoRojo";
@@ -149,6 +151,21 @@
             this.image_logo.TabIndex = 1;
             this.image_logo.TabStop = false;
             // 
+            // bt_logout
+            // 
+            this.bt_logout.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_logout.FlatAppearance.BorderSize = 0;
+            this.bt_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
+            this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.bt_logout.Location = new System.Drawing.Point(733, 16);
+            this.bt_logout.Name = "bt_logout";
+            this.bt_logout.Size = new System.Drawing.Size(55, 42);
+            this.bt_logout.TabIndex = 11;
+            this.bt_logout.UseVisualStyleBackColor = false;
+            this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
+            // 
             // frm_tipo_Donacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,5 +200,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Button bt_donacion_especies;
         public System.Windows.Forms.Button bt_donacion_dinero;
+        public System.Windows.Forms.Button bt_logout;
     }
 }

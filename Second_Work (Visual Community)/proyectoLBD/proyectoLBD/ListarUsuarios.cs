@@ -81,5 +81,19 @@ namespace proyectoLBD
             // Aqui se hace la logica donde tenemos que abrir el form y enviar los datos de la celda por parametro de la fila seleccionada
             // string nombre = dataTable.Rows[0]["Nombre"].ToString();
         }
+
+        private void bt_logout_Click(object sender, EventArgs e)
+        {
+            frm_login formulario = new frm_login();
+            formulario.Show();
+            this.Hide();
+        }
+
+        private void bt_atrás_Click(object sender, EventArgs e)
+        {
+            AgregarUsuario AgregarUsario = new AgregarUsuario();
+            AgregarUsario.Show();
+            this.Hide();
+        }
     }
 }
