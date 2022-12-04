@@ -54,11 +54,11 @@ CREATE TABLE TBUsername(
     ATUsername varchar2(50),
     ATContrasenna varchar2(50),
     ATDuenoUsername varchar2(30),
-    ATRollUsername varchar2(30),
-    PRIMARY KEY(ATId_Username)
+    ATRolUsername varchar2(30),
+    PRIMARY KEY(ATUsername)
 );
 
-ALTER TABLE TBUsername ADD CONSTRAINT fk_Roll_Username FOREIGN KEY (ATRollUsername) REFERENCES TBRol (ATTipoRol);
+ALTER TABLE TBUsername ADD CONSTRAINT fk_Rol_Username FOREIGN KEY (ATRolUsername) REFERENCES TBRol (ATTipoRol);
 
 -------------------------------------------------------------------------------------------
 
@@ -353,13 +353,13 @@ END;
 
 CREATE OR REPLACE PROCEDURE Agregar_Username
     (pUsername  IN varchar2, pContrasenna IN varchar2, pDuenoUsername IN varchar2, 
-    pRollUsername IN varchar2)
+    pRolUsername IN varchar2)
 AS 
 BEGIN
     INSERT INTO TBUsername
-    (ATUsername,ATContrasenna,ATDuenoUsername,ATRollUsername)
+    (ATUsername,ATContrasenna,ATDuenoUsername,ATRolUsername)
     VALUES 
-    (pUsername,pContrasenna,pDuenoUsername,pRollUsername);
+    (pUsername,pContrasenna,pDuenoUsername,pRolUsername);
 END;
 
 --Ver usuarios

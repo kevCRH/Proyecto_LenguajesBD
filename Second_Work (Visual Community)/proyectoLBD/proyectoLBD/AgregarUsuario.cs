@@ -29,16 +29,21 @@ namespace proyectoLBD
             try
             {
                 database.Open();
-                OracleCommand comandoAgregar = new OracleCommand("AGREGAR_USUARIO", database);
-                comandoAgregar.CommandType = System.Data.CommandType.StoredProcedure;
-                comandoAgregar.Parameters.Add("pUsuario", OracleType.VarChar).Value = txtUsario.Text;
-                comandoAgregar.Parameters.Add("pContrasenna", OracleType.VarChar).Value = txtContrasenna.Text;
-                comandoAgregar.Parameters.Add("pNombre", OracleType.VarChar).Value = txtNombre.Text;
-                comandoAgregar.Parameters.Add("pApellido_1", OracleType.VarChar).Value = txtPrimerApellido.Text;
-                comandoAgregar.Parameters.Add("pApellido_2", OracleType.VarChar).Value = txtSegundoApellido.Text;
-                comandoAgregar.Parameters.Add("pCedula", OracleType.VarChar).Value = txtCedula.Text;
-                comandoAgregar.Parameters.Add("pRol", OracleType.VarChar).Value = ddmRol.SelectedItem.ToString();
-                comandoAgregar.ExecuteNonQuery();
+                OracleCommand comandoAgregarUusuario = new OracleCommand("AGREGAR_USUARIO", database);
+                comandoAgregarUusuario.CommandType = System.Data.CommandType.StoredProcedure;
+                comandoAgregarUusuario.Parameters.Add("pNombre", OracleType.VarChar).Value = txtNombre.Text;
+                comandoAgregarUusuario.Parameters.Add("pApellido_1", OracleType.VarChar).Value = txtPrimerApellido.Text;
+                comandoAgregarUusuario.Parameters.Add("pApellido_2", OracleType.VarChar).Value = txtSegundoApellido.Text;
+                comandoAgregarUusuario.Parameters.Add("pCedula", OracleType.VarChar).Value = txtCedula.Text;
+                comandoAgregarUusuario.Parameters.Add("pRol", OracleType.VarChar).Value = ddmRol.SelectedItem.ToString();
+                comandoAgregarUusuario.ExecuteNonQuery();
+                OracleCommand comandoAgregarUsername = new OracleCommand("AGREGAR_USERNAME", database);
+                comandoAgregarUsername.CommandType = System.Data.CommandType.StoredProcedure;
+                comandoAgregarUsername.Parameters.Add("pUsername", OracleType.VarChar).Value = txtUsario.Text;
+                comandoAgregarUsername.Parameters.Add("pContrasenna", OracleType.VarChar).Value = txtContrasenna.Text;
+                comandoAgregarUsername.Parameters.Add("pDuenoUsername", OracleType.VarChar).Value = txtCedula.Text;
+                comandoAgregarUsername.Parameters.Add("pRolUsername", OracleType.VarChar).Value = ddmRol.SelectedItem.ToString();
+                comandoAgregarUsername.ExecuteNonQuery();
                 OracleCommand comandoAgregarCorreo = new OracleCommand("Agregar_Correo", database);
                 comandoAgregarCorreo.CommandType = System.Data.CommandType.StoredProcedure;
                 comandoAgregarCorreo.Parameters.Add("pCorreo", OracleType.VarChar).Value = txtCorreo.Text;
