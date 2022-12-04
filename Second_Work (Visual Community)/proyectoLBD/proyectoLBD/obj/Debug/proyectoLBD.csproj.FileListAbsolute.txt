@@ -65,7 +65,6 @@ C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesEspecie.resources
 C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsuarios.resources
 C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarUsuario.resources
-<<<<<<< HEAD
 C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.AssemblyReference.cache
 C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.SuggestedBindingRedirects.cache
 C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarUsuario.resources
@@ -86,6 +85,6 @@ C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Com
 C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.pdb
 C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Resources.BuscarDonacion.resources
 C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacion.resources
-=======
 C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarSede.resources
 >>>>>>> 7d4aa092ccbbcc91538554d5a431cec24871b116
+C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarSede.resources
