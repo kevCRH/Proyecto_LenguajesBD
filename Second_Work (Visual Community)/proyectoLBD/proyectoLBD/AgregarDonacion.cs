@@ -60,7 +60,7 @@ namespace proyectoLBD
             donacion.CommandType = System.Data.CommandType.StoredProcedure;
             donacion.Parameters.Add("pFecha", OracleType.DateTime).Value = dateTimePicker1.Value;
             donacion.Parameters.Add("pProcedencia", OracleType.VarChar).Value = textBox1.Text;
-            donacion.Parameters.Add("pNumeroRecibo", OracleType.Number).Value = numericUpDown3.Value;
+            donacion.Parameters.Add("pNumeroRecibo", OracleType.VarChar).Value = textBox5.Text;
             donacion.Parameters.Add("pCedulaUsuario", OracleType.VarChar).Value = textBox8.Text;
             donacion.Parameters.Add("pCedulaUsuarioCaptacion", OracleType.VarChar).Value = textBox13.Text;
 
@@ -95,7 +95,7 @@ namespace proyectoLBD
             }
          
   
-            donacion.Parameters.Add("pCantidad", OracleType.Number).Value = numericUpDown2.Value;
+            donacion.Parameters.Add("pCantidad", OracleType.VarChar).Value = textBox9.Text;
             donacion.Parameters.Add("pDescripcion", OracleType.VarChar).Value = textBox3.Text;
             if (checkBox4.Checked == true)
             {
@@ -117,7 +117,7 @@ namespace proyectoLBD
             {
                 MessageBox.Show("Seleccione el metodo de pago");
             }
-            donacion.Parameters.Add("pMonto", OracleType.Number).Value = numericUpDown1.Value;
+            donacion.Parameters.Add("pMonto", OracleType.VarChar).Value = textBox10.Text;
             usuario.ExecuteNonQuery();
             correo.ExecuteNonQuery();
             telefono.ExecuteNonQuery();
@@ -148,6 +148,41 @@ namespace proyectoLBD
         private void AgregarDonacion_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ActualizarDonacion actualizarDonacion = new ActualizarDonacion();
+            actualizarDonacion.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ListarDonaciones listarDonaciones = new ListarDonaciones();
+            listarDonaciones.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frm_tipo_Donacion formulario = new frm_tipo_Donacion();
+            formulario.Show();
+            this.Hide();
+        }
+
+        private void bt_atrás_Click(object sender, EventArgs e)
+        {
+            frm_tipo_Donacion formulario = new frm_tipo_Donacion();
+            formulario.Show();
+            this.Hide();
+        }
+
+        private void bt_logout_Click(object sender, EventArgs e)
+        {
+            frm_login formulario = new frm_login();
+            formulario.Show();
+            this.Hide();
         }
     }
 

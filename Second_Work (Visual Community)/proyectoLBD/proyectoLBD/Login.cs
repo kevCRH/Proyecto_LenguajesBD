@@ -1,5 +1,4 @@
-﻿using proyectoLBD.Resources;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -209,24 +208,24 @@ namespace proyectoLBD
             listarUsuarios.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            ActualizarUsuario actualizarUsuario = new ActualizarUsuario(); 
-            actualizarUsuario.Show();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            ActualizarDonacion actualizarDonacion = new ActualizarDonacion();
-            actualizarDonacion.Show();
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
-
             AgregarSede agregarSede = new AgregarSede();
             agregarSede.Show();
+        }
 
+        private void bt_loggin_quemado_Click(object sender, EventArgs e)
+        {
+            frm_tipo_Donacion formulario = new frm_tipo_Donacion();
+            formulario.Show();
+            this.Hide(); //Oculta la ventana si el login es exitoso
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MenuAdministrador formulario = new MenuAdministrador();
+            formulario.Show();
+            this.Hide(); //Oculta la ventana si el login es exitoso
         }
     }
 }

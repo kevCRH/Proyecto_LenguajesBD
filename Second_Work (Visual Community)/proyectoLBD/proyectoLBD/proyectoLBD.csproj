@@ -76,24 +76,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DonacionesDinero.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DonacionesDinero.Designer.cs">
-      <DependentUpon>DonacionesDinero.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DonacionesEspecie.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DonacionesEspecie.Designer.cs">
-      <DependentUpon>DonacionesEspecie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ActualizarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ActualizarUsuario.Designer.cs">
-      <DependentUpon>ActualizarUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="ListarUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,11 +88,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarDonacion.cs">
+    <Compile Include="MenuAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarDonacion.Designer.cs">
-      <DependentUpon>BuscarDonacion.cs</DependentUpon>
+    <Compile Include="MenuAdministrador.Designer.cs">
+      <DependentUpon>MenuAdministrador.cs</DependentUpon>
     </Compile>
     <Compile Include="TipoDonacion.cs">
       <SubType>Form</SubType>
@@ -120,11 +102,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ListarDonaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarDonaciones.Designer.cs">
+      <DependentUpon>ListarDonaciones.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ActualizarDonacion.resx">
       <DependentUpon>ActualizarDonacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ActualizarUsuario.resx">
-      <DependentUpon>ActualizarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarDonacion.resx">
       <DependentUpon>AgregarDonacion.cs</DependentUpon>
@@ -135,20 +120,14 @@
     <EmbeddedResource Include="AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonacionesDinero.resx">
-      <DependentUpon>DonacionesDinero.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DonacionesEspecie.resx">
-      <DependentUpon>DonacionesEspecie.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ListarUsuarios.resx">
       <DependentUpon>ListarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarDonacion.resx">
-      <DependentUpon>BuscarDonacion.cs</DependentUpon>
+    <EmbeddedResource Include="MenuAdministrador.resx">
+      <DependentUpon>MenuAdministrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TipoDonacion.resx">
       <DependentUpon>TipoDonacion.cs</DependentUpon>
@@ -157,6 +136,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarDonaciones.resx">
+      <DependentUpon>ListarDonaciones.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -201,6 +183,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AOES.ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sedes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuarios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
