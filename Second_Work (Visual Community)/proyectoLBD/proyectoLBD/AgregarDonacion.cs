@@ -152,8 +152,8 @@ namespace proyectoLBD
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ActualizarUsuario actualizarUsuario = new ActualizarUsuario();
-            actualizarUsuario.Show();
+            ActualizarDonacion actualizarDonacion = new ActualizarDonacion();
+            actualizarDonacion.Show();
         }
     }
 

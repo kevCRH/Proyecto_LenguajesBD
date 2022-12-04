@@ -81,7 +81,7 @@ CREATE TABLE TBCorreos(
     ATCategoriaCorreo varchar2(30),
     PRIMARY KEY(ATId_Correo)
 );
-select * from TBCorreos;
+
 ALTER TABLE TBCorreos ADD CONSTRAINT fk_categoria_correo FOREIGN KEY (ATCategoriaCorreo) REFERENCES TBCATEGORIA (AT_DESCRIPCION);
 
 -------------------------------------------------------------------------------------------
@@ -190,7 +190,6 @@ INSERT INTO TB_TipoDonacion (ATId_TipoDonacion,ATTipo_Donacion) VALUES (2, 'Espe
 
 -- Localizacion SEDES
 
-delete from tblocalizacion where ATId_Localizacion = 23;
 INSERT INTO TBLocalizacion (ATProvincia,ATCanton,ATDistrito,ATDireccionExacta) 
 VALUES ('San Jose','Centro','Cristo Rey','De la Escuela Nicaragua 200 mts al Oeste, Contiguo a la Parroquia de Cristo Rey.');
 
@@ -201,14 +200,15 @@ INSERT INTO TBLocalizacion (ATProvincia,ATCanton,ATDistrito,ATDireccionExacta)
 VALUES ('Puntarenas','Puntarenas','Falta','Costado Norte del Estadio Lito Perez');
 
 -- Sedes
-INSERT INTO TBSedes (ATNombreSede,ATId_Localizacion) 
-VALUES ('San Jose',24);
-INSERT INTO TBSedes (ATNombreSede,ATId_Localizacion) 
-VALUES ('Alajuela',25);
-INSERT INTO TBSedes (ATNombreSede,ATId_Localizacion) 
-VALUES ('Puntarenas',26);
+INSERT INTO TBSedes (ATNombreSede,ATId_Localizacion,ATCodPostal,ATProvincia,ATCanton,ATDistrito,ATDireccionExacta) 
+VALUES ('San Jose','01','San Jose','Centro','Cristo Rey','De la Escuela Nicaragua 200 mts al Oeste, Contiguo a la Parroquia de Cristo Rey.');
+INSERT INTO TBSedes (ATNombreSede,ATId_Localizacion,ATCodPostal,ATProvincia,ATCanton,ATDistrito,ATDireccionExacta) 
+VALUES ('Alajuela','02','Alajuela','Alajuela','La Garita','Del Restaurante Fiesta del Maíz 300 mts al Este');
+INSERT INTO TBSedes (ATNombreSede,ATId_Localizacion,ATCodPostal,ATProvincia,ATCanton,ATDistrito,ATDireccionExacta) 
+VALUES ('Puntarenas','03','Puntarenas','Puntarenas','Falta','Costado Norte del Estadio Lito Perez');
 
 -- PROCEDIMIENTO INGRESAR DONACION
+
 CREATE OR REPLACE PROCEDURE INSERTAR_DONACION 
     (pFecha IN date, pProcedencia IN VARCHAR2, pTipoDonacion IN int, pCedulaUsuario IN VARCHAR2,
     pCedulaUsuarioCaptacion IN VARCHAR2, pSede IN VARCHAR2,pCantidad IN int, 
@@ -288,8 +288,8 @@ VERIFICAR NUMBER;
 BEGIN
     SELECT COUNT(1)
     INTO VERIFICAR
-    FROM TBUSUARIOS
-    WHERE pATUSUARIO = ATUSUARIO AND pATCONTRASENNA = ATCONTRASENNA;
+    FROM TBUsername
+    WHERE pATUSUARIO = ATUsername AND pATCONTRASENNA = ATContrasenna;
     IF VERIFICAR = 1 THEN
         pVERIFICAR := 1;
     ELSE
