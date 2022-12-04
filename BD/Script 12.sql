@@ -167,22 +167,25 @@ INSERT INTO TBCATEGORIA (AT_DESCRIPCION) VALUES ('Sede');
 
 /*----------------------------------------------------------------------------*/
 --USUARIOS DE PRUEBA
---Rol de administrador
+--Rol de administrador TBUSUARIO
 select * from TBUsuarios;
 INSERT INTO TBUsuarios (ATNombre,ATApellido_1,ATApellido_2,ATCedula,ATActivo,ATRol)
 VALUES ('Nombre','Apellido1','Apellido2','305380675',1,'Administrador');
-INSERT INTO TBUsername(ATUsername,ATContrasenna,ATDuenoUsername,ATRollUsername)
-VALUES ('Administrador','1234','305380675','Administrador');
-
---Rol de empleado
+--Rol de empleado TBUSUARIO
 INSERT INTO TBUsuarios (ATNombre,ATApellido_1,ATApellido_2,ATCedula,ATActivo,ATRol)
 VALUES ('Nombre','Apellido1','Apellido2','305380675',1,'Empleado');
-
--- Rol de donante
+-- Rol de donante TBUSUARIO
 INSERT INTO TBUsuarios (ATNombre,ATApellido_1,ATApellido_2,ATCedula,ATActivo,ATRol)
 VALUES ('Nombre','Apellido1','Apellido2','402500983',1,'Donante');
 
---Tipos de donacion
+--Rol de administrador TBUsername
+INSERT INTO TBUsername(ATUsername,ATContrasenna,ATDuenoUsername,ATRollUsername)
+VALUES ('Administrador','1234','305380675','Administrador');
+--Rol de empleado TBUsername
+INSERT INTO TBUsername(ATUsername,ATContrasenna,ATDuenoUsername,ATRollUsername)
+VALUES ('Empleado','1234','123456789','Empleado');
+
+--Tipos de donacion TB
 SELECT * FROM TB_TipoDonacion;
 INSERT INTO TB_TipoDonacion (ATId_TipoDonacion,ATTipo_Donacion) VALUES (1, 'Monetaria');
 INSERT INTO TB_TipoDonacion (ATId_TipoDonacion,ATTipo_Donacion) VALUES (2, 'Especie');
@@ -216,6 +219,7 @@ BEGIN
     VALUES (pFecha,pProcedencia,pTipoDonacion,pCedulaUsuario,pCedulaUsuarioCaptacion,
     pSede,pCantidad,pNumeroRecibo,pDescripcion,pMetodoPago,pMonto);
 END;
+
 /*----------------------------------------------------------------------------*/
 --Para ver donación
 CREATE OR REPLACE PROCEDURE ver_donacion(pNumeroRecibo in number, registros out sys_refcursor)
@@ -284,13 +288,45 @@ END;*/
 /*---------------------------------------------------------------------------*/
 --Ingresar usuario
 CREATE OR REPLACE PROCEDURE Agregar_Usuario 
-(pUsuario IN varchar2, pContrasenna IN varchar2, pNombre IN varchar2, pApellido_1 IN varchar2, pApellido_2 IN varchar2, pCedula IN varchar2, 
-pRol IN varchar2)
+    (pNombre IN varchar2, pApellido_1 IN varchar2, pApellido_2 IN varchar2, 
+    pCedula IN varchar2, pRol IN varchar2)
 AS 
 BEGIN
-    INSERT INTO TBUSUARIOS(ATUsuario,ATContrasenna,ATNombre,ATApellido_1,ATApellido_2,ATCedula,ATActivo,ATRol)
-    VALUES (pUsuario,pContrasenna,pNombre,pApellido_1,pApellido_2,pCedula,1,pRol);
+    INSERT INTO TBUSUARIOS(ATNombre,ATApellido_1,ATApellido_2,ATCedula,ATActivo,
+    ATRol)
+    VALUES (pNombre,pApellido_1,pApellido_2,pCedula,1,pRol);
 END;
+
+/*---------------------------------------------------------------------------*/
+--Ingresar username
+CREATE OR REPLACE PROCEDURE Agregar_Username
+    (pUsername  IN varchar2, pContrasenna IN varchar2, pDuenoUsername IN varchar2, 
+    pRollUsername IN varchar2)
+AS 
+BEGIN
+    INSERT INTO TBUsername(ATUsername,ATContrasenna,ATDuenoUsername,ATRollUsername)
+    VALUES (pUsername,pContrasenna,pDuenoUsername,pRollUsername);
+END;
+
+--Ver usuarios
+CREATE OR REPLACE PROCEDURE Ver_Usuarios(registros out sys_refcursor)
+AS
+BEGIN
+    OPEN registros FOR SELECT * FROM TBUSUARIOS;
+END;
+
+/*---------------------------------------------------------------------------*/
+--Cargar cada dato de usuario por separado ---!!!!!!!IGNORAR ERA PUERBA!!!!!!!!
+CREATE OR REPLACE PROCEDURE Ver_Datos_Usuario(nombre out sys_refcursor,apellido_1 out sys_refcursor, pCedula in Varchar2)
+AS
+BEGIN
+    OPEN nombre FOR SELECT ATNOMBRE FROM TBUSUARIOS WHERE ATCEDULA = pCedula;
+    OPEN apellido_1 FOR SELECT ATAPELLIDO_1 FROM TBUSUARIOS WHERE ATCEDULA = pCedula;
+END;
+
+/*---------------------------------------------------------------------------*/
+/*SI QUIERO SABER EL NUMERO DE UN USUARIO EN ESPECIFICO SOLO HAGO UN SELECT CON INNER JOIN*/
+SELECT u.ATNombre, t.ATTelefono FROM TBUsuarios u INNER JOIN TBTelefonos t ON u.ATCedula = t.ATDuenoTelefono;
 
 /*---------------------------------------------------------------------------*/
 --Ingresar sede
@@ -313,7 +349,7 @@ BEGIN
 END;
 
 /*---------------------------------------------------------------------------*/
---Ingresar telefono
+--Ingresar teléfono
 CREATE OR REPLACE PROCEDURE Agregar_Telefono 
 (pTelefono IN varchar2, pDuenoTelefono IN varchar2, pCategoriaTelefono IN varchar2)
 AS 
@@ -321,27 +357,6 @@ BEGIN
     INSERT INTO TBTelefonos(ATTelefono,ATDuenoTelefono,ATCategoriaTelefono)
     VALUES (pTelefono,pDuenoTelefono,pCategoriaTelefono);
 END;
-
-/*---------------------------------------------------------------------------*/
---Ver usuarios
-CREATE OR REPLACE PROCEDURE Ver_Usuarios(registros out sys_refcursor)
-AS
-BEGIN
-    OPEN registros FOR SELECT * FROM TBUSUARIOS;
-END;
-
-/*---------------------------------------------------------------------------*/
---Cargar cada dato de usuario por separado ---!!!!!!!IGNORAR ERA PUERBA!!!!!!!!
-CREATE OR REPLACE PROCEDURE Ver_Datos_Usuario(nombre out sys_refcursor,apellido_1 out sys_refcursor, pCedula in Varchar2)
-AS
-BEGIN
-    OPEN nombre FOR SELECT ATNOMBRE FROM TBUSUARIOS WHERE ATCEDULA = pCedula;
-    OPEN apellido_1 FOR SELECT ATAPELLIDO_1 FROM TBUSUARIOS WHERE ATCEDULA = pCedula;
-END;
-
-/*---------------------------------------------------------------------------*/
-/*SI QUIERO SABER EL NUMERO DE UN USUARIO EN ESPECIFICO SOLO HAGO UN SELECT CON INNER JOIN*/
-SELECT u.ATNombre, t.ATTelefono FROM TBUsuarios u INNER JOIN TBTelefonos t ON u.ATCedula = t.ATDuenoTelefono;
 
 /*************************************************************************************************************************
 **************************************************************************************************************************
