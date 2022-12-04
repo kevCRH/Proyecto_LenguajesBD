@@ -98,3 +98,26 @@ C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual
 C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdministrador.resources
+C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacion.resources
+C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdministrador.resources
+C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe.config
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.pdb
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.AssemblyReference.cache
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.SuggestedBindingRedirects.cache
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacion.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarUsuario.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacion.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarSede.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarUsuario.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsuarios.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_login.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdministrador.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_tipo_Donacion.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Properties.Resources.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.GenerateResource.cache
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe
+C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.pdb

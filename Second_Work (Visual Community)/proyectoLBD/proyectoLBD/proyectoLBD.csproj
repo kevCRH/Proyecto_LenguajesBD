@@ -53,6 +53,12 @@
     <Compile Include="ActualizarDonacion.Designer.cs">
       <DependentUpon>ActualizarDonacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ActualizarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarUsuario.Designer.cs">
+      <DependentUpon>ActualizarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="AgregarDonacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="ActualizarDonacion.resx">
       <DependentUpon>ActualizarDonacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarUsuario.resx">
+      <DependentUpon>ActualizarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarDonacion.resx">
       <DependentUpon>AgregarDonacion.cs</DependentUpon>

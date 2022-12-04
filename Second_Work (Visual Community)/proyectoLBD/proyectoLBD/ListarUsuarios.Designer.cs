@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             this.panel_fondoCeleste = new System.Windows.Forms.Panel();
-            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
-            this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnCargarUsuarios = new System.Windows.Forms.Button();
             this.txt_navBar = new System.Windows.Forms.Label();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
             this.bt_logout = new System.Windows.Forms.Button();
             this.bt_atrás = new System.Windows.Forms.Button();
+            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.panel_fondoCeleste.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.panel_fondoRojo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_fondoCeleste
@@ -49,22 +48,6 @@
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
             this.panel_fondoCeleste.Size = new System.Drawing.Size(836, 393);
             this.panel_fondoCeleste.TabIndex = 7;
-            // 
-            // dgvUsuarios
-            // 
-            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Editar});
-            this.dgvUsuarios.Location = new System.Drawing.Point(13, 18);
-            this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.Size = new System.Drawing.Size(811, 358);
-            this.dgvUsuarios.TabIndex = 0;
-            this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick);
-            // 
-            // Editar
-            // 
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Name = "Editar";
             // 
             // btnCargarUsuarios
             // 
@@ -131,6 +114,14 @@
             this.bt_atrás.UseVisualStyleBackColor = false;
             this.bt_atrás.Click += new System.EventHandler(this.bt_atrás_Click);
             // 
+            // dgvUsuarios
+            // 
+            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.Location = new System.Drawing.Point(46, 18);
+            this.dgvUsuarios.Name = "dgvUsuarios";
+            this.dgvUsuarios.Size = new System.Drawing.Size(742, 348);
+            this.dgvUsuarios.TabIndex = 0;
+            // 
             // ListarUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,9 +134,9 @@
             this.Text = "ListarUsuarios";
             this.Load += new System.EventHandler(this.ListarUsuarios_Load);
             this.panel_fondoCeleste.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.panel_fondoRojo.ResumeLayout(false);
             this.panel_fondoRojo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -153,12 +144,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel_fondoCeleste;
-        private System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.Button btnCargarUsuarios;
-        private System.Windows.Forms.DataGridViewButtonColumn Editar;
         private System.Windows.Forms.Label txt_navBar;
         private System.Windows.Forms.Panel panel_fondoRojo;
         private System.Windows.Forms.Button bt_atrás;
         public System.Windows.Forms.Button bt_logout;
+        private System.Windows.Forms.DataGridView dgvUsuarios;
     }
 }

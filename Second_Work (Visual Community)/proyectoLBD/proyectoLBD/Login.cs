@@ -68,7 +68,30 @@ namespace proyectoLBD
                 MessageBox.Show("Usuario o Contraseña incorrecta"); //Esta vista se puede mejorar (Diseño)
                 database.Close();
             }
+
+            OracleCommand comando2 = new OracleCommand("SELECT * FROM TBUSERNAME WHERE ATUSERNAME = :Administrador AND ATCONTRASENNA = :1234", database);
+            comando2.Parameters.AddWithValue(":Administrador", txt_user.Text);
+            comando2.Parameters.AddWithValue(":1234", txt_pass.Text);
+            OracleDataReader lectura2 = comando2.ExecuteReader();
+
+            if (lectura2.Read())
+            {
+       
+                MenuAdministrador formAdmin = new MenuAdministrador();
+                database.Close();//se cierra la base de datos para que no de problema
+                formAdmin.Show();//muestra el formulario
+                this.Hide(); //Oculta la ventana si el lee el dato
+            }
+            else
+            {
+                frm_tipo_Donacion formEmpleado = new frm_tipo_Donacion();
+                database.Close();//se cierra la base de datos para que no de problema
+                formEmpleado.Show();//muestra el formulario
+                this.Hide(); //Oculta la ventana si lee el dato
+            }
             
+
+
             /* --------------LOGIN CON SELECT-------------- 
             OracleCommand comando = new OracleCommand("SELECT * FROM TBUSUARIOS WHERE ATUSUARIO = :usuario AND ATCONTRASENNA = :pass", database);
             comando.Parameters.AddWithValue(":usuario", txt_user.Text);
