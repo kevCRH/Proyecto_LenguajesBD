@@ -28,7 +28,7 @@ namespace proyectoLBD
             database.Open();
             OracleCommand donacion = new OracleCommand("ver_donacion", database);
             donacion.CommandType = System.Data.CommandType.StoredProcedure;
-            donacion.Parameters.AddWithValue("pNumeroRecibo", numericUpDown1.Value);
+            donacion.Parameters.AddWithValue("pNumeroRecibo", textBox6.Text);
             donacion.Parameters.Add("registros", OracleType.Cursor).Direction = ParameterDirection.Output;
 
             OracleDataAdapter adaptador = new OracleDataAdapter();
@@ -46,8 +46,8 @@ namespace proyectoLBD
             database.Open();
             OracleCommand donacion = new OracleCommand("actualizar_donacion", database);
             donacion.CommandType = System.Data.CommandType.StoredProcedure;
-            donacion.Parameters.Add("pNumeroRecibo", OracleType.Number).Value = numericUpDown1.Value;
-            donacion.Parameters.Add("npNUMERORECIBO", OracleType.Number).Value = numericUpDown2.Value;
+            donacion.Parameters.Add("pNumeroRecibo", OracleType.VarChar).Value = textBox6.Text;
+            donacion.Parameters.Add("npNUMERORECIBO", OracleType.VarChar).Value = textBox5.Text;
             donacion.Parameters.Add("npFECHA", OracleType.DateTime).Value = dateTimePicker1.Value;
             donacion.Parameters.Add("npPROCEDENCIA", OracleType.VarChar).Value = textBox1.Text;
             donacion.Parameters.Add("npCEDULAUSUARIO", OracleType.VarChar).Value = textBox2.Text;
@@ -82,7 +82,7 @@ namespace proyectoLBD
                 MessageBox.Show("Seleccione el tipo de donacion");
             }
 
-            donacion.Parameters.Add("npCANTIDAD", OracleType.Number).Value = numericUpDown4.Value;
+            donacion.Parameters.Add("npCANTIDAD", OracleType.VarChar).Value = textBox9.Text;
             donacion.Parameters.Add("npDESCRIPCION", OracleType.VarChar).Value = textBox4.Text;
             if (checkBox4.Checked == true)
             {
@@ -104,7 +104,7 @@ namespace proyectoLBD
             {
                 MessageBox.Show("Seleccione el metodo de pago");
             }
-            donacion.Parameters.Add("npMONTO", OracleType.Number).Value = numericUpDown3.Value;
+            donacion.Parameters.Add("npMONTO", OracleType.VarChar).Value = textBox10.Text;
             donacion.ExecuteNonQuery();
             MessageBox.Show("La donacion se actualizo");
             textBox2.Clear();
@@ -120,6 +120,13 @@ namespace proyectoLBD
             checkBox8.Checked = false;
             checkBox9.Checked = false;
             database.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AgregarDonacion agregarDonacion = new AgregarDonacion();
+            agregarDonacion.Show();
+            this.Hide();
         }
     }
 }

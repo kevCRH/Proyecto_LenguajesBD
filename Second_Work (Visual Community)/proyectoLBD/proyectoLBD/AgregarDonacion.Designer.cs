@@ -44,9 +44,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.panel_fondoCeleste = new System.Windows.Forms.Panel();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,7 +54,6 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
@@ -70,17 +68,18 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
             this.txt_navBar = new System.Windows.Forms.Label();
             this.image_logo = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel_fondoCeleste.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel_fondoRojo.SuspendLayout();
@@ -93,7 +92,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(878, 400);
+            this.button1.Location = new System.Drawing.Point(878, 368);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 64);
             this.button1.TabIndex = 0;
@@ -239,17 +238,10 @@
             this.textBox3.Size = new System.Drawing.Size(330, 70);
             this.textBox3.TabIndex = 11;
             // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(12, 72);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 25);
-            this.numericUpDown2.TabIndex = 21;
-            // 
             // panel_fondoCeleste
             // 
             this.panel_fondoCeleste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
-            this.panel_fondoCeleste.Controls.Add(this.numericUpDown3);
+            this.panel_fondoCeleste.Controls.Add(this.textBox5);
             this.panel_fondoCeleste.Controls.Add(this.label16);
             this.panel_fondoCeleste.Controls.Add(this.label15);
             this.panel_fondoCeleste.Controls.Add(this.label3);
@@ -282,12 +274,13 @@
             this.panel_fondoCeleste.Size = new System.Drawing.Size(799, 589);
             this.panel_fondoCeleste.TabIndex = 22;
             // 
-            // numericUpDown3
+            // textBox5
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(530, 173);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(246, 25);
-            this.numericUpDown3.TabIndex = 48;
+            this.textBox5.Location = new System.Drawing.Point(530, 173);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(246, 25);
+            this.textBox5.TabIndex = 47;
             // 
             // label16
             // 
@@ -346,9 +339,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.textBox10);
             this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.numericUpDown1);
             this.panel2.Controls.Add(this.checkBox9);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.checkBox5);
@@ -362,18 +356,11 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(206, 52);
+            this.label14.Location = new System.Drawing.Point(295, 148);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(62, 17);
             this.label14.TabIndex = 22;
             this.label14.Text = "MONTO:";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(209, 76);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 25);
-            this.numericUpDown1.TabIndex = 47;
             // 
             // checkBox9
             // 
@@ -519,15 +506,26 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.textBox9);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.numericUpDown2);
             this.panel1.Controls.Add(this.checkBox2);
             this.panel1.Location = new System.Drawing.Point(17, 361);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(371, 209);
             this.panel1.TabIndex = 40;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.textBox9.Location = new System.Drawing.Point(12, 72);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(246, 25);
+            this.textBox9.TabIndex = 48;
             // 
             // panel3
             // 
@@ -577,7 +575,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(878, 491);
+            this.button2.Location = new System.Drawing.Point(878, 459);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 64);
             this.button2.TabIndex = 40;
@@ -591,18 +589,54 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(878, 577);
+            this.button3.Location = new System.Drawing.Point(878, 545);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(140, 64);
             this.button3.TabIndex = 41;
             this.button3.Text = "VER DONACIONES DONACION";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.textBox10.Location = new System.Drawing.Point(152, 168);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(205, 25);
+            this.textBox10.TabIndex = 49;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(127, 176);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(19, 17);
+            this.label17.TabIndex = 50;
+            this.label17.Text = "₡:";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button4.Location = new System.Drawing.Point(890, 637);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(118, 45);
+            this.button4.TabIndex = 53;
+            this.button4.Text = "< ATRAS";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // AgregarDonacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1073, 694);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.image_logo);
@@ -612,13 +646,10 @@
             this.Name = "AgregarDonacion";
             this.Text = "AgregarDonacion";
             this.Load += new System.EventHandler(this.AgregarDonacion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.panel_fondoCeleste.ResumeLayout(false);
             this.panel_fondoCeleste.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -648,7 +679,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Panel panel_fondoCeleste;
         private System.Windows.Forms.Panel panel_fondoRojo;
         private System.Windows.Forms.Label txt_navBar;
@@ -675,10 +705,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Button button4;
     }
 }
