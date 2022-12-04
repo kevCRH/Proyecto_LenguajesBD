@@ -90,6 +90,7 @@
             this.bt_donacion_especies.TabIndex = 6;
             this.bt_donacion_especies.Text = "Donación en Especies";
             this.bt_donacion_especies.UseVisualStyleBackColor = false;
+            this.bt_donacion_especies.Click += new System.EventHandler(this.bt_donacion_especies_Click);
             // 
             // pictureBox1
             // 

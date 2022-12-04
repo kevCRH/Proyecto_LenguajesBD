@@ -26,5 +26,12 @@ namespace proyectoLBD
         {
 
         }
+
+        private void bt_donacion_especies_Click(object sender, EventArgs e)
+        {
+            AgregarDonacion donacion = new AgregarDonacion();
+            donacion.Show();
+            this.Hide();
+        }
     }
 }

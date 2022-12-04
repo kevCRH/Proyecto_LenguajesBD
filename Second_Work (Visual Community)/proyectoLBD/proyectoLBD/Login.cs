@@ -1,5 +1,4 @@
-﻿using proyectoLBD.Resources;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -215,18 +214,10 @@ namespace proyectoLBD
             actualizarUsuario.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            ActualizarDonacion actualizarDonacion = new ActualizarDonacion();
-            actualizarDonacion.Show();
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
-
             AgregarSede agregarSede = new AgregarSede();
             agregarSede.Show();
-
         }
     }
 }
