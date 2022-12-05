@@ -69,12 +69,22 @@ namespace proyectoLBD
                 database.Close();
             }
 
-            OracleCommand comando2 = new OracleCommand("SELECT * FROM TBUSERNAME WHERE ATUSERNAME = :Administrador AND ATCONTRASENNA = :1234", database);
-            comando2.Parameters.AddWithValue(":Administrador", txt_user.Text);
-            comando2.Parameters.AddWithValue(":1234", txt_pass.Text);
-            OracleDataReader lectura2 = comando2.ExecuteReader();
+            //--------------Verificación de roles (adminiistrador o usuario)------------------------------
+            //Se agarran los datos de la tabla TBUsername con el SELECT
+            OracleCommand comandoAdmin = new OracleCommand("SELECT * FROM TBUSERNAME WHERE ATUSERNAME = :Administrador AND ATCONTRASENNA = :1234", database);//se genera el comando para leer datos de los capos en caso de ser Administrador
+            OracleCommand comandoEmpleado = new OracleCommand("SELECT * FROM TBUSERNAME WHERE ATUSERNAME = :Empleado AND ATCONTRASENNA = :1234", database);//se genera el comando para leer datos de los capos en caso de ser Empleado
 
-            if (lectura2.Read())
+            comandoAdmin.Parameters.AddWithValue(":Administrador", txt_user.Text);//se usa el comando para que añada el valor que debe tener el campo de user
+            comandoAdmin.Parameters.AddWithValue(":1234", txt_pass.Text);//se usa el comando para que añada el valor que debe tener el campo de password
+
+            comandoEmpleado.Parameters.AddWithValue(":Empleado", txt_user.Text);//se usa el comando para que añada el valor que debe tener el campo de user
+            comandoEmpleado.Parameters.AddWithValue(":1234", txt_pass.Text);//se usa el comando para que añada el valor que debe tener el campo de password
+
+            OracleDataReader lecturaAdmin = comandoAdmin.ExecuteReader();//se hace un data reader para leer en caso de que sea un Administrador
+            OracleDataReader lecturaEmpleado = comandoEmpleado.ExecuteReader();//se hace un data reader para leer en caso de que sea un Empleado
+
+            //Se entra a una condicion en donde si logra leer los datos para el data reader 'lecturaAdmin' lo va a dirigir al form de menu Administrador
+            if (lecturaAdmin.Read())
             {
        
                 MenuAdministrador formAdmin = new MenuAdministrador();
@@ -82,14 +92,20 @@ namespace proyectoLBD
                 formAdmin.Show();//muestra el formulario
                 this.Hide(); //Oculta la ventana si el lee el dato
             }
-            else
+            //Se entra a una condicion en donde en caso de leer los datos que sean de Empleado le muestre el formulario de tipo de donacion 
+            else if (lecturaEmpleado.Read())
             {
                 frm_tipo_Donacion formEmpleado = new frm_tipo_Donacion();
                 database.Close();//se cierra la base de datos para que no de problema
                 formEmpleado.Show();//muestra el formulario
                 this.Hide(); //Oculta la ventana si lee el dato
             }
-            
+            //Si no se cumple ninguna de las condiciones anteriores se le mostrara un mensaje que diga "Usuario o Contraseña incorrecta"
+            else
+            {
+                MessageBox.Show("Usuario o Contraseña incorrecta"); //Se muestra un message box 
+                database.Close();//Se cierra la base de datos para que no de problema
+            }
 
 
             /* --------------LOGIN CON SELECT-------------- 
