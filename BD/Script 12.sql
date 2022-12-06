@@ -299,7 +299,7 @@ BEGIN
         A.ATCANTIDAD AS "CANTIDAD DE LA DONACION", A.ATDESCRIPCION AS "DESCRIPCION" 
     FROM TBDonacion A   
     INNER JOIN  TB_TipoDonacion B
-        ON A.ATId_TDonacion = B.ATId_TipoDonacion
+        ON A.ATId_TDonacion = B.ATId_TipoDonacion and A.ATId_TDonacion = 2
     INNER JOIN  TBUsuarios C
         ON A.ATCEDULAUSUARIO = C.ATCedula
     INNER JOIN  TBUsuarios D
