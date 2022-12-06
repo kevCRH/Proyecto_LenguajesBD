@@ -59,6 +59,12 @@
     <Compile Include="ActualizarDonacion.Designer.cs">
       <DependentUpon>ActualizarDonacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ActualizarSede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarSede.Designer.cs">
+      <DependentUpon>ActualizarSede.cs</DependentUpon>
+    </Compile>
     <Compile Include="ActualizarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,18 @@
     </Compile>
     <Compile Include="ListarDonacionesEspecie.Designer.cs">
       <DependentUpon>ListarDonacionesEspecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarSedes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarSedes.Designer.cs">
+      <DependentUpon>ListarSedes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarUsernames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarUsernames.Designer.cs">
+      <DependentUpon>ListarUsernames.cs</DependentUpon>
     </Compile>
     <Compile Include="ListarUsuarios.cs">
       <SubType>Form</SubType>
@@ -144,6 +162,9 @@
     <EmbeddedResource Include="ActualizarDonacion.resx">
       <DependentUpon>ActualizarDonacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarSede.resx">
+      <DependentUpon>ActualizarSede.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ActualizarUsuario.resx">
       <DependentUpon>ActualizarUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +182,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListarDonacionesEspecie.resx">
       <DependentUpon>ListarDonacionesEspecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarSedes.resx">
+      <DependentUpon>ListarSedes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarUsernames.resx">
+      <DependentUpon>ListarUsernames.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListarUsuarios.resx">
       <DependentUpon>ListarUsuarios.cs</DependentUpon>

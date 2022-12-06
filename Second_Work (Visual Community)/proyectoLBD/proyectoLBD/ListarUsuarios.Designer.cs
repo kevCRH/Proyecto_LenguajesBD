@@ -82,9 +82,9 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvUsuarios.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvUsuarios.EnableHeadersVisualStyles = false;
-            this.dgvUsuarios.Location = new System.Drawing.Point(46, 18);
+            this.dgvUsuarios.Location = new System.Drawing.Point(97, 17);
             this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.Size = new System.Drawing.Size(742, 348);
+            this.dgvUsuarios.Size = new System.Drawing.Size(642, 348);
             this.dgvUsuarios.TabIndex = 0;
             // 
             // btnCargarUsuarios
@@ -120,7 +120,7 @@
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
             this.panel_fondoRojo.Location = new System.Drawing.Point(1, -3);
             this.panel_fondoRojo.Name = "panel_fondoRojo";
-            this.panel_fondoRojo.Size = new System.Drawing.Size(954, 73);
+            this.panel_fondoRojo.Size = new System.Drawing.Size(867, 73);
             this.panel_fondoRojo.TabIndex = 9;
             // 
             // bt_logout
