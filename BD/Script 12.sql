@@ -248,6 +248,7 @@ END;
 
 --Para ver donación
 
+/* procedimiento para ver todas las donaciones*/
 CREATE OR REPLACE PROCEDURE ver_donacion
     (pNumeroRecibo in VARCHAR2, registros out sys_refcursor)
 AS
@@ -263,7 +264,7 @@ BEGIN
 END;
 
 --Para ver donaciónes
-CREATE OR REPLACE PROCEDURE ver_donaciones
+CREATE OR REPLACE PROCEDURE ver_donaciones_monetaria
     (registros out sys_refcursor)
 AS
 BEGIN
@@ -274,8 +275,28 @@ BEGIN
         D.ATNombre ||' '|| D.ATApellido_1 ||' '|| D.ATApellido_2 AS "EMPLEADO CAPTACION",
         A.ATCEDULAUSUARIOCAPTACION AS "CED EMPLEADO", 
         A.ATNOMBRESEDE AS "SEDE", B.ATTipo_Donacion AS "TIPO DONACION",
-        A.ATCANTIDAD AS "CANTIDAD DE LA DONACION", A.ATDESCRIPCION AS "DESCRIPCION", 
         A.ATMETODOPAGO AS "METODO PAGO", A.ATMONTO AS "MONTO" 
+    FROM TBDonacion A 
+    INNER JOIN  TB_TipoDonacion B 
+        ON A.ATId_TDonacion = B.ATId_TipoDonacion and A.ATId_TDonacion = 1
+    INNER JOIN  TBUsuarios C
+        ON A.ATCEDULAUSUARIO = C.ATCedula
+    INNER JOIN  TBUsuarios D
+        ON A.ATCEDULAUSUARIOCAPTACION = D.ATCedula;
+END;
+
+CREATE OR REPLACE PROCEDURE ver_donaciones_especie
+    (registros out sys_refcursor)
+AS
+BEGIN
+    OPEN registros FOR SELECT A.ATNUMERORECIBO AS "NUMERO RECIBO", A.ATFECHA AS "FECHA", 
+        A.ATPROCEDENCIA AS "PROCEDENCIA", 
+        C.ATNombre ||' '|| C.ATApellido_1 ||' '|| C.ATApellido_2 AS "Donante", 
+        A.ATCEDULAUSUARIO AS "CED DONANTE", 
+        D.ATNombre ||' '|| D.ATApellido_1 ||' '|| D.ATApellido_2 AS "EMPLEADO CAPTACION",
+        A.ATCEDULAUSUARIOCAPTACION AS "CED EMPLEADO", 
+        A.ATNOMBRESEDE AS "SEDE", B.ATTipo_Donacion AS "TIPO DONACION",
+        A.ATCANTIDAD AS "CANTIDAD DE LA DONACION", A.ATDESCRIPCION AS "DESCRIPCION" 
     FROM TBDonacion A   
     INNER JOIN  TB_TipoDonacion B
         ON A.ATId_TDonacion = B.ATId_TipoDonacion
@@ -289,14 +310,13 @@ END;
 
 CREATE OR REPLACE PROCEDURE actualizar_donacion
     (pNumeroRecibo IN VARCHAR2, npNUMERORECIBO IN VARCHAR2, npFECHA IN DATE, 
-    npPROCEDENCIA IN VARCHAR2, npCEDULAUSUARIO IN VARCHAR2, npCEDULAUSUARIOCAPTACION IN VARCHAR2,
-    npNOMBRESEDE IN VARCHAR2, npID_TDONACION IN INT, npCANTIDAD IN VARCHAR2, 
-    npDESCRIPCION IN VARCHAR2, npMETODOPAGO IN VARCHAR2, npMONTO IN VARCHAR2)
+    npPROCEDENCIA IN VARCHAR2,npNOMBRESEDE IN VARCHAR2, npID_TDONACION IN INT, 
+    npCANTIDAD IN VARCHAR2, npDESCRIPCION IN VARCHAR2, npMETODOPAGO IN VARCHAR2, 
+    npMONTO IN VARCHAR2)
 AS
 BEGIN
     UPDATE TBDONACION SET 
     ATNumeroRecibo = npNUMERORECIBO, ATFecha = npFECHA, ATProcedencia = npPROCEDENCIA,
-    ATCedulaUsuario = npCEDULAUSUARIO, ATCedulaUsuarioCaptacion = npCEDULAUSUARIOCAPTACION, 
     ATNombreSede = npNOMBRESEDE, ATID_TDONACION = npID_TDONACION, ATCantidad = npCANTIDAD,
     ATDescripcion = npDESCRIPCION, ATMetodoPago = npMETODOPAGO, ATMonto = npMONTO
     where ATNumeroRecibo = pNumeroRecibo;

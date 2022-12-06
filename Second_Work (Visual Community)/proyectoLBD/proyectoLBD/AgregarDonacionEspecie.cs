@@ -13,9 +13,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace proyectoLBD
 {
-    public partial class AgregarDonacion : Form
+    public partial class AgregarDonacionEspecie : Form
     {
-        public AgregarDonacion()
+        public AgregarDonacionEspecie()
         {
             InitializeComponent();
         }
@@ -83,59 +83,42 @@ namespace proyectoLBD
                 {
                     MessageBox.Show("Seleccione una sede");
                 }
-                //Al ser el form de las donaciones se envian los parametros directos de los espacios en especie
+                //Se capturan las descripcion de la donacion y la cantidad    
+                donacion.Parameters.Add("pTipoDonacion", OracleType.Number).Value = 2;  
+                donacion.Parameters.Add("pCantidad", OracleType.VarChar).Value = textBox9.Text;
+                donacion.Parameters.Add("pDescripcion", OracleType.VarChar).Value = textBox3.Text;
 
-                donacion.Parameters.Add("pTipoDonacion", OracleType.Number).Value = 1;
-                donacion.Parameters.Add("pCantidad", OracleType.VarChar).Value = "0";
-                donacion.Parameters.Add("pDescripcion", OracleType.VarChar).Value = "N/A";
-
-                //los chechBox se encargaràn de validar la opcion de tipo de metodo de pago que se seleccion,
-                //Si no se seleccion un tipo de metodo de pago mostrara una alerta
-                if (checkBox4.Checked)
-                {
-                    donacion.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = "N/A";
-                }
-                else if (checkBox5.Checked)
-                {
-                    donacion.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = "Efectivo";
-                }
-                else if (checkBox6.Checked)
-                {
-                    donacion.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = "Tarjeta";
-                }
-                else if (checkBox9.Checked)
-                {
-                    donacion.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = "Cheque";
-                }
-                else
-                {
-                    MessageBox.Show("Seleccione el metodo de pago");
-                }
-                donacion.Parameters.Add("pMonto", OracleType.VarChar).Value = textBox10.Text;
+                //Al ser el form de las donaciones se envian los parametros directos de los espacios monetarios
+                donacion.Parameters.Add("pMetodoPago", OracleType.VarChar).Value = "N/A";
+                donacion.Parameters.Add("pMonto", OracleType.VarChar).Value = "0";
+                
+                //Se ejecutan cada uno de los objetos que contienen los parametros que se enviaran al procedimiento almacenado
                 usuario.ExecuteNonQuery();
                 correo.ExecuteNonQuery();
                 telefono.ExecuteNonQuery();
                 donacion.ExecuteNonQuery();
+
+                //Alerta sobre que la donacion se agrego con exito y limpiamos cada uno de los espacios de la donacion
                 MessageBox.Show("La donacion se agrego");
                 txt_user.Clear();
                 textBox1.Clear();
                 textBox2.Clear();
+                textBox3.Clear();
                 textBox4.Clear();
                 textBox5.Clear();
                 textBox6.Clear();
                 textBox7.Clear();
-                textBox10.Clear();
+                textBox8.Clear();
+                textBox9.Clear();
                 textBox13.Clear();
                 checkBox3.Checked = false;
-                checkBox4.Checked = false;
-                checkBox5.Checked = false;
-                checkBox6.Checked = false;
                 checkBox7.Checked = false;
                 checkBox8.Checked = false;
-                checkBox9.Checked = false;
+
             }
             catch(Exception)
             {
+                //Si se detecta un fallo se mostrara la alerta de que algo ocurrio
                 MessageBox.Show("Algo fallo, asegurese de que los datos a ingresar sean correctos");
 
             }    
@@ -150,21 +133,21 @@ namespace proyectoLBD
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ActualizarDonacion actualizarDonacion = new ActualizarDonacion();
+            ActualizarDonacionEspecie actualizarDonacion = new ActualizarDonacionEspecie();
             actualizarDonacion.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ListarDonaciones listarDonaciones = new ListarDonaciones();
+            ListarDonacionesEspecie listarDonaciones = new ListarDonacionesEspecie();
             listarDonaciones.Show();
             this.Hide();
         }
 
         private void bt_atrás_Click(object sender, EventArgs e)
         {
-            TipoDonacion  formulario = new TipoDonacion();
+            TipoDonacion formulario = new TipoDonacion();
             formulario.Show();
             this.Hide();
         }

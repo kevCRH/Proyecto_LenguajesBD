@@ -1,6 +1,6 @@
 ﻿namespace proyectoLBD
 {
-    partial class TipoDonacion
+    partial class TipoDonacionAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TipoDonacion));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TipoDonacionAdmin));
             this.txt_navBar = new System.Windows.Forms.Label();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
             this.bt_logout = new System.Windows.Forms.Button();
@@ -39,6 +39,7 @@
             this.bt_donacion_dinero = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.image_logo = new System.Windows.Forms.PictureBox();
+            this.bt_atrás = new System.Windows.Forms.Button();
             this.panel_fondoRojo.SuspendLayout();
             this.panel_fondoCeleste.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,6 +63,7 @@
             // panel_fondoRojo
             // 
             this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.panel_fondoRojo.Controls.Add(this.bt_atrás);
             this.panel_fondoRojo.Controls.Add(this.bt_logout);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
             this.panel_fondoRojo.Location = new System.Drawing.Point(0, 0);
@@ -167,7 +169,21 @@
             this.image_logo.TabIndex = 1;
             this.image_logo.TabStop = false;
             // 
-            // frm_tipo_Donacion
+            // bt_atrás
+            // 
+            this.bt_atrás.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bt_atrás.Location = new System.Drawing.Point(672, 18);
+            this.bt_atrás.Name = "bt_atrás";
+            this.bt_atrás.Size = new System.Drawing.Size(55, 40);
+            this.bt_atrás.TabIndex = 56;
+            this.bt_atrás.Text = "<<";
+            this.bt_atrás.UseVisualStyleBackColor = false;
+            this.bt_atrás.Click += new System.EventHandler(this.bt_atrás_Click);
+            // 
+            // TipoDonacionAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -177,7 +193,7 @@
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.image_logo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frm_tipo_Donacion";
+            this.Name = "TipoDonacionAdmin";
             this.Text = "Form2";
             this.panel_fondoRojo.ResumeLayout(false);
             this.panel_fondoRojo.PerformLayout();
@@ -202,5 +218,6 @@
         public System.Windows.Forms.Button bt_donacion_especies;
         public System.Windows.Forms.Button bt_donacion_dinero;
         public System.Windows.Forms.Button bt_logout;
+        private System.Windows.Forms.Button bt_atrás;
     }
 }

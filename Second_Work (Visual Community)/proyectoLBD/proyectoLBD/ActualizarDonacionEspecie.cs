@@ -7,16 +7,15 @@ using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace proyectoLBD
 {
-    public partial class ActualizarDonacion : Form
+    public partial class ActualizarDonacionEspecie : Form
     {
-        public ActualizarDonacion()
+        public ActualizarDonacionEspecie()
         {
             InitializeComponent();
             
@@ -80,49 +79,26 @@ namespace proyectoLBD
                 {
                     MessageBox.Show("Seleccione una sede");
                 }
-                // Se capturan los datos del tipo de donacion monetaria
-                donacion.Parameters.Add("npID_TDONACION", OracleType.Number).Value = 1;
-                donacion.Parameters.Add("npCANTIDAD", OracleType.VarChar).Value = "0";
-                donacion.Parameters.Add("npDESCRIPCION", OracleType.VarChar).Value = "N/A";
-                //Se validan los checkBox para ver el metodo de pago
-                if (checkBox4.Checked)
-                {
-                    donacion.Parameters.Add("npMETODOPAGO", OracleType.VarChar).Value = "N/A";
-                }
-                else if (checkBox5.Checked)
-                {
-                    donacion.Parameters.Add("npMETODOPAGO", OracleType.VarChar).Value = "Efectivo";
-                }
-                else if (checkBox6.Checked)
-                {
-                    donacion.Parameters.Add("npMETODOPAGO", OracleType.VarChar).Value = "Tarjeta";
-                }
-                else if (checkBox9.Checked)
-                {
-                    donacion.Parameters.Add("npMETODOPAGO", OracleType.VarChar).Value = "Cheque";
-                }
-                else
-                {
-                    MessageBox.Show("Seleccione el metodo de pago");
-                }
-                donacion.Parameters.Add("npMONTO", OracleType.VarChar).Value = textBox10.Text;
+                //Se capturan los datos del tipo de donacion en especie
+                donacion.Parameters.Add("npID_TDONACION", OracleType.Number).Value = 2;
+                donacion.Parameters.Add("npCANTIDAD", OracleType.VarChar).Value = textBox9.Text;
+                donacion.Parameters.Add("npDESCRIPCION", OracleType.VarChar).Value = textBox4.Text;
+                donacion.Parameters.Add("npMETODOPAGO", OracleType.VarChar).Value = "N/A";                
+                donacion.Parameters.Add("npMONTO", OracleType.VarChar).Value = "0";
                 donacion.ExecuteNonQuery();
                 MessageBox.Show("La donacion se actualizo");
                 textBox1.Clear();
+                textBox4.Clear();
                 textBox5.Clear();
                 textBox6.Clear();
-                textBox10.Clear();
+                textBox9.Clear();
                 checkBox3.Checked = false;
-                checkBox4.Checked = false;
-                checkBox5.Checked = false;
-                checkBox6.Checked = false;
                 checkBox7.Checked = false;
                 checkBox8.Checked = false;
-                checkBox9.Checked = false;
+
             }
             catch (Exception) {
                 MessageBox.Show("Algo fallo, asegurese de que los datos a ingresar sean correctos");
-
             }
             database.Close();
         }

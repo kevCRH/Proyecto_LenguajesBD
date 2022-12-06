@@ -10,18 +10,27 @@ using System.Windows.Forms;
 
 namespace proyectoLBD
 {
-    public partial class MenuAdministrador : Form
+    public partial class TipoDonacionAdmin : Form
     {
-        public MenuAdministrador()
+        public TipoDonacionAdmin()
         {
             InitializeComponent();
         }
 
-        private void bt_donaciones_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
-            TipoDonacionAdmin formulario = new TipoDonacionAdmin();
-            formulario.Show();
+        }
+
+        private void btnNuevoUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_donacion_especies_Click(object sender, EventArgs e)
+        {
+            AgregarDonacionEspecie donacion = new AgregarDonacionEspecie();
+            donacion.Show();
             this.Hide();
         }
 
@@ -39,17 +48,17 @@ namespace proyectoLBD
             this.Hide();
         }
 
-        private void bt_usuarios_Click(object sender, EventArgs e)
+        private void bt_donacion_dinero_Click(object sender, EventArgs e)
         {
-            AgregarUsuario AgregarUsario = new AgregarUsuario();
-            AgregarUsario.Show();
+            AgregarDonacion donacion = new AgregarDonacion();
+            donacion.Show();
             this.Hide();
         }
 
-        private void bt_sedes_Click(object sender, EventArgs e)
+        private void bt_atrás_Click(object sender, EventArgs e)
         {
-            AgregarSede agregarSede = new AgregarSede();
-            agregarSede.Show();
+            MenuAdministrador formulario = new MenuAdministrador();
+            formulario.Show();
             this.Hide();
         }
     }

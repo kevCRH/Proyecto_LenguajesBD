@@ -1,6 +1,6 @@
 ﻿namespace proyectoLBD
 {
-    partial class AgregarDonacion
+    partial class AgregarDonacionEspecie
     {
         /// <summary>
         /// Required designer variable.
@@ -35,16 +35,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel_fondoCeleste = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -64,6 +58,8 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
             this.bt_logout = new System.Windows.Forms.Button();
@@ -73,7 +69,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel_fondoCeleste.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel_fondoRojo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_logo)).BeginInit();
@@ -146,10 +142,37 @@
             this.checkBox3.Text = "SAN JOSE";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 100);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 17);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "DESCRIPCION:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(140, 17);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "CANTIDAD OBJETOS:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Location = new System.Drawing.Point(12, 123);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(330, 70);
+            this.textBox3.TabIndex = 11;
+            // 
             // panel_fondoCeleste
             // 
             this.panel_fondoCeleste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
-            this.panel_fondoCeleste.Controls.Add(this.panel2);
             this.panel_fondoCeleste.Controls.Add(this.textBox5);
             this.panel_fondoCeleste.Controls.Add(this.label16);
             this.panel_fondoCeleste.Controls.Add(this.label15);
@@ -174,106 +197,13 @@
             this.panel_fondoCeleste.Controls.Add(this.textBox1);
             this.panel_fondoCeleste.Controls.Add(this.checkBox3);
             this.panel_fondoCeleste.Controls.Add(this.label4);
+            this.panel_fondoCeleste.Controls.Add(this.panel1);
             this.panel_fondoCeleste.Controls.Add(this.panel3);
             this.panel_fondoCeleste.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.panel_fondoCeleste.Location = new System.Drawing.Point(2, 93);
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
             this.panel_fondoCeleste.Size = new System.Drawing.Size(799, 589);
             this.panel_fondoCeleste.TabIndex = 22;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.textBox10);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.checkBox9);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.checkBox5);
-            this.panel2.Controls.Add(this.checkBox6);
-            this.panel2.Controls.Add(this.checkBox4);
-            this.panel2.Location = new System.Drawing.Point(111, 361);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(596, 209);
-            this.panel2.TabIndex = 41;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(301, 159);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(19, 17);
-            this.label17.TabIndex = 50;
-            this.label17.Text = "₡:";
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox10.Location = new System.Drawing.Point(326, 151);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(205, 25);
-            this.textBox10.TabIndex = 49;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(469, 131);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(62, 17);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "MONTO:";
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(107, 131);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(73, 21);
-            this.checkBox9.TabIndex = 39;
-            this.checkBox9.Text = "Cheque";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(88, 39);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(129, 17);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "METODO DE PAGO:";
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(107, 87);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(76, 21);
-            this.checkBox5.TabIndex = 14;
-            this.checkBox5.Text = "Efectivo";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(107, 110);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(69, 21);
-            this.checkBox6.TabIndex = 15;
-            this.checkBox6.Text = "Tarjeta";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(107, 152);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(52, 21);
-            this.checkBox4.TabIndex = 19;
-            this.checkBox4.Text = "N/A";
-            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // textBox5
             // 
@@ -468,6 +398,29 @@
             this.label9.TabIndex = 26;
             this.label9.Text = "CORREO:";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Location = new System.Drawing.Point(110, 361);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(597, 209);
+            this.panel1.TabIndex = 40;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.textBox9.Location = new System.Drawing.Point(12, 72);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(246, 25);
+            this.textBox9.TabIndex = 48;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -569,7 +522,7 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // AgregarDonacion
+            // AgregarDonacionEspecie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -580,13 +533,13 @@
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.panel_fondoCeleste);
             this.Controls.Add(this.button1);
-            this.Name = "AgregarDonacion";
+            this.Name = "AgregarDonacionEspecie";
             this.Text = "AgregarDonacion";
             this.Load += new System.EventHandler(this.AgregarDonacion_Load);
             this.panel_fondoCeleste.ResumeLayout(false);
             this.panel_fondoCeleste.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel_fondoRojo.ResumeLayout(false);
@@ -605,6 +558,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Panel panel_fondoCeleste;
         private System.Windows.Forms.Panel panel_fondoRojo;
         private System.Windows.Forms.Label txt_navBar;
@@ -622,6 +578,7 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox image_logo;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -631,16 +588,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button bt_atrás;
         public System.Windows.Forms.Button bt_logout;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox4;
     }
 }

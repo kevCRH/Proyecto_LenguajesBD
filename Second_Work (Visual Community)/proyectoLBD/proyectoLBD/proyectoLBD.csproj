@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarDonacionEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarDonacionEspecie.Designer.cs">
+      <DependentUpon>ActualizarDonacionEspecie.cs</DependentUpon>
+    </Compile>
     <Compile Include="ActualizarDonacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,12 @@
     </Compile>
     <Compile Include="ActualizarUsuario.Designer.cs">
       <DependentUpon>ActualizarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarDonacionEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarDonacionEspecie.Designer.cs">
+      <DependentUpon>AgregarDonacionEspecie.cs</DependentUpon>
     </Compile>
     <Compile Include="AgregarDonacion.cs">
       <SubType>Form</SubType>
@@ -82,6 +94,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ListarDonacionesEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarDonacionesEspecie.Designer.cs">
+      <DependentUpon>ListarDonacionesEspecie.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListarUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +118,12 @@
     <Compile Include="MenuAdministrador.Designer.cs">
       <DependentUpon>MenuAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="TipoDonacionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoDonacionAdmin.Designer.cs">
+      <DependentUpon>TipoDonacionAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="TipoDonacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,11 +138,17 @@
     <Compile Include="ListarDonaciones.Designer.cs">
       <DependentUpon>ListarDonaciones.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActualizarDonacionEspecie.resx">
+      <DependentUpon>ActualizarDonacionEspecie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ActualizarDonacion.resx">
       <DependentUpon>ActualizarDonacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ActualizarUsuario.resx">
       <DependentUpon>ActualizarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarDonacionEspecie.resx">
+      <DependentUpon>AgregarDonacionEspecie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarDonacion.resx">
       <DependentUpon>AgregarDonacion.cs</DependentUpon>
@@ -129,6 +159,9 @@
     <EmbeddedResource Include="AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListarDonacionesEspecie.resx">
+      <DependentUpon>ListarDonacionesEspecie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListarUsuarios.resx">
       <DependentUpon>ListarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAdministrador.resx">
       <DependentUpon>MenuAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoDonacionAdmin.resx">
+      <DependentUpon>TipoDonacionAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TipoDonacion.resx">
       <DependentUpon>TipoDonacion.cs</DependentUpon>
