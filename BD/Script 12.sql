@@ -445,6 +445,95 @@ BEGIN
     (pTelefono,pDuenoTelefono,pCategoriaTelefono);
 END;
 
+/*TEGO QUE PONER ESTOS PROCEDURES DONDE VAN*/
+create or replace NONEDITIONABLE PROCEDURE ActualizarUsuario 
+(pNombre IN varchar2, pApellido_1 IN varchar2, pApellido_2 IN varchar2, 
+pCedula IN varchar2, pRol IN varchar2)
+AS
+BEGIN
+    UPDATE TBUSUARIOS SET ATNOMBRE = pNombre, ATAPELLIDO_1 = pApellido_1,
+    ATAPELLIDO_2 = pApellido_2, ATROL = pRol
+    WHERE ATCEDULA = pCedula;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+    NULL;
+    WHEN OTHERS THEN
+    RAISE;
+END;
+
+create or replace NONEDITIONABLE PROCEDURE ActualizarUsername
+(pUsername IN varchar2, pContrasenna IN varchar2, pDuenoUsername IN varchar2, pRol IN varchar2)
+AS
+BEGIN
+    UPDATE TBUSERNAME SET ATUSERNAME = pUsername, ATCONTRASENNA = pContrasenna,
+    ATROLUSERNAME = pRol
+    WHERE ATDUENOUSERNAME = pDuenoUsername;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+    NULL;
+    WHEN OTHERS THEN
+    RAISE;
+END;
+
+create or replace NONEDITIONABLE PROCEDURE ActualizarTelefono
+(pTelefono IN varchar2, pDuenoTelefono IN varchar2, pCategoria IN varchar2)
+AS
+BEGIN
+    UPDATE TBTELEFONOS SET ATTELEFONO = pTelefono, ATCATEGORIATELEFONO = pCategoria
+    WHERE ATDUENOTELEFONO = pDuenoTelefono;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+    NULL;
+    WHEN OTHERS THEN
+    RAISE;
+END;
+
+create or replace NONEDITIONABLE PROCEDURE ActualizarCorreo
+(pCorreo IN varchar2, pDuenoCorreo IN varchar2, pCategoria IN varchar2)
+AS
+BEGIN
+    UPDATE TBCORREOS SET ATCORREO= pCorreo, ATCATEGORIACORREO = pCategoria
+    WHERE ATDUENOCORREO = pDuenoCorreo;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+    NULL;
+    WHEN OTHERS THEN
+    RAISE;
+END;
+
+create or replace NONEDITIONABLE PROCEDURE ActualizarCorreo
+(pCorreo IN varchar2, pDuenoCorreo IN varchar2, pCategoria IN varchar2)
+AS
+BEGIN
+    UPDATE TBCORREOS SET ATCORREO= pCorreo, ATCATEGORIACORREO = pCategoria
+    WHERE ATDUENOCORREO = pDuenoCorreo;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+    NULL;
+    WHEN OTHERS THEN
+    RAISE;
+END;
+
+create or replace NONEDITIONABLE PROCEDURE VER_SEDE_ESPECIFICA
+    (pNombreSede in VARCHAR2, registros out sys_refcursor)
+AS
+BEGIN
+    OPEN registros FOR SELECT * FROM TBSEDES WHERE ATNOMBRESEDE = pNombreSede; 
+END;
+
+create or replace NONEDITIONABLE PROCEDURE ActualizarSede
+(pNombreSede IN varchar2,pCodPostal IN varchar2, pCanton IN varchar2,pDistrito IN varchar2,pDireccionExacta IN varchar2)
+AS
+BEGIN
+    UPDATE TBSEDES SET ATCODPOSTAL = pCodPostal, ATCANTON = pCanton, ATDISTRITO = pDistrito,
+    ATDIRECCIONEXACTA = pDireccionExacta WHERE ATNOMBRESEDE = pNombreSede;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+    NULL;
+    WHEN OTHERS THEN
+    RAISE;
+END;
+
 /*************************************************************************************************************************
 **************************************************************************************************************************
 **********************************************************TRIGGERS********************************************************
