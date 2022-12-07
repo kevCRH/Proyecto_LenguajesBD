@@ -55,11 +55,11 @@ namespace proyectoLBD
             comando.ExecuteNonQuery();
 
             if (comando.Parameters["pVERIFICAR"].Value.ToString().Equals("1"))
-            {   
-                frm_tipo_Donacion formulario = new frm_tipo_Donacion();
+            {
+                TipoDonacion formEmpleado = new TipoDonacion();
                 database.Close();
                 //MessageBox.Show("Conectado"); //Msj para confirmar que todo este bien
-                formulario.Show();
+                formEmpleado.Show();
                 this.Hide(); //Oculta la ventana si el login es exitoso
 
             }
@@ -95,7 +95,7 @@ namespace proyectoLBD
             //Se entra a una condicion en donde en caso de leer los datos que sean de Empleado le muestre el formulario de tipo de donacion 
             else if (lecturaEmpleado.Read())
             {
-                frm_tipo_Donacion formEmpleado = new frm_tipo_Donacion();
+                TipoDonacion formEmpleado = new TipoDonacion();
                 database.Close();//se cierra la base de datos para que no de problema
                 formEmpleado.Show();//muestra el formulario
                 this.Hide(); //Oculta la ventana si lee el dato
@@ -255,7 +255,7 @@ namespace proyectoLBD
 
         private void bt_loggin_quemado_Click(object sender, EventArgs e)
         {
-            frm_tipo_Donacion formulario = new frm_tipo_Donacion();
+            TipoDonacion formulario = new TipoDonacion();
             formulario.Show();
             this.Hide(); //Oculta la ventana si el login es exitoso
         }

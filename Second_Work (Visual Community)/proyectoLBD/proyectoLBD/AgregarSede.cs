@@ -84,5 +84,19 @@ namespace proyectoLBD
             formulario.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ListarSedes listarSedes = new ListarSedes();
+            listarSedes.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ActualizarSede actualizarSede = new ActualizarSede();   
+            actualizarSede.Show();
+            this.Hide();
+        }
     }
 }

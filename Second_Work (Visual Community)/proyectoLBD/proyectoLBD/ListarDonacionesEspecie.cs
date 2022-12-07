@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace proyectoLBD
 {
-    public partial class ListarDonaciones : Form
+    public partial class ListarDonacionesEspecie : Form
     {
-        public ListarDonaciones()
+        public ListarDonacionesEspecie()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace proyectoLBD
             {
                 database.Open();
                 //llamamos al metodo ver_donaciones el cual nos devolvera un cursor como un parametro de salida
-                OracleCommand donacion = new OracleCommand("ver_donaciones_monetaria", database);
+                OracleCommand donacion = new OracleCommand("ver_donaciones_especie", database);
                 donacion.CommandType = System.Data.CommandType.StoredProcedure;
                 donacion.Parameters.Add("registros", OracleType.Cursor).Direction = ParameterDirection.Output;
                 //adaptamos el cursor para poder meterlo dentro de una tabla
@@ -42,9 +42,10 @@ namespace proyectoLBD
             }
             database.Close(); 
         }
+
         private void bt_atrás_Click(object sender, EventArgs e)
         {
-            AgregarDonacion agregarDonacion = new AgregarDonacion();
+            AgregarDonacionEspecie agregarDonacion = new AgregarDonacionEspecie();
             agregarDonacion.Show();
             this.Hide();
         }

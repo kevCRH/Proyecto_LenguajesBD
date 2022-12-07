@@ -28,14 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel_fondoRojo = new System.Windows.Forms.Panel();
-            this.bt_logout = new System.Windows.Forms.Button();
-            this.bt_atrás = new System.Windows.Forms.Button();
-            this.txt_navBar = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_fondoCeleste = new System.Windows.Forms.Panel();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
@@ -53,102 +48,27 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtUsario = new System.Windows.Forms.TextBox();
             this.txtContrasenna = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel_fondoRojo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtActualizar = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvUsuario = new System.Windows.Forms.DataGridView();
+            this.panel_fondoRojo = new System.Windows.Forms.Panel();
+            this.bt_logout = new System.Windows.Forms.Button();
+            this.bt_atrás = new System.Windows.Forms.Button();
+            this.txt_navBar = new System.Windows.Forms.Label();
             this.panel_fondoCeleste.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
+            this.panel_fondoRojo.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel_fondoRojo
-            // 
-            this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.panel_fondoRojo.Controls.Add(this.bt_logout);
-            this.panel_fondoRojo.Controls.Add(this.bt_atrás);
-            this.panel_fondoRojo.Controls.Add(this.txt_navBar);
-            this.panel_fondoRojo.Location = new System.Drawing.Point(2, 1);
-            this.panel_fondoRojo.Name = "panel_fondoRojo";
-            this.panel_fondoRojo.Size = new System.Drawing.Size(1205, 87);
-            this.panel_fondoRojo.TabIndex = 25;
-            // 
-            // bt_logout
-            // 
-            this.bt_logout.BackColor = System.Drawing.Color.DarkRed;
-            this.bt_logout.FlatAppearance.BorderSize = 0;
-            this.bt_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
-            this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_logout.Location = new System.Drawing.Point(1117, 23);
-            this.bt_logout.Name = "bt_logout";
-            this.bt_logout.Size = new System.Drawing.Size(55, 40);
-            this.bt_logout.TabIndex = 58;
-            this.bt_logout.UseVisualStyleBackColor = false;
-            // 
-            // bt_atrás
-            // 
-            this.bt_atrás.BackColor = System.Drawing.Color.DarkRed;
-            this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bt_atrás.Location = new System.Drawing.Point(1056, 23);
-            this.bt_atrás.Name = "bt_atrás";
-            this.bt_atrás.Size = new System.Drawing.Size(55, 40);
-            this.bt_atrás.TabIndex = 57;
-            this.bt_atrás.Text = "<<";
-            this.bt_atrás.UseVisualStyleBackColor = false;
-            // 
-            // txt_navBar
-            // 
-            this.txt_navBar.AutoSize = true;
-            this.txt_navBar.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold);
-            this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txt_navBar.Location = new System.Drawing.Point(12, 23);
-            this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Size = new System.Drawing.Size(499, 40);
-            this.txt_navBar.TabIndex = 0;
-            this.txt_navBar.Text = "SISTEMA DE ACTUALIZAR USUARIOS";
-            this.txt_navBar.Click += new System.EventHandler(this.txt_navBar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(18, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(301, 17);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "CÉDULA DE USUARIO QUE QUIERE ACTUALIZAR";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(21, 133);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(167, 20);
-            this.textBox6.TabIndex = 58;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(194, 131);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 59;
-            this.button1.Text = "BUSCAR";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 160);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1146, 93);
-            this.dataGridView1.TabIndex = 60;
             // 
             // panel_fondoCeleste
             // 
             this.panel_fondoCeleste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
             this.panel_fondoCeleste.Controls.Add(this.txtTelefono);
+            this.panel_fondoCeleste.Controls.Add(this.txtActualizar);
             this.panel_fondoCeleste.Controls.Add(this.txtCorreo);
             this.panel_fondoCeleste.Controls.Add(this.label10);
             this.panel_fondoCeleste.Controls.Add(this.label9);
@@ -352,53 +272,172 @@
             this.txtContrasenna.Size = new System.Drawing.Size(248, 54);
             this.txtContrasenna.TabIndex = 5;
             // 
-            // button3
+            // txtActualizar
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(976, 548);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 34);
-            this.button3.TabIndex = 62;
-            this.button3.Text = "VER USUARIOS";
-            this.button3.UseVisualStyleBackColor = false;
+            this.txtActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
+            this.txtActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtActualizar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtActualizar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtActualizar.Location = new System.Drawing.Point(711, 251);
+            this.txtActualizar.Name = "txtActualizar";
+            this.txtActualizar.Size = new System.Drawing.Size(137, 34);
+            this.txtActualizar.TabIndex = 62;
+            this.txtActualizar.Text = "ACTUALIZAR";
+            this.txtActualizar.UseVisualStyleBackColor = false;
+            this.txtActualizar.Click += new System.EventHandler(this.txtActualizar_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
+            this.panel9.Controls.Add(this.dgvUsuario);
+            this.panel9.Controls.Add(this.txtCedula);
+            this.panel9.Controls.Add(this.button1);
+            this.panel9.Controls.Add(this.label1);
+            this.panel9.Location = new System.Drawing.Point(21, 94);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(860, 156);
+            this.panel9.TabIndex = 63;
+            // 
+            // txtCedula
+            // 
+            this.txtCedula.Location = new System.Drawing.Point(16, 33);
+            this.txtCedula.Multiline = true;
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(167, 20);
+            this.txtCedula.TabIndex = 57;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(201, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 26);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "BUSCAR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(13, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(300, 17);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "NUMERO DE CEDULA QUE DESEA  ACTUALIZAR";
+            // 
+            // dgvUsuario
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(170)))), ((int)(((byte)(203)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(170)))), ((int)(((byte)(203)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvUsuario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(133)))), ((int)(((byte)(167)))));
+            this.dgvUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(72)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(72)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(130)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(130)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUsuario.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvUsuario.EnableHeadersVisualStyles = false;
+            this.dgvUsuario.Location = new System.Drawing.Point(3, 63);
+            this.dgvUsuario.Name = "dgvUsuario";
+            this.dgvUsuario.Size = new System.Drawing.Size(857, 93);
+            this.dgvUsuario.TabIndex = 58;
+            // 
+            // panel_fondoRojo
+            // 
+            this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.panel_fondoRojo.Controls.Add(this.bt_logout);
+            this.panel_fondoRojo.Controls.Add(this.bt_atrás);
+            this.panel_fondoRojo.Controls.Add(this.txt_navBar);
+            this.panel_fondoRojo.Location = new System.Drawing.Point(2, 2);
+            this.panel_fondoRojo.Name = "panel_fondoRojo";
+            this.panel_fondoRojo.Size = new System.Drawing.Size(903, 73);
+            this.panel_fondoRojo.TabIndex = 64;
+            // 
+            // bt_logout
+            // 
+            this.bt_logout.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_logout.FlatAppearance.BorderSize = 0;
+            this.bt_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
+            this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.bt_logout.Location = new System.Drawing.Point(780, 16);
+            this.bt_logout.Name = "bt_logout";
+            this.bt_logout.Size = new System.Drawing.Size(55, 42);
+            this.bt_logout.TabIndex = 10;
+            this.bt_logout.UseVisualStyleBackColor = false;
+            this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
+            // 
+            // bt_atrás
+            // 
+            this.bt_atrás.BackColor = System.Drawing.Color.DarkRed;
+            this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bt_atrás.Location = new System.Drawing.Point(713, 16);
+            this.bt_atrás.Name = "bt_atrás";
+            this.bt_atrás.Size = new System.Drawing.Size(55, 40);
+            this.bt_atrás.TabIndex = 58;
+            this.bt_atrás.Text = "<<";
+            this.bt_atrás.UseVisualStyleBackColor = false;
+            this.bt_atrás.Click += new System.EventHandler(this.bt_atrás_Click);
+            // 
+            // txt_navBar
+            // 
+            this.txt_navBar.AutoSize = true;
+            this.txt_navBar.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold);
+            this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
+            this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txt_navBar.Location = new System.Drawing.Point(17, 16);
+            this.txt_navBar.Name = "txt_navBar";
+            this.txt_navBar.Size = new System.Drawing.Size(330, 40);
+            this.txt_navBar.TabIndex = 0;
+            this.txt_navBar.Text = "ACTUALIZAR USUARIOS";
             // 
             // ActualizarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 611);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.panel_fondoCeleste);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(904, 611);
             this.Controls.Add(this.panel_fondoRojo);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel_fondoCeleste);
             this.Name = "ActualizarUsuario";
             this.Text = "ActualizarUsuario";
-            this.panel_fondoRojo.ResumeLayout(false);
-            this.panel_fondoRojo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel_fondoCeleste.ResumeLayout(false);
             this.panel_fondoCeleste.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
+            this.panel_fondoRojo.ResumeLayout(false);
+            this.panel_fondoRojo.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel_fondoRojo;
-        public System.Windows.Forms.Button bt_logout;
-        private System.Windows.Forms.Button bt_atrás;
-        private System.Windows.Forms.Label txt_navBar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
-        public System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel_fondoCeleste;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtCorreo;
@@ -416,6 +455,15 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtUsario;
         private System.Windows.Forms.TextBox txtContrasenna;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button txtActualizar;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.TextBox txtCedula;
+        public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvUsuario;
+        private System.Windows.Forms.Panel panel_fondoRojo;
+        public System.Windows.Forms.Button bt_logout;
+        private System.Windows.Forms.Button bt_atrás;
+        private System.Windows.Forms.Label txt_navBar;
     }
 }
