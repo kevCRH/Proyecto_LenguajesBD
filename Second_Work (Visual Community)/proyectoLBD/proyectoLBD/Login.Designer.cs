@@ -149,6 +149,7 @@
             this.Controls.Add(this.txt_inicial);
             this.Controls.Add(this.panel_fondoCeleste);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_login";
             this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.frm_login_Load);

@@ -52,5 +52,10 @@ namespace proyectoLBD
             agregarSede.Show();
             this.Hide();
         }
+
+        private void panel_fondoRojo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

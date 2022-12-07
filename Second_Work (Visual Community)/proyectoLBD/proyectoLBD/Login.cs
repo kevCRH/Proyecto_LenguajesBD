@@ -33,35 +33,58 @@ namespace proyectoLBD
           SI NO COINCIDEN LOS DATOS LA BASE DE DATOS NO SE LES ABRIRA*/
 
         OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
+
         private void bt_login_Click(object sender, EventArgs e)
         {
             database.Open();
             /* --------------LOGIN CON STORED PROCEDURE--------------*/
-            OracleCommand comando = new OracleCommand("USUARIO_LOGIN", database);
-            comando.CommandType = CommandType.StoredProcedure;
-            
+            OracleCommand comandoLogin = new OracleCommand("USUARIO_LOGIN", database);
+            OracleCommand comandoRol = new OracleCommand("USUARIO_ROL_LOGIN", database);
+            comandoLogin.CommandType = CommandType.StoredProcedure;
+            comandoRol.CommandType = CommandType.StoredProcedure;
+
             /*Se envian los datos al procedimiento almacenado para que sean verificados*/
-            comando.Parameters.Add("pATUSUARIO", OracleType.VarChar).Value = txt_user.Text;
-            comando.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;
-            
+            comandoLogin.Parameters.Add("pATUSUARIO", OracleType.VarChar).Value = txt_user.Text;
+            comandoLogin.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;
+            comandoRol.Parameters.Add("pATUSUARIO", OracleType.VarChar).Value = txt_user.Text;
+            comandoRol.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;
+
             /*Forma larga de obtener variable del procedimiento almacenado*/
             //comando.Parameters.Add("pVERIFICAR", OracleType.VarChar, 120);
             //comando.Parameters["pVERIFICAR"].Direction = ParameterDirection.Output;
-            
+
             /*Forma corta de obtener variable del procedimiento almacenado*/
-            comando.Parameters.Add("pVERIFICAR", OracleType.Number).Direction = ParameterDirection.Output;
-            
+            comandoLogin.Parameters.Add("pVERIFICAR", OracleType.Number).Direction = ParameterDirection.Output;
+            comandoRol.Parameters.Add("pVERIFICAR", OracleType.Number).Direction = ParameterDirection.Output;
+
             //Se ejecuta los datos obtenidos para poder leerlos posteriormente
-            comando.ExecuteNonQuery();
+            comandoLogin.ExecuteNonQuery();
+            comandoRol.ExecuteNonQuery();
 
-            if (comando.Parameters["pVERIFICAR"].Value.ToString().Equals("1"))
+            if (comandoLogin.Parameters["pVERIFICAR"].Value.ToString().Equals("1"))
             {
-                TipoDonacion formEmpleado = new TipoDonacion();
-                database.Close();
-                //MessageBox.Show("Conectado"); //Msj para confirmar que todo este bien
-                formEmpleado.Show();
-                this.Hide(); //Oculta la ventana si el login es exitoso
+                //--------------Verificación de roles (adminiistrador o empleado)------------------------------
+                //Condicional que llama al procedimiento almacenado USUARIO_ROL_LOGIN para verificar que el valor del parametro pVERIFICAR
+                //sea igual a 1, lo que significa que se inserto un usuario y contraseña y que el rol es administrador
+                if (comandoRol.Parameters["pVERIFICAR"].Value.ToString().Equals("1"))
+                {
+                    MenuAdministrador formAdmin = new MenuAdministrador();
+                    database.Close();//se cierra la base de datos para que no de problema
+                    formAdmin.Show();//muestra el formulario
+                    this.Hide(); //Oculta la ventana si el lee el dato
 
+                }
+                //si no se cumple la condicion de que el usuario sea Administrador lo manda al form de empleados el cual es TipoDonacion
+                else
+                {
+                    TipoDonacion formEmpleado = new TipoDonacion();
+                    database.Close();//se cierra la base de datos para que no de problema
+                    formEmpleado.Show();//muestra el formulario
+                    this.Hide(); //Oculta la ventana si lee el dato
+                }
+
+
+                    
             }
             else
             {
@@ -69,43 +92,8 @@ namespace proyectoLBD
                 database.Close();
             }
 
-            //--------------Verificación de roles (adminiistrador o usuario)------------------------------
-            //Se agarran los datos de la tabla TBUsername con el SELECT
-            OracleCommand comandoAdmin = new OracleCommand("SELECT * FROM TBUSERNAME WHERE ATUSERNAME = :Administrador AND ATCONTRASENNA = :1234", database);//se genera el comando para leer datos de los capos en caso de ser Administrador
-            OracleCommand comandoEmpleado = new OracleCommand("SELECT * FROM TBUSERNAME WHERE ATUSERNAME = :Empleado AND ATCONTRASENNA = :1234", database);//se genera el comando para leer datos de los capos en caso de ser Empleado
-
-            comandoAdmin.Parameters.AddWithValue(":Administrador", txt_user.Text);//se usa el comando para que añada el valor que debe tener el campo de user
-            comandoAdmin.Parameters.AddWithValue(":1234", txt_pass.Text);//se usa el comando para que añada el valor que debe tener el campo de password
-
-            comandoEmpleado.Parameters.AddWithValue(":Empleado", txt_user.Text);//se usa el comando para que añada el valor que debe tener el campo de user
-            comandoEmpleado.Parameters.AddWithValue(":1234", txt_pass.Text);//se usa el comando para que añada el valor que debe tener el campo de password
-
-            OracleDataReader lecturaAdmin = comandoAdmin.ExecuteReader();//se hace un data reader para leer en caso de que sea un Administrador
-            OracleDataReader lecturaEmpleado = comandoEmpleado.ExecuteReader();//se hace un data reader para leer en caso de que sea un Empleado
-
-            //Se entra a una condicion en donde si logra leer los datos para el data reader 'lecturaAdmin' lo va a dirigir al form de menu Administrador
-            if (lecturaAdmin.Read())
-            {
-       
-                MenuAdministrador formAdmin = new MenuAdministrador();
-                database.Close();//se cierra la base de datos para que no de problema
-                formAdmin.Show();//muestra el formulario
-                this.Hide(); //Oculta la ventana si el lee el dato
-            }
-            //Se entra a una condicion en donde en caso de leer los datos que sean de Empleado le muestre el formulario de tipo de donacion 
-            else if (lecturaEmpleado.Read())
-            {
-                TipoDonacion formEmpleado = new TipoDonacion();
-                database.Close();//se cierra la base de datos para que no de problema
-                formEmpleado.Show();//muestra el formulario
-                this.Hide(); //Oculta la ventana si lee el dato
-            }
-            //Si no se cumple ninguna de las condiciones anteriores se le mostrara un mensaje que diga "Usuario o Contraseña incorrecta"
-            else
-            {
-                MessageBox.Show("Usuario o Contraseña incorrecta"); //Se muestra un message box 
-                database.Close();//Se cierra la base de datos para que no de problema
-            }
+           
+            
 
 
             /* --------------LOGIN CON SELECT-------------- 

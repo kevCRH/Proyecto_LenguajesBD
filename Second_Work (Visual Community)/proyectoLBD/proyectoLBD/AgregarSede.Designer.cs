@@ -60,9 +60,10 @@
             this.panel_fondoRojo.Controls.Add(this.bt_logout);
             this.panel_fondoRojo.Controls.Add(this.bt_atrás);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
-            this.panel_fondoRojo.Location = new System.Drawing.Point(2, 1);
+            this.panel_fondoRojo.Location = new System.Drawing.Point(3, 1);
+            this.panel_fondoRojo.Margin = new System.Windows.Forms.Padding(4);
             this.panel_fondoRojo.Name = "panel_fondoRojo";
-            this.panel_fondoRojo.Size = new System.Drawing.Size(1031, 73);
+            this.panel_fondoRojo.Size = new System.Drawing.Size(1375, 90);
             this.panel_fondoRojo.TabIndex = 6;
             // 
             // bt_logout
@@ -73,9 +74,10 @@
             this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
             this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_logout.Location = new System.Drawing.Point(938, 16);
+            this.bt_logout.Location = new System.Drawing.Point(1251, 20);
+            this.bt_logout.Margin = new System.Windows.Forms.Padding(4);
             this.bt_logout.Name = "bt_logout";
-            this.bt_logout.Size = new System.Drawing.Size(55, 40);
+            this.bt_logout.Size = new System.Drawing.Size(73, 49);
             this.bt_logout.TabIndex = 28;
             this.bt_logout.UseVisualStyleBackColor = false;
             this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
@@ -86,9 +88,10 @@
             this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bt_atrás.Location = new System.Drawing.Point(877, 16);
+            this.bt_atrás.Location = new System.Drawing.Point(1169, 20);
+            this.bt_atrás.Margin = new System.Windows.Forms.Padding(4);
             this.bt_atrás.Name = "bt_atrás";
-            this.bt_atrás.Size = new System.Drawing.Size(55, 40);
+            this.bt_atrás.Size = new System.Drawing.Size(73, 49);
             this.bt_atrás.TabIndex = 56;
             this.bt_atrás.Text = "<<";
             this.bt_atrás.UseVisualStyleBackColor = false;
@@ -100,9 +103,10 @@
             this.txt_navBar.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold);
             this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
             this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txt_navBar.Location = new System.Drawing.Point(17, 16);
+            this.txt_navBar.Location = new System.Drawing.Point(23, 20);
+            this.txt_navBar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Size = new System.Drawing.Size(279, 40);
+            this.txt_navBar.Size = new System.Drawing.Size(359, 50);
             this.txt_navBar.TabIndex = 0;
             this.txt_navBar.Text = "Ingresar nueva sede";
             this.txt_navBar.Click += new System.EventHandler(this.txt_navBar_Click);
@@ -112,9 +116,10 @@
             this.image_logo.BackColor = System.Drawing.Color.Transparent;
             this.image_logo.Image = global::proyectoLBD.Properties.Resources.AOES_PNG;
             this.image_logo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.image_logo.Location = new System.Drawing.Point(849, 166);
+            this.image_logo.Location = new System.Drawing.Point(1132, 204);
+            this.image_logo.Margin = new System.Windows.Forms.Padding(4);
             this.image_logo.Name = "image_logo";
-            this.image_logo.Size = new System.Drawing.Size(161, 93);
+            this.image_logo.Size = new System.Drawing.Size(215, 114);
             this.image_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.image_logo.TabIndex = 1;
             this.image_logo.TabStop = false;
@@ -134,9 +139,10 @@
             this.panel_fondoCeleste.Controls.Add(this.txtProvincia);
             this.panel_fondoCeleste.Controls.Add(this.txtNombreSede);
             this.panel_fondoCeleste.Controls.Add(this.txtCodPostal);
-            this.panel_fondoCeleste.Location = new System.Drawing.Point(12, 80);
+            this.panel_fondoCeleste.Location = new System.Drawing.Point(16, 98);
+            this.panel_fondoCeleste.Margin = new System.Windows.Forms.Padding(4);
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
-            this.panel_fondoCeleste.Size = new System.Drawing.Size(831, 356);
+            this.panel_fondoCeleste.Size = new System.Drawing.Size(1108, 438);
             this.panel_fondoCeleste.TabIndex = 7;
             // 
             // txtDireccionExacta
@@ -144,10 +150,11 @@
             this.txtDireccionExacta.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtDireccionExacta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDireccionExacta.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtDireccionExacta.Location = new System.Drawing.Point(14, 230);
+            this.txtDireccionExacta.Location = new System.Drawing.Point(19, 283);
+            this.txtDireccionExacta.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccionExacta.Multiline = true;
             this.txtDireccionExacta.Name = "txtDireccionExacta";
-            this.txtDireccionExacta.Size = new System.Drawing.Size(794, 85);
+            this.txtDireccionExacta.Size = new System.Drawing.Size(1058, 104);
             this.txtDireccionExacta.TabIndex = 25;
             // 
             // LbDireccionExacta
@@ -155,9 +162,10 @@
             this.LbDireccionExacta.AutoSize = true;
             this.LbDireccionExacta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbDireccionExacta.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.LbDireccionExacta.Location = new System.Drawing.Point(10, 207);
+            this.LbDireccionExacta.Location = new System.Drawing.Point(13, 255);
+            this.LbDireccionExacta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LbDireccionExacta.Name = "LbDireccionExacta";
-            this.LbDireccionExacta.Size = new System.Drawing.Size(153, 20);
+            this.LbDireccionExacta.Size = new System.Drawing.Size(192, 26);
             this.LbDireccionExacta.TabIndex = 23;
             this.LbDireccionExacta.Text = "Dirección Exacta";
             // 
@@ -166,9 +174,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label5.Location = new System.Drawing.Point(288, 114);
+            this.label5.Location = new System.Drawing.Point(384, 140);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 20);
+            this.label5.Size = new System.Drawing.Size(88, 26);
             this.label5.TabIndex = 13;
             this.label5.Text = "Distrito";
             // 
@@ -177,10 +186,11 @@
             this.txtDistrito.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtDistrito.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDistrito.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtDistrito.Location = new System.Drawing.Point(292, 137);
+            this.txtDistrito.Location = new System.Drawing.Point(389, 169);
+            this.txtDistrito.Margin = new System.Windows.Forms.Padding(4);
             this.txtDistrito.Multiline = true;
             this.txtDistrito.Name = "txtDistrito";
-            this.txtDistrito.Size = new System.Drawing.Size(248, 54);
+            this.txtDistrito.Size = new System.Drawing.Size(330, 66);
             this.txtDistrito.TabIndex = 12;
             // 
             // LbCanton
@@ -188,9 +198,10 @@
             this.LbCanton.AutoSize = true;
             this.LbCanton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbCanton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.LbCanton.Location = new System.Drawing.Point(9, 114);
+            this.LbCanton.Location = new System.Drawing.Point(12, 140);
+            this.LbCanton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LbCanton.Name = "LbCanton";
-            this.LbCanton.Size = new System.Drawing.Size(68, 20);
+            this.LbCanton.Size = new System.Drawing.Size(88, 26);
             this.LbCanton.TabIndex = 11;
             this.LbCanton.Text = "Cantón";
             // 
@@ -199,10 +210,11 @@
             this.txtCanton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCanton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCanton.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtCanton.Location = new System.Drawing.Point(13, 137);
+            this.txtCanton.Location = new System.Drawing.Point(17, 169);
+            this.txtCanton.Margin = new System.Windows.Forms.Padding(4);
             this.txtCanton.Multiline = true;
             this.txtCanton.Name = "txtCanton";
-            this.txtCanton.Size = new System.Drawing.Size(248, 54);
+            this.txtCanton.Size = new System.Drawing.Size(330, 66);
             this.txtCanton.TabIndex = 10;
             // 
             // LbProvincia
@@ -210,9 +222,10 @@
             this.LbProvincia.AutoSize = true;
             this.LbProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbProvincia.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.LbProvincia.Location = new System.Drawing.Point(556, 18);
+            this.LbProvincia.Location = new System.Drawing.Point(741, 22);
+            this.LbProvincia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LbProvincia.Name = "LbProvincia";
-            this.LbProvincia.Size = new System.Drawing.Size(87, 20);
+            this.LbProvincia.Size = new System.Drawing.Size(111, 26);
             this.LbProvincia.TabIndex = 9;
             this.LbProvincia.Text = "Provincia";
             // 
@@ -221,9 +234,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label2.Location = new System.Drawing.Point(288, 18);
+            this.label2.Location = new System.Drawing.Point(384, 22);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 20);
+            this.label2.Size = new System.Drawing.Size(158, 26);
             this.label2.TabIndex = 8;
             this.label2.Text = "Código postal";
             // 
@@ -232,9 +246,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label1.Location = new System.Drawing.Point(9, 18);
+            this.label1.Location = new System.Drawing.Point(12, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 20);
+            this.label1.Size = new System.Drawing.Size(158, 26);
             this.label1.TabIndex = 7;
             this.label1.Text = "Nombre Sede";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -244,10 +259,11 @@
             this.txtProvincia.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtProvincia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtProvincia.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtProvincia.Location = new System.Drawing.Point(560, 41);
+            this.txtProvincia.Location = new System.Drawing.Point(747, 50);
+            this.txtProvincia.Margin = new System.Windows.Forms.Padding(4);
             this.txtProvincia.Multiline = true;
             this.txtProvincia.Name = "txtProvincia";
-            this.txtProvincia.Size = new System.Drawing.Size(248, 54);
+            this.txtProvincia.Size = new System.Drawing.Size(330, 66);
             this.txtProvincia.TabIndex = 6;
             // 
             // txtNombreSede
@@ -255,10 +271,11 @@
             this.txtNombreSede.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNombreSede.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombreSede.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtNombreSede.Location = new System.Drawing.Point(13, 41);
+            this.txtNombreSede.Location = new System.Drawing.Point(17, 50);
+            this.txtNombreSede.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreSede.Multiline = true;
             this.txtNombreSede.Name = "txtNombreSede";
-            this.txtNombreSede.Size = new System.Drawing.Size(248, 54);
+            this.txtNombreSede.Size = new System.Drawing.Size(330, 66);
             this.txtNombreSede.TabIndex = 4;
             // 
             // txtCodPostal
@@ -266,10 +283,11 @@
             this.txtCodPostal.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCodPostal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodPostal.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtCodPostal.Location = new System.Drawing.Point(292, 41);
+            this.txtCodPostal.Location = new System.Drawing.Point(389, 50);
+            this.txtCodPostal.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodPostal.Multiline = true;
             this.txtCodPostal.Name = "txtCodPostal";
-            this.txtCodPostal.Size = new System.Drawing.Size(248, 54);
+            this.txtCodPostal.Size = new System.Drawing.Size(330, 66);
             this.txtCodPostal.TabIndex = 5;
             // 
             // btnAgregar
@@ -279,9 +297,10 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnAgregar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAgregar.Location = new System.Drawing.Point(864, 399);
+            this.btnAgregar.Location = new System.Drawing.Point(1152, 491);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(137, 37);
+            this.btnAgregar.Size = new System.Drawing.Size(183, 46);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -293,9 +312,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(864, 345);
+            this.button3.Location = new System.Drawing.Point(1152, 425);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 37);
+            this.button3.Size = new System.Drawing.Size(183, 46);
             this.button3.TabIndex = 43;
             this.button3.Text = "VER SEDES";
             this.button3.UseVisualStyleBackColor = false;
@@ -307,9 +327,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(864, 287);
+            this.button1.Location = new System.Drawing.Point(1152, 353);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 37);
+            this.button1.Size = new System.Drawing.Size(183, 46);
             this.button1.TabIndex = 44;
             this.button1.Text = "ACTUALIZAR SEDES";
             this.button1.UseVisualStyleBackColor = false;
@@ -317,16 +338,19 @@
             // 
             // AgregarSede
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 455);
+            this.ClientSize = new System.Drawing.Size(1363, 560);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.image_logo);
             this.Controls.Add(this.panel_fondoCeleste);
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.btnAgregar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AgregarSede";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarSede";
             this.panel_fondoRojo.ResumeLayout(false);
             this.panel_fondoRojo.PerformLayout();
