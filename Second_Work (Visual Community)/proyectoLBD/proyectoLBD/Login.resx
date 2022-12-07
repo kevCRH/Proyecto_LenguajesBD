@@ -122,18 +122,14 @@
     <value>Segoe UI Semibold, 18pt, style=Bold</value>
   </data>
   <data name="txt_user.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 60</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txt_user.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>45, 41</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txt_user.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txt_user.Size" type="System.Drawing.Size, System.Drawing">
-    <value>330, 78</value>
+    <value>248, 54</value>
   </data>
   <data name="txt_user.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -154,16 +150,13 @@
     <value>Segoe UI Semibold, 18pt, style=Bold</value>
   </data>
   <data name="txt_pass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 148</value>
-  </data>
-  <data name="txt_pass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>45, 101</value>
   </data>
   <data name="txt_pass.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txt_pass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>330, 78</value>
+    <value>248, 54</value>
   </data>
   <data name="txt_pass.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -186,17 +179,15 @@
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 376</value>
-  </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>21, 257</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>386, 20</value>
+    <value>302, 15</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -224,13 +215,10 @@
     <value>Segoe UI, 18pt, style=Bold</value>
   </data>
   <data name="bt_login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 263</value>
-  </data>
-  <data name="bt_login.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>45, 180</value>
   </data>
   <data name="bt_login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>331, 89</value>
+    <value>248, 61</value>
   </data>
   <data name="bt_login.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -251,13 +239,10 @@
     <value>3</value>
   </data>
   <data name="panel_fondoCeleste.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 158</value>
-  </data>
-  <data name="panel_fondoCeleste.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>55, 108</value>
   </data>
   <data name="panel_fondoCeleste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>447, 427</value>
+    <value>335, 292</value>
   </data>
   <data name="panel_fondoCeleste.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -272,7 +257,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_fondoCeleste.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="txt_inicial.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -281,13 +266,10 @@
     <value>Segoe UI, 26.25pt, style=Bold</value>
   </data>
   <data name="txt_inicial.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 250</value>
-  </data>
-  <data name="txt_inicial.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>430, 171</value>
   </data>
   <data name="txt_inicial.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 180</value>
+    <value>340, 141</value>
   </data>
   <data name="txt_inicial.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -310,16 +292,13 @@ pedir, ¡Es contruir!
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_inicial.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="image_logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>849, 6</value>
-  </data>
-  <data name="image_logo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>637, 4</value>
   </data>
   <data name="image_logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 99</value>
+    <value>146, 68</value>
   </data>
   <data name="image_logo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -346,13 +325,10 @@ pedir, ¡Es contruir!
     <value>Segoe UI Semibold, 21.75pt, style=Bold</value>
   </data>
   <data name="txt_navBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="txt_navBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>17, 16</value>
   </data>
   <data name="txt_navBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>694, 50</value>
+    <value>544, 40</value>
   </data>
   <data name="txt_navBar.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -375,11 +351,8 @@ pedir, ¡Es contruir!
   <data name="panel_fondoRojo.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, -1</value>
   </data>
-  <data name="panel_fondoRojo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
   <data name="panel_fondoRojo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1069, 107</value>
+    <value>802, 73</value>
   </data>
   <data name="panel_fondoRojo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -394,91 +367,19 @@ pedir, ¡Es contruir!
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_fondoRojo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="bt_loggin_quemado.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="bt_loggin_quemado.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bt_loggin_quemado.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bt_loggin_quemado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>663, 542</value>
-  </data>
-  <data name="bt_loggin_quemado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="bt_loggin_quemado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 47</value>
-  </data>
-  <data name="bt_loggin_quemado.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="bt_loggin_quemado.Text" xml:space="preserve">
-    <value>LOGIN QUEMADO EMPLEADO</value>
-  </data>
-  <data name="&gt;&gt;bt_loggin_quemado.Name" xml:space="preserve">
-    <value>bt_loggin_quemado</value>
-  </data>
-  <data name="&gt;&gt;bt_loggin_quemado.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bt_loggin_quemado.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bt_loggin_quemado.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt, style=Bold</value>
-  </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>663, 487</value>
-  </data>
-  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 47</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>LOGIN QUEMADO ADMINISTRADOR</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 19</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1067, 658</value>
+    <value>800, 450</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
@@ -2713,9 +2614,6 @@ pedir, ¡Es contruir!
         ////////////gP//////g////////////////////////////4D//////4f/////////////////////
         //////+A
 </value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

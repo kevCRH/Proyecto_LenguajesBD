@@ -28,6 +28,7 @@ namespace proyectoLBD
             try
             {
                 database.Open();
+
                 //Declaramos los procedimientos almacenados
                 OracleCommand usuario = new OracleCommand("AGREGAR_USUARIO", database);
                 OracleCommand correo = new OracleCommand("AGREGAR_CORREO", database);
@@ -134,11 +135,11 @@ namespace proyectoLBD
                 checkBox8.Checked = false;
                 checkBox9.Checked = false;
             }
-            catch(Exception)
+            catch (Exception)
             {
                 MessageBox.Show("Algo fallo, asegurese de que los datos a ingresar sean correctos");
-
-            }    
+            }
+               
             database.Close();
 
         }

@@ -38,8 +38,6 @@
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
             this.image_logo = new System.Windows.Forms.PictureBox();
             this.txt_navBar = new System.Windows.Forms.Label();
-            this.bt_loggin_quemado = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel_fondoCeleste.SuspendLayout();
             this.panel_fondoRojo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_logo)).BeginInit();
@@ -120,31 +118,11 @@
             this.txt_navBar.Name = "txt_navBar";
             this.txt_navBar.Click += new System.EventHandler(this.label2_Click);
             // 
-            // bt_loggin_quemado
-            // 
-            this.bt_loggin_quemado.BackColor = System.Drawing.Color.DarkRed;
-            this.bt_loggin_quemado.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.bt_loggin_quemado, "bt_loggin_quemado");
-            this.bt_loggin_quemado.Name = "bt_loggin_quemado";
-            this.bt_loggin_quemado.UseVisualStyleBackColor = false;
-            this.bt_loggin_quemado.Click += new System.EventHandler(this.bt_loggin_quemado_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DarkRed;
-            this.button3.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // frm_login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.bt_loggin_quemado);
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.txt_inicial);
             this.Controls.Add(this.panel_fondoCeleste);
@@ -174,8 +152,6 @@
         private System.Windows.Forms.TextBox txt_pass;
         private System.Windows.Forms.TextBox txt_user;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Button bt_loggin_quemado;
-        public System.Windows.Forms.Button button3;
     }
 }
 
