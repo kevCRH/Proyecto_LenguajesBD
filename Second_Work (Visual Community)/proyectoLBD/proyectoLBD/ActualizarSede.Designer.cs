@@ -50,6 +50,7 @@
             this.txtCanton = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodPostal = new System.Windows.Forms.TextBox();
+            this.btnMin = new System.Windows.Forms.Button();
             this.panel_fondoRojo.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSede)).BeginInit();
@@ -59,6 +60,7 @@
             // panel_fondoRojo
             // 
             this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.panel_fondoRojo.Controls.Add(this.btnMin);
             this.panel_fondoRojo.Controls.Add(this.bt_logout);
             this.panel_fondoRojo.Controls.Add(this.bt_atrás);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
@@ -75,7 +77,7 @@
             this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
             this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_logout.Location = new System.Drawing.Point(780, 16);
+            this.bt_logout.Location = new System.Drawing.Point(780, 15);
             this.bt_logout.Name = "bt_logout";
             this.bt_logout.Size = new System.Drawing.Size(55, 42);
             this.bt_logout.TabIndex = 10;
@@ -88,7 +90,7 @@
             this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bt_atrás.Location = new System.Drawing.Point(713, 16);
+            this.bt_atrás.Location = new System.Drawing.Point(658, 16);
             this.bt_atrás.Name = "bt_atrás";
             this.bt_atrás.Size = new System.Drawing.Size(55, 40);
             this.bt_atrás.TabIndex = 58;
@@ -104,9 +106,9 @@
             this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txt_navBar.Location = new System.Drawing.Point(17, 16);
             this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Size = new System.Drawing.Size(275, 40);
+            this.txt_navBar.Size = new System.Drawing.Size(259, 40);
             this.txt_navBar.TabIndex = 0;
-            this.txt_navBar.Text = "ACTUALIZAR SEDES";
+            this.txt_navBar.Text = "ACTUALIZAR SEDE";
             // 
             // panel9
             // 
@@ -305,11 +307,27 @@
             this.txtCodPostal.Size = new System.Drawing.Size(248, 54);
             this.txtCodPostal.TabIndex = 5;
             // 
+            // btnMin
+            // 
+            this.btnMin.BackColor = System.Drawing.Color.DarkRed;
+            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMin.Image = global::proyectoLBD.Properties.Resources.minimizar;
+            this.btnMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnMin.Location = new System.Drawing.Point(719, 16);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(55, 40);
+            this.btnMin.TabIndex = 68;
+            this.btnMin.UseVisualStyleBackColor = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
+            // 
             // ActualizarSede
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 611);
+            this.ClientSize = new System.Drawing.Size(904, 589);
             this.Controls.Add(this.panel_fondoCeleste);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel_fondoRojo);
@@ -347,5 +365,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodPostal;
         private System.Windows.Forms.Button txtActualizar;
+        private System.Windows.Forms.Button btnMin;
     }
 }

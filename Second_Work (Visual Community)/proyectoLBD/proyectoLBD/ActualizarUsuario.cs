@@ -39,7 +39,7 @@ namespace proyectoLBD
                 OracleCommand donacion = new OracleCommand("BuscarUsuario", database); //llamamos procedure
                 donacion.CommandType = System.Data.CommandType.StoredProcedure; //especificamos que la instancia es un procedure
                 donacion.Parameters.AddWithValue("pCedula", txtCedula.Text); //parametro que recibira  
-                donacion.Parameters.Add("registros", OracleType.Cursor).Direction = ParameterDirection.Output //definimos una direccion
+                donacion.Parameters.Add("registros", OracleType.Cursor).Direction = ParameterDirection.Output; //definimos una direccion
                 OracleDataAdapter adaptador = new OracleDataAdapter();
                 adaptador.SelectCommand = donacion;//Comando que tiene el procedimiento almacenado
                 DataTable tabla = new DataTable();//Creamos un data table
@@ -48,7 +48,7 @@ namespace proyectoLBD
             }
             catch
             {
-                MessageBox.Show("Donacion no encontrada, algo fallo");
+                MessageBox.Show("Usuario no encontrado, algo fallo");
             }
             database.Close();
         }
@@ -62,9 +62,16 @@ namespace proyectoLBD
 
         private void bt_logout_Click(object sender, EventArgs e)
         {
-            frm_login formulario = new frm_login();
-            formulario.Show();
-            this.Hide();
+            //Mensaje de confirmación para Cerrar Sesión
+            DialogResult dr = MessageBox.Show("¿Está seguro que quiere Cerrar Sesión?",
+                "CERRAR SESION", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+            if (dr == DialogResult.Yes) //Si le da que SI entonces cierra sesión
+            {
+                frm_login formulario = new frm_login();
+                formulario.Show();
+                this.Hide();
+            }
         }
 
         private void txtActualizar_Click(object sender, EventArgs e)
@@ -132,6 +139,15 @@ namespace proyectoLBD
                 txtCedula.Clear();
             }
             database.Close();
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            //Evento click del botón minimizar
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Minimized;
+            else if (WindowState == FormWindowState.Maximized)
+                WindowState = FormWindowState.Minimized;
         }
     }
 }

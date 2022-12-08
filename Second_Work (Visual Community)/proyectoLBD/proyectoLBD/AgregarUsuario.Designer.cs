@@ -51,6 +51,7 @@
             this.txt_navBar = new System.Windows.Forms.Label();
             this.panel_fondoCeleste = new System.Windows.Forms.Panel();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
+            this.btnMin = new System.Windows.Forms.Button();
             this.bt_logout = new System.Windows.Forms.Button();
             this.bt_atrás = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -118,8 +119,8 @@
             // 
             // ddmRol
             // 
-            this.ddmRol.BackColor = System.Drawing.SystemColors.Window;
-            this.ddmRol.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.ddmRol.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.ddmRol.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.ddmRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ddmRol.ForeColor = System.Drawing.SystemColors.MenuText;
             this.ddmRol.FormattingEnabled = true;
@@ -132,6 +133,7 @@
             this.ddmRol.Name = "ddmRol";
             this.ddmRol.Size = new System.Drawing.Size(248, 54);
             this.ddmRol.TabIndex = 18;
+            this.ddmRol.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.ddmRol_DrawItem);
             this.ddmRol.SelectedIndexChanged += new System.EventHandler(this.ddmRol_SelectedIndexChanged);
             // 
             // label6
@@ -269,7 +271,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
+            this.btnAgregar.BackColor = System.Drawing.Color.Chartreuse;
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -336,6 +338,7 @@
             // panel_fondoRojo
             // 
             this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.panel_fondoRojo.Controls.Add(this.btnMin);
             this.panel_fondoRojo.Controls.Add(this.bt_logout);
             this.panel_fondoRojo.Controls.Add(this.bt_atrás);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
@@ -343,6 +346,22 @@
             this.panel_fondoRojo.Name = "panel_fondoRojo";
             this.panel_fondoRojo.Size = new System.Drawing.Size(1031, 73);
             this.panel_fondoRojo.TabIndex = 5;
+            // 
+            // btnMin
+            // 
+            this.btnMin.BackColor = System.Drawing.Color.DarkRed;
+            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMin.Image = global::proyectoLBD.Properties.Resources.minimizar;
+            this.btnMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnMin.Location = new System.Drawing.Point(881, 16);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(55, 40);
+            this.btnMin.TabIndex = 73;
+            this.btnMin.UseVisualStyleBackColor = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // bt_logout
             // 
@@ -365,7 +384,7 @@
             this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bt_atrás.Location = new System.Drawing.Point(881, 16);
+            this.bt_atrás.Location = new System.Drawing.Point(820, 16);
             this.bt_atrás.Name = "bt_atrás";
             this.bt_atrás.Size = new System.Drawing.Size(55, 40);
             this.bt_atrás.TabIndex = 55;
@@ -470,5 +489,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMin;
     }
 }
