@@ -22,7 +22,7 @@ namespace proyectoLBD
             
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
             try
@@ -48,7 +48,7 @@ namespace proyectoLBD
             database.Close();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
             try
@@ -127,14 +127,14 @@ namespace proyectoLBD
             database.Close();
         }
 
-        private void Bt_atrás_Click(object sender, EventArgs e)
+        private void bt_atrás_Click(object sender, EventArgs e)
         {
             AgregarDonacionEspecie agregarDonacion = new AgregarDonacionEspecie();
             agregarDonacion.Show();
             this.Hide();
         }
 
-        private void Bt_logout_Click(object sender, EventArgs e)
+        private void bt_logout_Click(object sender, EventArgs e)
         {
             frm_login formulario = new frm_login();
             formulario.Show();

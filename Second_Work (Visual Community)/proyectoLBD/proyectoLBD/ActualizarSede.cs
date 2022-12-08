@@ -19,21 +19,21 @@ namespace proyectoLBD
             InitializeComponent();
         }
 
-        private void Bt_atrás_Click(object sender, EventArgs e)
+        private void bt_atrás_Click(object sender, EventArgs e)
         {
             AgregarSede agregarSede = new AgregarSede();
             agregarSede.Show();
             this.Hide();
         }
 
-        private void Bt_logout_Click(object sender, EventArgs e)
+        private void bt_logout_Click(object sender, EventArgs e)
         {
             frm_login formulario = new frm_login();
             formulario.Show();
             this.Hide();
         }
 
-        private void BtnBuscar_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
             OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
             try
@@ -60,7 +60,7 @@ namespace proyectoLBD
             database.Close();
         }
 
-        private void TxtActualizar_Click(object sender, EventArgs e)
+        private void txtActualizar_Click(object sender, EventArgs e)
         {
             OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
             try
