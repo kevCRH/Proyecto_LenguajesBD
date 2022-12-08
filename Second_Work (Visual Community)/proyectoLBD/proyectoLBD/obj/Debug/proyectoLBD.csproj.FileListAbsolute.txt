@@ -170,3 +170,7 @@ C:\Users\fidelitas\Desktop\ProyectoFinal\Proyecto_LenguajesBD\Second_Work (Visua
 C:\Users\fidelitas\Desktop\ProyectoFinal\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
 C:\Users\fidelitas\Desktop\ProyectoFinal\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe
 C:\Users\fidelitas\Desktop\ProyectoFinal\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.pdb
+C:\Users\fidelitas\Desktop\ProyectoFinal\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe.manifest
+C:\Users\fidelitas\Desktop\ProyectoFinal\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.application
+C:\Users\fidelitas\Desktop\ProyectoFinal\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe.manifest
+C:\Users\fidelitas\Desktop\ProyectoFinal\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.application
