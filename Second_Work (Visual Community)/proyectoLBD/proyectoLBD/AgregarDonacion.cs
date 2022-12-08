@@ -165,9 +165,18 @@ namespace proyectoLBD
 
         private void bt_atrás_Click(object sender, EventArgs e)
         {
-            TipoDonacion  formulario = new TipoDonacion();
-            formulario.Show();
-            this.Hide();
+            if (Program.varglobal.valorRol.Equals(1))
+            {
+                TipoDonacionAdmin formulario = new TipoDonacionAdmin();
+                formulario.Show();
+                this.Hide();
+            }
+            else
+            {
+                TipoDonacion formulario = new TipoDonacion();
+                formulario.Show();
+                this.Hide();
+            }
         }
 
         private void bt_logout_Click(object sender, EventArgs e)

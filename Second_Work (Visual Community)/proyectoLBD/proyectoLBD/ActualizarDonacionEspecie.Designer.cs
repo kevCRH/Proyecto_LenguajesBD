@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarDonacionEspecie));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -55,12 +56,12 @@
             this.label12 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
+            this.btnMin = new System.Windows.Forms.Button();
             this.bt_logout = new System.Windows.Forms.Button();
             this.bt_atrás = new System.Windows.Forms.Button();
             this.txt_navBar = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.btnMin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -359,6 +360,22 @@
             this.panel_fondoRojo.Size = new System.Drawing.Size(1205, 87);
             this.panel_fondoRojo.TabIndex = 24;
             // 
+            // btnMin
+            // 
+            this.btnMin.BackColor = System.Drawing.Color.DarkRed;
+            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMin.Image = global::proyectoLBD.Properties.Resources.minimizar;
+            this.btnMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnMin.Location = new System.Drawing.Point(1056, 23);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(55, 40);
+            this.btnMin.TabIndex = 60;
+            this.btnMin.UseVisualStyleBackColor = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
+            // 
             // bt_logout
             // 
             this.bt_logout.BackColor = System.Drawing.Color.DarkRed;
@@ -396,9 +413,9 @@
             this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txt_navBar.Location = new System.Drawing.Point(22, 23);
             this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Size = new System.Drawing.Size(546, 40);
+            this.txt_navBar.Size = new System.Drawing.Size(703, 40);
             this.txt_navBar.TabIndex = 0;
-            this.txt_navBar.Text = "SISTEMA DE ACTUALIZAR DONACIONES";
+            this.txt_navBar.Text = "SISTEMA DE ACTUALIZAR DONACIONES EN ESPECIE";
             // 
             // textBox6
             // 
@@ -419,22 +436,6 @@
             this.panel9.Size = new System.Drawing.Size(1146, 156);
             this.panel9.TabIndex = 58;
             // 
-            // btnMin
-            // 
-            this.btnMin.BackColor = System.Drawing.Color.DarkRed;
-            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMin.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnMin.Image = global::proyectoLBD.Properties.Resources.minimizar;
-            this.btnMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnMin.Location = new System.Drawing.Point(1056, 23);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(55, 40);
-            this.btnMin.TabIndex = 60;
-            this.btnMin.UseVisualStyleBackColor = false;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
-            // 
             // ActualizarDonacionEspecie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,6 +446,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel9);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ActualizarDonacionEspecie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarDonacion";

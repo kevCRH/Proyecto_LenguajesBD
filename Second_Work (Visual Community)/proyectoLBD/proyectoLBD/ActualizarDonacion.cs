@@ -129,7 +129,7 @@ namespace proyectoLBD
 
         private void bt_atrás_Click(object sender, EventArgs e)
         {
-            AgregarDonacionEspecie agregarDonacion = new AgregarDonacionEspecie();
+            AgregarDonacion agregarDonacion = new AgregarDonacion();
             agregarDonacion.Show();
             this.Hide();
         }

@@ -263,10 +263,11 @@ VALUES ('Puntarenas','03','Puntarenas','Puntarenas','Falta','Costado Norte del E
 **************************************************************************************************************************/   
 
 /*------------------------------ LOGIN ------------------------------*/
---Para acceder a login
-CREATE OR REPLACE PROCEDURE USUARIO_LOGIN (pATUSUARIO IN VARCHAR2, pATCONTRASENNA IN VARCHAR2, pVERIFICAR OUT NUMBER)
+--Para acceder a login y verificar rol
+CREATE OR REPLACE PROCEDURE USUARIO_LOGIN (pATUSUARIO IN VARCHAR2, pATCONTRASENNA IN VARCHAR2, pVERIFICAR OUT NUMBER, pROL OUT NUMBER)
 AS
 VERIFICAR NUMBER;
+ROL NUMBER;
 BEGIN
     SELECT COUNT(1)
     INTO VERIFICAR
@@ -274,36 +275,31 @@ BEGIN
     WHERE pATUSUARIO = ATUsername AND pATCONTRASENNA = ATContrasenna;
     IF VERIFICAR = 1 THEN
         pVERIFICAR := 1;
+        SELECT COUNT(1)
+        INTO ROL
+        FROM TBUsername
+        where pATUSUARIO = ATUsername AND pATCONTRASENNA = ATContrasenna AND ATRolUsername = 'Administrador';
+        IF ROL = 1 THEN
+            pROL := 1;
+        ELSE
+            pROL := 0;
+        END IF;
     ELSE
         pVERIFICAR := 0;
+        pROL := 0;
     END IF;
 END;
 --Esto es solo para verificar que el procedimiento almacenado este correcto
 /*SET SERVEROUTPUT ON;
 DECLARE
 VERIFICAR NUMBER;
+ROL NUMBER;
 BEGIN
-    USUARIO_LOGIN('Administrador','1234',VERIFICAR);
+    USUARIO_LOGIN('Administrador','1234',VERIFICAR,ROL);
     DBMS_OUTPUT.PUT_LINE(VERIFICAR);
+    DBMS_OUTPUT.PUT_LINE(ROL);
 COMMIT;
 END;*/
-
---------------------------------------------------------------------------------------------
---Para verificar el rol del usuario
-CREATE OR REPLACE PROCEDURE USUARIO_ROL_LOGIN (pATUSUARIO IN VARCHAR2, pATCONTRASENNA IN VARCHAR2, pROL OUT NUMBER)
-AS
-VERIFICAR NUMBER;
-BEGIN
-    SELECT COUNT(1)
-    INTO VERIFICAR
-    FROM TBUsername
-    WHERE pATUSUARIO = ATUsername AND pATCONTRASENNA = ATContrasenna AND ATRolUsername = 'Administrador';
-    IF VERIFICAR = 1 THEN
-        pROL := 1;
-    ELSE
-        pROL := 0;
-    END IF;
-END;
 
 /*------------------------------ CRUD USUARIOS ------------------------------*/
 --Ingresar usuario

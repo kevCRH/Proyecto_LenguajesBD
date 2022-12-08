@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarSede));
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
+            this.btnMin = new System.Windows.Forms.Button();
             this.bt_logout = new System.Windows.Forms.Button();
             this.bt_atrás = new System.Windows.Forms.Button();
             this.txt_navBar = new System.Windows.Forms.Label();
@@ -49,7 +51,6 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnMin = new System.Windows.Forms.Button();
             this.panel_fondoRojo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_logo)).BeginInit();
             this.panel_fondoCeleste.SuspendLayout();
@@ -66,6 +67,22 @@
             this.panel_fondoRojo.Name = "panel_fondoRojo";
             this.panel_fondoRojo.Size = new System.Drawing.Size(1031, 73);
             this.panel_fondoRojo.TabIndex = 6;
+            // 
+            // btnMin
+            // 
+            this.btnMin.BackColor = System.Drawing.Color.DarkRed;
+            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMin.Image = global::proyectoLBD.Properties.Resources.minimizar;
+            this.btnMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnMin.Location = new System.Drawing.Point(877, 16);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(55, 40);
+            this.btnMin.TabIndex = 72;
+            this.btnMin.UseVisualStyleBackColor = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // bt_logout
             // 
@@ -317,22 +334,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnMin
-            // 
-            this.btnMin.BackColor = System.Drawing.Color.DarkRed;
-            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMin.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnMin.Image = global::proyectoLBD.Properties.Resources.minimizar;
-            this.btnMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnMin.Location = new System.Drawing.Point(877, 16);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(55, 40);
-            this.btnMin.TabIndex = 72;
-            this.btnMin.UseVisualStyleBackColor = false;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
-            // 
             // AgregarSede
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,6 +346,7 @@
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.btnAgregar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AgregarSede";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarSede";

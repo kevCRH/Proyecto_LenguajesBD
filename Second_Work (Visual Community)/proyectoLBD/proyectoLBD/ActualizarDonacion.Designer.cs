@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarDonacion));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -459,9 +460,9 @@
             this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txt_navBar.Location = new System.Drawing.Point(22, 23);
             this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Size = new System.Drawing.Size(546, 40);
+            this.txt_navBar.Size = new System.Drawing.Size(704, 40);
             this.txt_navBar.TabIndex = 0;
-            this.txt_navBar.Text = "SISTEMA DE ACTUALIZAR DONACIONES";
+            this.txt_navBar.Text = "SISTEMA DE ACTUALIZAR DONACIONES DE DINERO";
             // 
             // textBox6
             // 
@@ -492,6 +493,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel9);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ActualizarDonacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarDonacion";

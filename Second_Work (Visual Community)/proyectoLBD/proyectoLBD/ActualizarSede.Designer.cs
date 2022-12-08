@@ -31,7 +31,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarSede));
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
+            this.btnMin = new System.Windows.Forms.Button();
             this.bt_logout = new System.Windows.Forms.Button();
             this.bt_atrás = new System.Windows.Forms.Button();
             this.txt_navBar = new System.Windows.Forms.Label();
@@ -50,7 +52,6 @@
             this.txtCanton = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodPostal = new System.Windows.Forms.TextBox();
-            this.btnMin = new System.Windows.Forms.Button();
             this.panel_fondoRojo.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSede)).BeginInit();
@@ -68,6 +69,22 @@
             this.panel_fondoRojo.Name = "panel_fondoRojo";
             this.panel_fondoRojo.Size = new System.Drawing.Size(903, 73);
             this.panel_fondoRojo.TabIndex = 65;
+            // 
+            // btnMin
+            // 
+            this.btnMin.BackColor = System.Drawing.Color.DarkRed;
+            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMin.Image = global::proyectoLBD.Properties.Resources.minimizar;
+            this.btnMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnMin.Location = new System.Drawing.Point(719, 16);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(55, 40);
+            this.btnMin.TabIndex = 68;
+            this.btnMin.UseVisualStyleBackColor = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // bt_logout
             // 
@@ -307,22 +324,6 @@
             this.txtCodPostal.Size = new System.Drawing.Size(248, 54);
             this.txtCodPostal.TabIndex = 5;
             // 
-            // btnMin
-            // 
-            this.btnMin.BackColor = System.Drawing.Color.DarkRed;
-            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMin.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnMin.Image = global::proyectoLBD.Properties.Resources.minimizar;
-            this.btnMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnMin.Location = new System.Drawing.Point(719, 16);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(55, 40);
-            this.btnMin.TabIndex = 68;
-            this.btnMin.UseVisualStyleBackColor = false;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
-            // 
             // ActualizarSede
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,6 +332,7 @@
             this.Controls.Add(this.panel_fondoCeleste);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel_fondoRojo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ActualizarSede";
             this.Text = "ActualizarSede";
             this.panel_fondoRojo.ResumeLayout(false);

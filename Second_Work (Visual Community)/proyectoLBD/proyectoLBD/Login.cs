@@ -46,31 +46,24 @@ namespace proyectoLBD
                 comandoLogin.Parameters.Add("pATUSUARIO", OracleType.VarChar).Value = txt_user.Text;
                 comandoLogin.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;
 
-                /*Forma larga de obtener variable del procedimiento almacenado*/
-                //comando.Parameters.Add("pVERIFICAR", OracleType.VarChar, 120);
-                //comando.Parameters["pVERIFICAR"].Direction = ParameterDirection.Output;
 
-                /*Forma corta de obtener variable del procedimiento almacenado*/
+                /*Se obtienen las variables del procedimiento almacenado*/
                 comandoLogin.Parameters.Add("pVERIFICAR", OracleType.Number).Direction = ParameterDirection.Output;
+                comandoLogin.Parameters.Add("pROL", OracleType.Number).Direction = ParameterDirection.Output;
 
                 //Se ejecuta los datos obtenidos para poder leerlos posteriormente
                 comandoLogin.ExecuteNonQuery();
-            
 
                 if (comandoLogin.Parameters["pVERIFICAR"].Value.ToString().Equals("1"))
                 {
                     //--------------Verificación de roles (administrador o empleado)------------------------------
-                    //Condicional que llama al procedimiento almacenado USUARIO_ROL_LOGIN para verificar que el valor del parametro pVERIFICAR
-                    //sea igual a 1, lo que significa que se inserto un usuario y contraseña y que el rol es administrador
-                    OracleCommand comandoRol = new OracleCommand("USUARIO_ROL_LOGIN", database);
-                    comandoRol.CommandType = CommandType.StoredProcedure;
-                    comandoRol.Parameters.Add("pATUSUARIO", OracleType.VarChar).Value = txt_user.Text;
-                    comandoRol.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;
-                    comandoRol.Parameters.Add("pROL", OracleType.Number).Direction = ParameterDirection.Output;
-                    comandoRol.ExecuteNonQuery();
 
-                    if (comandoRol.Parameters["pROL"].Value.ToString().Equals("1"))
+                    if (comandoLogin.Parameters["pROL"].Value.ToString().Equals("1"))
                     {
+                        //Ejecutamos la clase global para posteriormente guardar una variable
+                        //que nos permita conocer el Rol del Usuario en todo momento
+                        Program.varglobal.valorRol = 1;
+
                         MenuAdministrador formAdmin = new MenuAdministrador();
                         database.Close();//se cierra la base de datos para que no de problema
                         formAdmin.Show();//muestra el formulario
@@ -80,22 +73,24 @@ namespace proyectoLBD
                     //si no se cumple la condicion de que el usuario sea Administrador lo manda al form de empleados el cual es TipoDonacion
                     else
                     {
+                        //Ejecutamos la clase global para posteriormente guardar una variable
+                        //que nos permita conocer el Rol del Usuario en todo momento
+                        Program.varglobal.valorRol = 2;
+
                         TipoDonacion formEmpleado = new TipoDonacion();
                         database.Close();//se cierra la base de datos para que no de problema
                         formEmpleado.Show();//muestra el formulario
                         this.Hide(); //Oculta la ventana si lee el dato
                     }                    
                 }
-                else
-                {
+                else{
                     MessageBox.Show("Usuario o Contraseña incorrecta"); //Esta vista se puede mejorar (Diseño)
                     database.Close();
                 }
-                }
-            catch
-                {
+            }
+            catch{
                     MessageBox.Show("Error en el sistema, algo fallo");
-                }
+            }
 
             /* --------------LOGIN CON SELECT-------------- 
             OracleCommand comando = new OracleCommand("SELECT * FROM TBUSUARIOS WHERE ATUSUARIO = :usuario AND ATCONTRASENNA = :pass", database);
