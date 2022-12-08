@@ -86,10 +86,15 @@ namespace proyectoLBD
                 else{
                     MessageBox.Show("Usuario o Contraseña incorrecta"); //Esta vista se puede mejorar (Diseño)
                     database.Close();
+                    txt_user.Clear();
+                    txt_pass.Clear();
+
                 }
             }
             catch{
-                    MessageBox.Show("Error en el sistema, algo fallo");
+                MessageBox.Show("Error en el sistema, algo fallo");
+                txt_user.Clear();
+                txt_pass.Clear();
             }
 
             /* --------------LOGIN CON SELECT-------------- 
