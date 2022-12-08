@@ -21,8 +21,8 @@ namespace proyectoLBD
 
         private void bt_atrás_Click(object sender, EventArgs e)
         {
-            AgregarUsuario AgregarUsario = new AgregarUsuario();
-            AgregarUsario.Show();
+            AgregarSede agregarSede = new AgregarSede();
+            agregarSede.Show();
             this.Hide();
         }
 
