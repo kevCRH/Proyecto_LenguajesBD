@@ -11,6 +11,10 @@ namespace proyectoLBD
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
+
+        //La variable creada en la clase ManejoRoles, se le da un USO GLOBAL
+        public static ManejoRoles varglobal = new ManejoRoles();
+
         [STAThread]
         static void Main()
         {

@@ -36,10 +36,10 @@
             this.bt_login = new System.Windows.Forms.Button();
             this.txt_inicial = new System.Windows.Forms.Label();
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
-            this.image_logo = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnMin = new System.Windows.Forms.Button();
             this.txt_navBar = new System.Windows.Forms.Label();
-            this.bt_loggin_quemado = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.image_logo = new System.Windows.Forms.PictureBox();
             this.panel_fondoCeleste.SuspendLayout();
             this.panel_fondoRojo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_logo)).BeginInit();
@@ -100,10 +100,42 @@
             // panel_fondoRojo
             // 
             this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.panel_fondoRojo.Controls.Add(this.image_logo);
+            this.panel_fondoRojo.Controls.Add(this.btnCerrar);
+            this.panel_fondoRojo.Controls.Add(this.btnMin);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
             resources.ApplyResources(this.panel_fondoRojo, "panel_fondoRojo");
             this.panel_fondoRojo.Name = "panel_fondoRojo";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.Red;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(101)))), ((int)(((byte)(113)))));
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(3)))));
+            resources.ApplyResources(this.btnCerrar, "btnCerrar");
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCerrar.Image = global::proyectoLBD.Properties.Resources.Equis;
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMin
+            // 
+            this.btnMin.FlatAppearance.BorderSize = 0;
+            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            resources.ApplyResources(this.btnMin, "btnMin");
+            this.btnMin.Image = global::proyectoLBD.Properties.Resources.minimizar;
+            this.btnMin.Name = "btnMin";
+            this.btnMin.UseVisualStyleBackColor = true;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
+            // 
+            // txt_navBar
+            // 
+            resources.ApplyResources(this.txt_navBar, "txt_navBar");
+            this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
+            this.txt_navBar.Name = "txt_navBar";
+            this.txt_navBar.Click += new System.EventHandler(this.label2_Click);
             // 
             // image_logo
             // 
@@ -113,38 +145,12 @@
             this.image_logo.Name = "image_logo";
             this.image_logo.TabStop = false;
             // 
-            // txt_navBar
-            // 
-            resources.ApplyResources(this.txt_navBar, "txt_navBar");
-            this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // bt_loggin_quemado
-            // 
-            this.bt_loggin_quemado.BackColor = System.Drawing.Color.DarkRed;
-            this.bt_loggin_quemado.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.bt_loggin_quemado, "bt_loggin_quemado");
-            this.bt_loggin_quemado.Name = "bt_loggin_quemado";
-            this.bt_loggin_quemado.UseVisualStyleBackColor = false;
-            this.bt_loggin_quemado.Click += new System.EventHandler(this.bt_loggin_quemado_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DarkRed;
-            this.button3.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // frm_login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.bt_loggin_quemado);
+            this.Controls.Add(this.image_logo);
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.txt_inicial);
             this.Controls.Add(this.panel_fondoCeleste);
@@ -174,8 +180,8 @@
         private System.Windows.Forms.TextBox txt_pass;
         private System.Windows.Forms.TextBox txt_user;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Button bt_loggin_quemado;
-        public System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnMin;
     }
 }
 

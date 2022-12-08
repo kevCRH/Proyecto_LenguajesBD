@@ -36,65 +36,61 @@ namespace proyectoLBD
 
         private void bt_login_Click(object sender, EventArgs e)
         {
-            database.Open();
-            /* --------------LOGIN CON STORED PROCEDURE--------------*/
-            OracleCommand comandoLogin = new OracleCommand("USUARIO_LOGIN", database);
-            OracleCommand comandoRol = new OracleCommand("USUARIO_ROL_LOGIN", database);
-            comandoLogin.CommandType = CommandType.StoredProcedure;
-            comandoRol.CommandType = CommandType.StoredProcedure;
+            try {
+                database.Open();
+                /* --------------LOGIN CON STORED PROCEDURE--------------*/
+                OracleCommand comandoLogin = new OracleCommand("USUARIO_LOGIN", database);
+                comandoLogin.CommandType = CommandType.StoredProcedure;
 
-            /*Se envian los datos al procedimiento almacenado para que sean verificados*/
-            comandoLogin.Parameters.Add("pATUSUARIO", OracleType.VarChar).Value = txt_user.Text;
-            comandoLogin.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;
-            comandoRol.Parameters.Add("pATUSUARIO", OracleType.VarChar).Value = txt_user.Text;
-            comandoRol.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;
+                /*Se envian los datos al procedimiento almacenado para que sean verificados*/
+                comandoLogin.Parameters.Add("pATUSUARIO", OracleType.VarChar).Value = txt_user.Text;
+                comandoLogin.Parameters.Add("pATCONTRASENNA", OracleType.VarChar).Value = txt_pass.Text;
 
-            /*Forma larga de obtener variable del procedimiento almacenado*/
-            //comando.Parameters.Add("pVERIFICAR", OracleType.VarChar, 120);
-            //comando.Parameters["pVERIFICAR"].Direction = ParameterDirection.Output;
 
-            /*Forma corta de obtener variable del procedimiento almacenado*/
-            comandoLogin.Parameters.Add("pVERIFICAR", OracleType.Number).Direction = ParameterDirection.Output;
-            comandoRol.Parameters.Add("pVERIFICAR", OracleType.Number).Direction = ParameterDirection.Output;
+                /*Se obtienen las variables del procedimiento almacenado*/
+                comandoLogin.Parameters.Add("pVERIFICAR", OracleType.Number).Direction = ParameterDirection.Output;
+                comandoLogin.Parameters.Add("pROL", OracleType.Number).Direction = ParameterDirection.Output;
 
-            //Se ejecuta los datos obtenidos para poder leerlos posteriormente
-            comandoLogin.ExecuteNonQuery();
-            comandoRol.ExecuteNonQuery();
+                //Se ejecuta los datos obtenidos para poder leerlos posteriormente
+                comandoLogin.ExecuteNonQuery();
 
-            if (comandoLogin.Parameters["pVERIFICAR"].Value.ToString().Equals("1"))
-            {
-                //--------------Verificación de roles (adminiistrador o empleado)------------------------------
-                //Condicional que llama al procedimiento almacenado USUARIO_ROL_LOGIN para verificar que el valor del parametro pVERIFICAR
-                //sea igual a 1, lo que significa que se inserto un usuario y contraseña y que el rol es administrador
-                if (comandoRol.Parameters["pVERIFICAR"].Value.ToString().Equals("1"))
+                if (comandoLogin.Parameters["pVERIFICAR"].Value.ToString().Equals("1"))
                 {
-                    MenuAdministrador formAdmin = new MenuAdministrador();
-                    database.Close();//se cierra la base de datos para que no de problema
-                    formAdmin.Show();//muestra el formulario
-                    this.Hide(); //Oculta la ventana si el lee el dato
+                    //--------------Verificación de roles (administrador o empleado)------------------------------
 
+                    if (comandoLogin.Parameters["pROL"].Value.ToString().Equals("1"))
+                    {
+                        //Ejecutamos la clase global para posteriormente guardar una variable
+                        //que nos permita conocer el Rol del Usuario en todo momento
+                        Program.varglobal.valorRol = 1;
+
+                        MenuAdministrador formAdmin = new MenuAdministrador();
+                        database.Close();//se cierra la base de datos para que no de problema
+                        formAdmin.Show();//muestra el formulario
+                        this.Hide(); //Oculta la ventana si el lee el dato
+
+                    }
+                    //si no se cumple la condicion de que el usuario sea Administrador lo manda al form de empleados el cual es TipoDonacion
+                    else
+                    {
+                        //Ejecutamos la clase global para posteriormente guardar una variable
+                        //que nos permita conocer el Rol del Usuario en todo momento
+                        Program.varglobal.valorRol = 2;
+
+                        TipoDonacion formEmpleado = new TipoDonacion();
+                        database.Close();//se cierra la base de datos para que no de problema
+                        formEmpleado.Show();//muestra el formulario
+                        this.Hide(); //Oculta la ventana si lee el dato
+                    }                    
                 }
-                //si no se cumple la condicion de que el usuario sea Administrador lo manda al form de empleados el cual es TipoDonacion
-                else
-                {
-                    TipoDonacion formEmpleado = new TipoDonacion();
-                    database.Close();//se cierra la base de datos para que no de problema
-                    formEmpleado.Show();//muestra el formulario
-                    this.Hide(); //Oculta la ventana si lee el dato
+                else{
+                    MessageBox.Show("Usuario o Contraseña incorrecta"); //Esta vista se puede mejorar (Diseño)
+                    database.Close();
                 }
-
-
-                    
             }
-            else
-            {
-                MessageBox.Show("Usuario o Contraseña incorrecta"); //Esta vista se puede mejorar (Diseño)
-                database.Close();
+            catch{
+                    MessageBox.Show("Error en el sistema, algo fallo");
             }
-
-           
-            
-
 
             /* --------------LOGIN CON SELECT-------------- 
             OracleCommand comando = new OracleCommand("SELECT * FROM TBUSUARIOS WHERE ATUSUARIO = :usuario AND ATCONTRASENNA = :pass", database);
@@ -253,6 +249,29 @@ namespace proyectoLBD
             MenuAdministrador formulario = new MenuAdministrador();
             formulario.Show();
             this.Hide(); //Oculta la ventana si el login es exitoso
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close(); //Evento click del botón cerrar
+        }
+
+        private void btnMax_Click(object sender, EventArgs e)
+        {
+            //Evento click del botón máximizar
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else if (WindowState == FormWindowState.Maximized)
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            //Evento click del botón minimizar
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Minimized;
+            else if (WindowState == FormWindowState.Maximized)
+                WindowState = FormWindowState.Minimized;
         }
     }
 }

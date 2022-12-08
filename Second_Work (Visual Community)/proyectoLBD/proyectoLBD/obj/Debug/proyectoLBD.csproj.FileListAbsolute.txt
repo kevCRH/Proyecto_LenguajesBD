@@ -1,145 +1,31 @@
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe.config
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.pdb
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.AssemblyReference.cache
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.SuggestedBindingRedirects.cache
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_login.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_tipo_Donacion.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Properties.Resources.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.GenerateResource.cache
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.pdb
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.AssemblyReference.cache
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.SuggestedBindingRedirects.cache
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_login.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_tipo_Donacion.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Properties.Resources.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.GenerateResource.cache
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe.config
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe.manifest
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.application
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.pdb
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.AssemblyReference.cache
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacionEspecie.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacion.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarSede.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarUsuario.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacionEspecie.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacion.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarSede.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarUsuario.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonacionesEspecie.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarSedes.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsernames.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsuarios.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_login.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdministrador.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.TipoDonacionAdmin.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.TipoDonacion.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Properties.Resources.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.GenerateResource.cache
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe.manifest
+C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.application
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe
 C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.pdb
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarUsuario.resources
-<<<<<<< HEAD
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe.config
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.pdb
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.AssemblyReference.cache
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.SuggestedBindingRedirects.cache
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarUsuario.resources
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_login.resources
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_tipo_Donacion.resources
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Properties.Resources.resources
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.GenerateResource.cache
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.pdb
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacion.resources
-=======
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe.config
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.pdb
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.AssemblyReference.cache
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.SuggestedBindingRedirects.cache
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarUsuario.resources
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Form1.resources
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_login.resources
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_tipo_Donacion.resources
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Properties.Resources.resources
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.GenerateResource.cache
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe
-C:\Users\XSF\Source\Repos\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.pdb
->>>>>>> f2a05d61423fd7e9e7b2176db5091ce757c7963b
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesDinero.resources
-C:\Users\fidelitas\Desktop\Proyecto\kevCRH\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesEspecie.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacion.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesDinero.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesEspecie.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacion.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarUsuario.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesDinero.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesEspecie.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsuarios.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarUsuario.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.AssemblyReference.cache
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.SuggestedBindingRedirects.cache
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarUsuario.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacion.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarUsuario.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesDinero.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.DonacionesEspecie.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsuarios.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_login.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_tipo_Donacion.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Properties.Resources.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.GenerateResource.cache
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.pdb
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe.config
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.pdb
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Resources.BuscarDonacion.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacion.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarSede.resources
->>>>>>> 7d4aa092ccbbcc91538554d5a431cec24871b116
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarSede.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdmin.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacion.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarUsuario.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarSede.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsuarios.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Resources.BuscarDonacion.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdmin.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
-C:\Users\Administrador\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdministrador.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacion.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdministrador.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe.config
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.exe
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\bin\Debug\proyectoLBD.pdb
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.AssemblyReference.cache
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.SuggestedBindingRedirects.cache
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacion.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarUsuario.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacion.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarSede.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarUsuario.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsuarios.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_login.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdministrador.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.frm_tipo_Donacion.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.Properties.Resources.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonaciones.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.GenerateResource.cache
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.csproj.CoreCompileInputs.cache
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.exe
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.pdb
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.MenuAdministrador.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacionEspecie.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacionEspecie.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonacionesEspecie.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.TipoDonacionAdmin.resources
-C:\Users\fidelitas\Desktop\Proyecto\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.TipoDonacion.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacionEspecie.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacionEspecie.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonacionesEspecie.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.TipoDonacionAdmin.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.TipoDonacion.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsernames.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarSedes.resources
-C:\Users\joser\Documents\Proyecto Lenguajes\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarSede.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarDonacionEspecie.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ActualizarSede.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.AgregarDonacionEspecie.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarDonacionesEspecie.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarSedes.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.ListarUsernames.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.TipoDonacionAdmin.resources
-C:\Users\XSF\Documents\GitHub\Proyecto_LenguajesBD\Second_Work (Visual Community)\proyectoLBD\proyectoLBD\obj\Debug\proyectoLBD.TipoDonacion.resources

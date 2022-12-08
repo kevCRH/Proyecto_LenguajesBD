@@ -31,7 +31,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListarSedes));
             this.panel_fondoRojo = new System.Windows.Forms.Panel();
+            this.btnMin = new System.Windows.Forms.Button();
             this.bt_logout = new System.Windows.Forms.Button();
             this.bt_atrás = new System.Windows.Forms.Button();
             this.txt_navBar = new System.Windows.Forms.Label();
@@ -46,14 +48,30 @@
             // panel_fondoRojo
             // 
             this.panel_fondoRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.panel_fondoRojo.Controls.Add(this.btnMin);
             this.panel_fondoRojo.Controls.Add(this.bt_logout);
             this.panel_fondoRojo.Controls.Add(this.bt_atrás);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
             this.panel_fondoRojo.Location = new System.Drawing.Point(1, 2);
-            this.panel_fondoRojo.Margin = new System.Windows.Forms.Padding(4);
             this.panel_fondoRojo.Name = "panel_fondoRojo";
-            this.panel_fondoRojo.Size = new System.Drawing.Size(1156, 90);
+            this.panel_fondoRojo.Size = new System.Drawing.Size(867, 73);
             this.panel_fondoRojo.TabIndex = 11;
+            // 
+            // btnMin
+            // 
+            this.btnMin.BackColor = System.Drawing.Color.DarkRed;
+            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMin.Image = global::proyectoLBD.Properties.Resources.minimizar;
+            this.btnMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnMin.Location = new System.Drawing.Point(716, 16);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(55, 40);
+            this.btnMin.TabIndex = 76;
+            this.btnMin.UseVisualStyleBackColor = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // bt_logout
             // 
@@ -63,10 +81,9 @@
             this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
             this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_logout.Location = new System.Drawing.Point(1040, 20);
-            this.bt_logout.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_logout.Location = new System.Drawing.Point(780, 15);
             this.bt_logout.Name = "bt_logout";
-            this.bt_logout.Size = new System.Drawing.Size(73, 52);
+            this.bt_logout.Size = new System.Drawing.Size(55, 42);
             this.bt_logout.TabIndex = 10;
             this.bt_logout.UseVisualStyleBackColor = false;
             this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
@@ -77,10 +94,9 @@
             this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bt_atrás.Location = new System.Drawing.Point(951, 20);
-            this.bt_atrás.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_atrás.Location = new System.Drawing.Point(652, 16);
             this.bt_atrás.Name = "bt_atrás";
-            this.bt_atrás.Size = new System.Drawing.Size(73, 49);
+            this.bt_atrás.Size = new System.Drawing.Size(55, 40);
             this.bt_atrás.TabIndex = 58;
             this.bt_atrás.Text = "<<";
             this.bt_atrás.UseVisualStyleBackColor = false;
@@ -92,10 +108,9 @@
             this.txt_navBar.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold);
             this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
             this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txt_navBar.Location = new System.Drawing.Point(23, 20);
-            this.txt_navBar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_navBar.Location = new System.Drawing.Point(17, 16);
             this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Size = new System.Drawing.Size(310, 50);
+            this.txt_navBar.Size = new System.Drawing.Size(244, 40);
             this.txt_navBar.TabIndex = 0;
             this.txt_navBar.Text = "MOSTRAR SEDES";
             // 
@@ -104,10 +119,9 @@
             this.panel_fondoCeleste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
             this.panel_fondoCeleste.Controls.Add(this.dgvSedes);
             this.panel_fondoCeleste.Controls.Add(this.btnCargarUsuarios);
-            this.panel_fondoCeleste.Location = new System.Drawing.Point(16, 100);
-            this.panel_fondoCeleste.Margin = new System.Windows.Forms.Padding(4);
+            this.panel_fondoCeleste.Location = new System.Drawing.Point(12, 81);
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
-            this.panel_fondoCeleste.Size = new System.Drawing.Size(1115, 524);
+            this.panel_fondoCeleste.Size = new System.Drawing.Size(836, 426);
             this.panel_fondoCeleste.TabIndex = 12;
             // 
             // dgvSedes
@@ -139,11 +153,10 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSedes.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSedes.EnableHeadersVisualStyles = false;
-            this.dgvSedes.Location = new System.Drawing.Point(132, 21);
-            this.dgvSedes.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvSedes.Location = new System.Drawing.Point(99, 17);
             this.dgvSedes.Name = "dgvSedes";
             this.dgvSedes.RowHeadersWidth = 51;
-            this.dgvSedes.Size = new System.Drawing.Size(855, 428);
+            this.dgvSedes.Size = new System.Drawing.Size(641, 348);
             this.dgvSedes.TabIndex = 0;
             // 
             // btnCargarUsuarios
@@ -151,10 +164,9 @@
             this.btnCargarUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(2)))));
             this.btnCargarUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCargarUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarUsuarios.Location = new System.Drawing.Point(908, 471);
-            this.btnCargarUsuarios.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCargarUsuarios.Location = new System.Drawing.Point(681, 383);
             this.btnCargarUsuarios.Name = "btnCargarUsuarios";
-            this.btnCargarUsuarios.Size = new System.Drawing.Size(191, 37);
+            this.btnCargarUsuarios.Size = new System.Drawing.Size(143, 30);
             this.btnCargarUsuarios.TabIndex = 8;
             this.btnCargarUsuarios.Text = "Cargar Sedes";
             this.btnCargarUsuarios.UseVisualStyleBackColor = false;
@@ -162,13 +174,13 @@
             // 
             // ListarSedes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 633);
+            this.ClientSize = new System.Drawing.Size(866, 514);
             this.Controls.Add(this.panel_fondoCeleste);
             this.Controls.Add(this.panel_fondoRojo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ListarSedes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListarSedes";
@@ -189,5 +201,6 @@
         private System.Windows.Forms.Panel panel_fondoCeleste;
         private System.Windows.Forms.DataGridView dgvSedes;
         private System.Windows.Forms.Button btnCargarUsuarios;
+        private System.Windows.Forms.Button btnMin;
     }
 }

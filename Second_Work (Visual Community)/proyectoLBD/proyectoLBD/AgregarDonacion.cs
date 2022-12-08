@@ -28,6 +28,7 @@ namespace proyectoLBD
             try
             {
                 database.Open();
+
                 //Declaramos los procedimientos almacenados
                 OracleCommand usuario = new OracleCommand("AGREGAR_USUARIO", database);
                 OracleCommand correo = new OracleCommand("AGREGAR_CORREO", database);
@@ -134,11 +135,11 @@ namespace proyectoLBD
                 checkBox8.Checked = false;
                 checkBox9.Checked = false;
             }
-            catch(Exception)
+            catch (Exception)
             {
                 MessageBox.Show("Algo fallo, asegurese de que los datos a ingresar sean correctos");
-
-            }    
+            }
+               
             database.Close();
 
         }
@@ -164,16 +165,41 @@ namespace proyectoLBD
 
         private void bt_atrás_Click(object sender, EventArgs e)
         {
-            TipoDonacion  formulario = new TipoDonacion();
-            formulario.Show();
-            this.Hide();
+            if (Program.varglobal.valorRol.Equals(1))
+            {
+                TipoDonacionAdmin formulario = new TipoDonacionAdmin();
+                formulario.Show();
+                this.Hide();
+            }
+            else
+            {
+                TipoDonacion formulario = new TipoDonacion();
+                formulario.Show();
+                this.Hide();
+            }
         }
 
         private void bt_logout_Click(object sender, EventArgs e)
         {
-            frm_login formulario = new frm_login();
-            formulario.Show();
-            this.Hide();
+            //Mensaje de confirmación para Cerrar Sesión
+            DialogResult dr = MessageBox.Show("¿Está seguro que quiere Cerrar Sesión?",
+                "CERRAR SESION", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+            if (dr == DialogResult.Yes) //Si le da que SI entonces cierra sesión
+            {
+                frm_login formulario = new frm_login();
+                formulario.Show();
+                this.Hide();
+            }
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            //Evento click del botón minimizar
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Minimized;
+            else if (WindowState == FormWindowState.Maximized)
+                WindowState = FormWindowState.Minimized;
         }
     }
 
