@@ -39,19 +39,15 @@ namespace proyectoLBD
             try
             {
                 database.Open();
-                //llamamos al metodo ver_donacion enviandole como parametro el numero del recibo de la donacion
-                //que queremos buscar para actualizar, el cual nos devolvera un cursor como un parametro de salida con los datos que necesitamos
-                OracleCommand donacion = new OracleCommand("VER_SEDE_ESPECIFICA", database);
-                donacion.CommandType = System.Data.CommandType.StoredProcedure;
-                donacion.Parameters.AddWithValue("pNombreSede", txtSede.Text);
-                donacion.Parameters.Add("registros", OracleType.Cursor).Direction = ParameterDirection.Output;
-                //adaptamos el cursor para poder meterlo dentro de una tabla
-                OracleDataAdapter adaptador = new OracleDataAdapter();
-                adaptador.SelectCommand = donacion;
-                DataTable tabla = new DataTable();
-                adaptador.Fill(tabla);
-                //enviamos la tabla con los datos del cursor al dataGripView
-                dgvSede.DataSource = tabla;
+                OracleCommand donacion = new OracleCommand("VER_SEDE_ESPECIFICA", database); //llamamos procedure
+                donacion.CommandType = System.Data.CommandType.StoredProcedure; //especificamos que la instancia es un procedure
+                donacion.Parameters.AddWithValue("pNombreSede", txtSede.Text); //parametro que recibira 
+                donacion.Parameters.Add("registros", OracleType.Cursor).Direction = ParameterDirection.Output; //definimos una direccion
+                OracleDataAdapter adaptador = new OracleDataAdapter(); 
+                adaptador.SelectCommand = donacion;//Comando que tiene el procedimiento almacenado
+                DataTable tabla = new DataTable();//Creamos un data table
+                adaptador.Fill(tabla);//Aca se llena la tabla con los datos
+                dgvSede.DataSource = tabla;//y le decimos que se reflejen los datos a nivel de diseno en la tabla
             }
             catch
             {
@@ -66,15 +62,17 @@ namespace proyectoLBD
             try
             {
                 database.Open();
-                OracleCommand comandoAgregar = new OracleCommand("ACTUALIZARSEDE", database);
-                comandoAgregar.CommandType = System.Data.CommandType.StoredProcedure;
+                OracleCommand comandoAgregar = new OracleCommand("ACTUALIZARSEDE", database); //llamamos procedure
+                comandoAgregar.CommandType = System.Data.CommandType.StoredProcedure; //especificamos que la instancia es un procedure
+                //pasamos los parametros con la informacion esrita por el usuario
                 comandoAgregar.Parameters.Add("pNombreSede", OracleType.VarChar).Value = txtSede.Text;
                 comandoAgregar.Parameters.Add("pCodPostal", OracleType.VarChar).Value = txtCodPostal.Text;
                 comandoAgregar.Parameters.Add("pCanton", OracleType.VarChar).Value = txtCanton.Text;
                 comandoAgregar.Parameters.Add("pDistrito", OracleType.VarChar).Value = txtDistrito.Text;
                 comandoAgregar.Parameters.Add("pDireccionExacta", OracleType.VarChar).Value = txtDireccionExacta.Text;
-                comandoAgregar.ExecuteNonQuery();
-                MessageBox.Show("Sede actualizada con exito");
+                comandoAgregar.ExecuteNonQuery(); //ejecutamos 
+                MessageBox.Show("Sede actualizada con exito"); //mandamos msj de exito
+                //limpiamos campos
                 txtSede.Clear();
                 txtCodPostal.Clear();
                 txtCanton.Clear();
@@ -83,7 +81,8 @@ namespace proyectoLBD
             }
             catch (Exception)
             {
-                MessageBox.Show("Algo fallo");
+                MessageBox.Show("Algo fallo");//mandamos msj de fallo
+                //limpiamos campos
                 txtSede.Clear();
                 txtCodPostal.Clear();
                 txtCanton.Clear();

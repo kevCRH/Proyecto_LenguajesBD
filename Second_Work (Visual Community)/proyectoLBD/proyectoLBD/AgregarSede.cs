@@ -34,16 +34,18 @@ namespace proyectoLBD
             try
             {
                 database.Open();
-                OracleCommand comandoAgregar = new OracleCommand("AGREGAR_SEDE", database);
-                comandoAgregar.CommandType = System.Data.CommandType.StoredProcedure;
+                OracleCommand comandoAgregar = new OracleCommand("AGREGAR_SEDE", database); //llamamos procedure
+                comandoAgregar.CommandType = System.Data.CommandType.StoredProcedure; //especificamos que la instancia es un procedure
+                //pasamos los parametros con la informacion esrita por el usuario
                 comandoAgregar.Parameters.Add("pNombreSede", OracleType.VarChar).Value = txtNombreSede.Text;
                 comandoAgregar.Parameters.Add("pCodPostal", OracleType.VarChar).Value = txtCodPostal.Text;
                 comandoAgregar.Parameters.Add("pProvincia", OracleType.VarChar).Value = txtProvincia.Text;
                 comandoAgregar.Parameters.Add("pCanton", OracleType.VarChar).Value = txtCanton.Text;
                 comandoAgregar.Parameters.Add("pDistrito", OracleType.VarChar).Value = txtDistrito.Text;
                 comandoAgregar.Parameters.Add("pDireccionExacta", OracleType.VarChar).Value = txtDireccionExacta.Text;
-                comandoAgregar.ExecuteNonQuery();
-                MessageBox.Show("Sede agregado con exito");
+                comandoAgregar.ExecuteNonQuery(); //ejecutamos
+                MessageBox.Show("Sede agregado con exito"); //mandamos msj de exito
+                //limpiamos campos
                 txtNombreSede.Clear();
                 txtCodPostal.Clear();
                 txtProvincia.Clear();
@@ -53,7 +55,8 @@ namespace proyectoLBD
             }
             catch (Exception)
             {
-                MessageBox.Show("Algo fallo");
+                MessageBox.Show("Algo fallo"); //mandamos msj de fallo
+                //limpiamos campos
                 txtNombreSede.Clear();
                 txtCodPostal.Clear();
                 txtProvincia.Clear();

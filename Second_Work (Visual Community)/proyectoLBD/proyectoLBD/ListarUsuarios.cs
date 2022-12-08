@@ -61,18 +61,22 @@ namespace proyectoLBD
 
         private void btnCargarUsuarios_Click(object sender, EventArgs e)
         {
-            database.Open();//se abre la conexion de db
-            OracleCommand comando = new OracleCommand("Ver_Usuarios",database); //Instanciamos
-            comando.CommandType = System.Data.CommandType.StoredProcedure;//Definimos comando, que tipo de comando es
-            comando.Parameters.Add("registros",OracleType.Cursor).Direction=ParameterDirection.Output; //parametro que recibira, que tipo es y definimos una direccion
-          
-            OracleDataAdapter adaptador = new OracleDataAdapter();
-            adaptador.SelectCommand = comando;//Comando que tiene el procedimiento almacenado
-            DataTable tabla = new DataTable();//Creamos un data table
-            adaptador.Fill(tabla);//Aca se llena la tabla con los datos
-            dgvUsuarios.DataSource = tabla;//y le decimos que se reflejen los datos a nivel de diseno en la tabla
-
-            database.Close();//Cerramos conexion de db
+            try
+            {
+                database.Open();//se abre la conexion de db
+                OracleCommand comando = new OracleCommand("Ver_Usuarios", database); //llamamos procedure
+                comando.CommandType = System.Data.CommandType.StoredProcedure;//especificamos que la instancia es un procedure
+                comando.Parameters.Add("registros", OracleType.Cursor).Direction = ParameterDirection.Output; //parametro que recibira, que tipo es y definimos una direccion
+                OracleDataAdapter adaptador = new OracleDataAdapter();
+                adaptador.SelectCommand = comando;//Comando que tiene el procedimiento almacenado
+                DataTable tabla = new DataTable();//Creamos un data table
+                adaptador.Fill(tabla);//Aca se llena la tabla con los datos
+                dgvUsuarios.DataSource = tabla;//y le decimos que se reflejen los datos a nivel de diseno en la tabla
+            }
+            catch (Exception) {
+                MessageBox.Show("Algo fallo, intente de nuevo");
+            }
+            database.Close();//Cerramos conexion de db       
         }
 
         private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)

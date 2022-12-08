@@ -29,34 +29,39 @@ namespace proyectoLBD
             try
             {
                 database.Open();
-                OracleCommand comandoAgregarUusuario = new OracleCommand("AGREGAR_USUARIO", database);
-                comandoAgregarUusuario.CommandType = System.Data.CommandType.StoredProcedure;
+                OracleCommand comandoAgregarUusuario = new OracleCommand("AGREGAR_USUARIO", database); //llamamos procedure
+                comandoAgregarUusuario.CommandType = System.Data.CommandType.StoredProcedure; //especificamos que la instancia es un procedure
+                //pasamos los parametros con la informacion esrita por el usuario
                 comandoAgregarUusuario.Parameters.Add("pNombre", OracleType.VarChar).Value = txtNombre.Text;
                 comandoAgregarUusuario.Parameters.Add("pApellido_1", OracleType.VarChar).Value = txtPrimerApellido.Text;
                 comandoAgregarUusuario.Parameters.Add("pApellido_2", OracleType.VarChar).Value = txtSegundoApellido.Text;
                 comandoAgregarUusuario.Parameters.Add("pCedula", OracleType.VarChar).Value = txtCedula.Text;
                 comandoAgregarUusuario.Parameters.Add("pRol", OracleType.VarChar).Value = ddmRol.SelectedItem.ToString();
                 comandoAgregarUusuario.ExecuteNonQuery();
-                OracleCommand comandoAgregarUsername = new OracleCommand("AGREGAR_USERNAME", database);
-                comandoAgregarUsername.CommandType = System.Data.CommandType.StoredProcedure;
+                OracleCommand comandoAgregarUsername = new OracleCommand("AGREGAR_USERNAME", database); //llamamos procedure
+                comandoAgregarUsername.CommandType = System.Data.CommandType.StoredProcedure; //especificamos que la instancia es un procedure
+                //pasamos los parametros con la informacion esrita por el usuario
                 comandoAgregarUsername.Parameters.Add("pUsername", OracleType.VarChar).Value = txtUsario.Text;
                 comandoAgregarUsername.Parameters.Add("pContrasenna", OracleType.VarChar).Value = txtContrasenna.Text;
                 comandoAgregarUsername.Parameters.Add("pDuenoUsername", OracleType.VarChar).Value = txtCedula.Text;
                 comandoAgregarUsername.Parameters.Add("pRolUsername", OracleType.VarChar).Value = ddmRol.SelectedItem.ToString();
                 comandoAgregarUsername.ExecuteNonQuery();
-                OracleCommand comandoAgregarCorreo = new OracleCommand("Agregar_Correo", database);
-                comandoAgregarCorreo.CommandType = System.Data.CommandType.StoredProcedure;
+                OracleCommand comandoAgregarCorreo = new OracleCommand("Agregar_Correo", database); //llamamos procedure
+                comandoAgregarCorreo.CommandType = System.Data.CommandType.StoredProcedure; //especificamos que la instancia es un procedure
+                //pasamos los parametros con la informacion esrita por el usuario
                 comandoAgregarCorreo.Parameters.Add("pCorreo", OracleType.VarChar).Value = txtCorreo.Text;
                 comandoAgregarCorreo.Parameters.Add("pDuenoCorreo", OracleType.VarChar).Value = txtCedula.Text;
                 comandoAgregarCorreo.Parameters.Add("pCategoriaCorreo", OracleType.VarChar).Value = "Usuario";
                 comandoAgregarCorreo.ExecuteNonQuery();
-                OracleCommand comandoAgregarTelefono = new OracleCommand("Agregar_Telefono", database);
-                comandoAgregarTelefono.CommandType = System.Data.CommandType.StoredProcedure;
+                OracleCommand comandoAgregarTelefono = new OracleCommand("Agregar_Telefono", database); //llamamos procedure
+                comandoAgregarTelefono.CommandType = System.Data.CommandType.StoredProcedure; //especificamos que la instancia es un procedure
+                //pasamos los parametros con la informacion esrita por el usuario
                 comandoAgregarTelefono.Parameters.Add("pTelefono", OracleType.VarChar).Value = txtTelefono.Text;
                 comandoAgregarTelefono.Parameters.Add("pDuenoTelefono", OracleType.VarChar).Value = txtCedula.Text;
                 comandoAgregarTelefono.Parameters.Add("pCategoriaTelefono", OracleType.VarChar).Value = "Usuario";
-                comandoAgregarTelefono.ExecuteNonQuery();
-                MessageBox.Show("Usuario Agregado con exito");
+                comandoAgregarTelefono.ExecuteNonQuery(); //ejecutamos 
+                MessageBox.Show("Usuario Agregado con exito"); //mandamos msj de exito
+                //limpiamos campos
                 txtUsario.Clear();
                 txtContrasenna.Clear();
                 txtNombre.Clear();
@@ -70,7 +75,8 @@ namespace proyectoLBD
             }
             catch (Exception)
             {
-                MessageBox.Show("Algo fallo");
+                MessageBox.Show("Algo fallo"); //mandamos msj de fallo
+                //limpiamos campos
                 txtUsario.Clear();
                 txtContrasenna.Clear();
                 txtNombre.Clear();
