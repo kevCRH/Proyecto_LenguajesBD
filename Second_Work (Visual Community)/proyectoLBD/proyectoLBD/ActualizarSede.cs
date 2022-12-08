@@ -13,7 +13,7 @@ namespace proyectoLBD
 {
     public partial class ActualizarSede : Form
     {
-        OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
+        
         public ActualizarSede()
         {
             InitializeComponent();
@@ -35,6 +35,7 @@ namespace proyectoLBD
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
             try
             {
                 database.Open();
@@ -61,6 +62,7 @@ namespace proyectoLBD
 
         private void txtActualizar_Click(object sender, EventArgs e)
         {
+            OracleConnection database = new OracleConnection("DATA SOURCE = ORCL ; PASSWORD=1234; USER ID = PROYECTO;");
             try
             {
                 database.Open();

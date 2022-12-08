@@ -117,83 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;txt_user.Name" xml:space="preserve">
-    <value>txt_user</value>
-  </data>
-  <data name="&gt;&gt;txt_user.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_user.Parent" xml:space="preserve">
-    <value>panel_fondoCeleste</value>
-  </data>
-  <data name="&gt;&gt;txt_user.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txt_pass.Name" xml:space="preserve">
-    <value>txt_pass</value>
-  </data>
-  <data name="&gt;&gt;txt_pass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_pass.Parent" xml:space="preserve">
-    <value>panel_fondoCeleste</value>
-  </data>
-  <data name="&gt;&gt;txt_pass.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel_fondoCeleste</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;bt_login.Name" xml:space="preserve">
-    <value>bt_login</value>
-  </data>
-  <data name="&gt;&gt;bt_login.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bt_login.Parent" xml:space="preserve">
-    <value>panel_fondoCeleste</value>
-  </data>
-  <data name="&gt;&gt;bt_login.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panel_fondoCeleste.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 108</value>
-  </data>
-  <data name="panel_fondoCeleste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 292</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel_fondoCeleste.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoCeleste.Name" xml:space="preserve">
-    <value>panel_fondoCeleste</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoCeleste.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoCeleste.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoCeleste.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="txt_user.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 18pt, style=Bold</value>
   </data>
   <data name="txt_user.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 41</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txt_user.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -307,6 +238,27 @@
   <data name="&gt;&gt;bt_login.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="panel_fondoCeleste.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 108</value>
+  </data>
+  <data name="panel_fondoCeleste.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 292</value>
+  </data>
+  <data name="panel_fondoCeleste.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel_fondoCeleste.Name" xml:space="preserve">
+    <value>panel_fondoCeleste</value>
+  </data>
+  <data name="&gt;&gt;panel_fondoCeleste.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_fondoCeleste.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_fondoCeleste.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="txt_inicial.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -340,52 +292,7 @@ pedir, ¡Es contruir!
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_inicial.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;image_logo.Name" xml:space="preserve">
-    <value>image_logo</value>
-  </data>
-  <data name="&gt;&gt;image_logo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;image_logo.Parent" xml:space="preserve">
-    <value>panel_fondoRojo</value>
-  </data>
-  <data name="&gt;&gt;image_logo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txt_navBar.Name" xml:space="preserve">
-    <value>txt_navBar</value>
-  </data>
-  <data name="&gt;&gt;txt_navBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_navBar.Parent" xml:space="preserve">
-    <value>panel_fondoRojo</value>
-  </data>
-  <data name="&gt;&gt;txt_navBar.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="panel_fondoRojo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, -1</value>
-  </data>
-  <data name="panel_fondoRojo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>802, 73</value>
-  </data>
-  <data name="panel_fondoRojo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoRojo.Name" xml:space="preserve">
-    <value>panel_fondoRojo</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoRojo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoRojo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoRojo.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="image_logo.Location" type="System.Drawing.Point, System.Drawing">
     <value>637, 4</value>
@@ -441,70 +348,25 @@ pedir, ¡Es contruir!
   <data name="&gt;&gt;txt_navBar.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="bt_loggin_quemado.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="panel_fondoRojo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, -1</value>
   </data>
-  <data name="bt_loggin_quemado.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt, style=Bold</value>
+  <data name="panel_fondoRojo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>802, 73</value>
   </data>
-  <data name="bt_loggin_quemado.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="panel_fondoRojo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="bt_loggin_quemado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>497, 371</value>
+  <data name="&gt;&gt;panel_fondoRojo.Name" xml:space="preserve">
+    <value>panel_fondoRojo</value>
   </data>
-  <data name="bt_loggin_quemado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 32</value>
+  <data name="&gt;&gt;panel_fondoRojo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="bt_loggin_quemado.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="bt_loggin_quemado.Text" xml:space="preserve">
-    <value>LOGIN QUEMADO EMPLEADO</value>
-  </data>
-  <data name="&gt;&gt;bt_loggin_quemado.Name" xml:space="preserve">
-    <value>bt_loggin_quemado</value>
-  </data>
-  <data name="&gt;&gt;bt_loggin_quemado.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bt_loggin_quemado.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel_fondoRojo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;bt_loggin_quemado.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt, style=Bold</value>
-  </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>497, 333</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 32</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>LOGIN QUEMADO ADMINISTRADOR</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel_fondoRojo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -2752,6 +2614,9 @@ pedir, ¡Es contruir!
         ////////////gP//////g////////////////////////////4D//////4f/////////////////////
         //////+A
 </value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Login</value>

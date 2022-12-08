@@ -54,5 +54,10 @@ namespace proyectoLBD
             donacion.Show();
             this.Hide();
         }
+
+        private void TipoDonacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

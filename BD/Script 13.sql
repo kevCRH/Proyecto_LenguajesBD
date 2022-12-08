@@ -32,7 +32,7 @@ CREATE TABLE TBUsuarios(
     ATApellido_1 varchar2(50),
     ATApellido_2 varchar2(50),
     ATCedula varchar2(30),
-    ATActivo char(1) check ( ATActivo in ( '0', '1' )),
+    ATActivo varchar2(30),
     ATRol varchar2(50),
     PRIMARY KEY(ATCedula)
 );
@@ -182,6 +182,7 @@ INSERT INTO TBRol VALUES (3,'Donante');
 
 
 --INSERTAR TABLA CATEGORIA -------> VALORES QUEMADOS DE LA TABLA DE CATEGORIA
+SELECT * FROM TBCATEGORIA;
 INSERT INTO TBCATEGORIA (AT_DESCRIPCION) VALUES ('Usuario');
 INSERT INTO TBCATEGORIA (AT_DESCRIPCION) VALUES ('Sede');
 
@@ -192,10 +193,10 @@ INSERT INTO TBCATEGORIA (AT_DESCRIPCION) VALUES ('Sede');
 --Rol de administrador TBUSUARIO
 select * from TBUsuarios;
 INSERT INTO TBUsuarios (ATNombre,ATApellido_1,ATApellido_2,ATCedula,ATActivo,ATRol)
-VALUES ('Nombre','Apellido1','Apellido2','305380675',1,'Administrador');
+VALUES ('Nombre','Apellido1','Apellido2','305380675','Activo','Administrador');
 --Rol de empleado TBUSUARIO
 INSERT INTO TBUsuarios (ATNombre,ATApellido_1,ATApellido_2,ATCedula,ATActivo,ATRol)
-VALUES ('Nombre','Apellido1','Apellido2','405380675',1,'Empleado');
+VALUES ('Nombre','Apellido1','Apellido2','405380675','Activo','Empleado');
 -- Rol de donante TBUSUARIO
 INSERT INTO TBUsuarios (ATNombre,ATApellido_1,ATApellido_2,ATCedula,ATActivo,ATRol)
 VALUES ('Nombre','Apellido1','Apellido2','402500983',1,'Donante');
@@ -381,7 +382,7 @@ BEGIN
     INSERT INTO TBUSUARIOS
     (ATNombre,ATApellido_1,ATApellido_2,ATCedula,ATActivo,ATRol)
     VALUES 
-    (pNombre,pApellido_1,pApellido_2,pCedula,1,pRol);
+    (pNombre,pApellido_1,pApellido_2,pCedula,'ACTIVO',pRol);
 END;
 
 --Ingresar username

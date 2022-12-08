@@ -66,10 +66,11 @@
             this.txtTelefono.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTelefono.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtTelefono.Location = new System.Drawing.Point(45, 231);
+            this.txtTelefono.Location = new System.Drawing.Point(60, 284);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Multiline = true;
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(248, 54);
+            this.txtTelefono.Size = new System.Drawing.Size(330, 66);
             this.txtTelefono.TabIndex = 25;
             // 
             // txtCorreo
@@ -77,10 +78,11 @@
             this.txtCorreo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCorreo.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtCorreo.Location = new System.Drawing.Point(324, 231);
+            this.txtCorreo.Location = new System.Drawing.Point(432, 284);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Multiline = true;
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(248, 54);
+            this.txtCorreo.Size = new System.Drawing.Size(330, 66);
             this.txtCorreo.TabIndex = 24;
             // 
             // label10
@@ -88,9 +90,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label10.Location = new System.Drawing.Point(41, 208);
+            this.label10.Location = new System.Drawing.Point(55, 256);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 20);
+            this.label10.Size = new System.Drawing.Size(103, 26);
             this.label10.TabIndex = 23;
             this.label10.Text = "Teléfono";
             // 
@@ -99,9 +102,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label9.Location = new System.Drawing.Point(320, 208);
+            this.label9.Location = new System.Drawing.Point(427, 256);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 20);
+            this.label9.Size = new System.Drawing.Size(84, 26);
             this.label9.TabIndex = 21;
             this.label9.Text = "Correo";
             // 
@@ -110,9 +114,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label8.Location = new System.Drawing.Point(596, 208);
+            this.label8.Location = new System.Drawing.Point(795, 256);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 20);
+            this.label8.Size = new System.Drawing.Size(48, 26);
             this.label8.TabIndex = 19;
             this.label8.Text = "Rol";
             // 
@@ -128,9 +133,10 @@
             this.ddmRol.Items.AddRange(new object[] {
             "Administrador",
             "Empleado"});
-            this.ddmRol.Location = new System.Drawing.Point(600, 231);
+            this.ddmRol.Location = new System.Drawing.Point(800, 284);
+            this.ddmRol.Margin = new System.Windows.Forms.Padding(4);
             this.ddmRol.Name = "ddmRol";
-            this.ddmRol.Size = new System.Drawing.Size(248, 54);
+            this.ddmRol.Size = new System.Drawing.Size(329, 54);
             this.ddmRol.TabIndex = 18;
             this.ddmRol.SelectedIndexChanged += new System.EventHandler(this.ddmRol_SelectedIndexChanged);
             // 
@@ -139,9 +145,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label6.Location = new System.Drawing.Point(596, 114);
+            this.label6.Location = new System.Drawing.Point(795, 140);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 20);
+            this.label6.Size = new System.Drawing.Size(87, 26);
             this.label6.TabIndex = 15;
             this.label6.Text = "Cedula";
             // 
@@ -150,10 +157,11 @@
             this.txtCedula.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCedula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCedula.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtCedula.Location = new System.Drawing.Point(600, 137);
+            this.txtCedula.Location = new System.Drawing.Point(800, 169);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(4);
             this.txtCedula.Multiline = true;
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(248, 54);
+            this.txtCedula.Size = new System.Drawing.Size(330, 66);
             this.txtCedula.TabIndex = 14;
             this.txtCedula.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
             // 
@@ -162,9 +170,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label5.Location = new System.Drawing.Point(320, 114);
+            this.label5.Location = new System.Drawing.Point(427, 140);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 20);
+            this.label5.Size = new System.Drawing.Size(196, 26);
             this.label5.TabIndex = 13;
             this.label5.Text = "Segundo apellido";
             // 
@@ -173,10 +182,11 @@
             this.txtSegundoApellido.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtSegundoApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSegundoApellido.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtSegundoApellido.Location = new System.Drawing.Point(324, 137);
+            this.txtSegundoApellido.Location = new System.Drawing.Point(432, 169);
+            this.txtSegundoApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtSegundoApellido.Multiline = true;
             this.txtSegundoApellido.Name = "txtSegundoApellido";
-            this.txtSegundoApellido.Size = new System.Drawing.Size(248, 54);
+            this.txtSegundoApellido.Size = new System.Drawing.Size(330, 66);
             this.txtSegundoApellido.TabIndex = 12;
             // 
             // label4
@@ -184,9 +194,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label4.Location = new System.Drawing.Point(41, 114);
+            this.label4.Location = new System.Drawing.Point(55, 140);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 20);
+            this.label4.Size = new System.Drawing.Size(173, 26);
             this.label4.TabIndex = 11;
             this.label4.Text = "Primer apellido";
             // 
@@ -195,10 +206,11 @@
             this.txtPrimerApellido.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtPrimerApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPrimerApellido.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtPrimerApellido.Location = new System.Drawing.Point(45, 137);
+            this.txtPrimerApellido.Location = new System.Drawing.Point(60, 169);
+            this.txtPrimerApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrimerApellido.Multiline = true;
             this.txtPrimerApellido.Name = "txtPrimerApellido";
-            this.txtPrimerApellido.Size = new System.Drawing.Size(248, 54);
+            this.txtPrimerApellido.Size = new System.Drawing.Size(330, 66);
             this.txtPrimerApellido.TabIndex = 10;
             // 
             // label3
@@ -206,9 +218,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label3.Location = new System.Drawing.Point(596, 18);
+            this.label3.Location = new System.Drawing.Point(795, 22);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 20);
+            this.label3.Size = new System.Drawing.Size(96, 26);
             this.label3.TabIndex = 9;
             this.label3.Text = "Nombre";
             // 
@@ -217,9 +230,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label2.Location = new System.Drawing.Point(320, 18);
+            this.label2.Location = new System.Drawing.Point(427, 22);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 20);
+            this.label2.Size = new System.Drawing.Size(134, 26);
             this.label2.TabIndex = 8;
             this.label2.Text = "Contraseña";
             // 
@@ -228,9 +242,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label1.Location = new System.Drawing.Point(41, 18);
+            this.label1.Location = new System.Drawing.Point(55, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 20);
+            this.label1.Size = new System.Drawing.Size(94, 26);
             this.label1.TabIndex = 7;
             this.label1.Text = "Usuario";
             // 
@@ -239,10 +254,11 @@
             this.txtNombre.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtNombre.Location = new System.Drawing.Point(600, 41);
+            this.txtNombre.Location = new System.Drawing.Point(800, 50);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(248, 54);
+            this.txtNombre.Size = new System.Drawing.Size(330, 66);
             this.txtNombre.TabIndex = 6;
             // 
             // txtUsario
@@ -250,10 +266,11 @@
             this.txtUsario.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtUsario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsario.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtUsario.Location = new System.Drawing.Point(45, 41);
+            this.txtUsario.Location = new System.Drawing.Point(60, 50);
+            this.txtUsario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsario.Multiline = true;
             this.txtUsario.Name = "txtUsario";
-            this.txtUsario.Size = new System.Drawing.Size(248, 54);
+            this.txtUsario.Size = new System.Drawing.Size(330, 66);
             this.txtUsario.TabIndex = 4;
             // 
             // txtContrasenna
@@ -261,10 +278,11 @@
             this.txtContrasenna.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtContrasenna.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtContrasenna.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtContrasenna.Location = new System.Drawing.Point(324, 41);
+            this.txtContrasenna.Location = new System.Drawing.Point(432, 50);
+            this.txtContrasenna.Margin = new System.Windows.Forms.Padding(4);
             this.txtContrasenna.Multiline = true;
             this.txtContrasenna.Name = "txtContrasenna";
-            this.txtContrasenna.Size = new System.Drawing.Size(248, 54);
+            this.txtContrasenna.Size = new System.Drawing.Size(330, 66);
             this.txtContrasenna.TabIndex = 5;
             // 
             // btnAgregar
@@ -274,9 +292,10 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAgregar.Location = new System.Drawing.Point(878, 364);
+            this.btnAgregar.Location = new System.Drawing.Point(1171, 448);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(137, 37);
+            this.btnAgregar.Size = new System.Drawing.Size(183, 46);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -287,9 +306,10 @@
             this.image_logo.BackColor = System.Drawing.Color.Transparent;
             this.image_logo.Image = global::proyectoLBD.Properties.Resources.AOES_PNG;
             this.image_logo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.image_logo.Location = new System.Drawing.Point(882, 112);
+            this.image_logo.Location = new System.Drawing.Point(1176, 138);
+            this.image_logo.Margin = new System.Windows.Forms.Padding(4);
             this.image_logo.Name = "image_logo";
-            this.image_logo.Size = new System.Drawing.Size(130, 68);
+            this.image_logo.Size = new System.Drawing.Size(173, 84);
             this.image_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.image_logo.TabIndex = 1;
             this.image_logo.TabStop = false;
@@ -300,9 +320,10 @@
             this.txt_navBar.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold);
             this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
             this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txt_navBar.Location = new System.Drawing.Point(17, 16);
+            this.txt_navBar.Location = new System.Drawing.Point(23, 20);
+            this.txt_navBar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Size = new System.Drawing.Size(418, 40);
+            this.txt_navBar.Size = new System.Drawing.Size(536, 50);
             this.txt_navBar.TabIndex = 0;
             this.txt_navBar.Text = "INGRESO DE NUEVO USUARIO";
             // 
@@ -327,9 +348,10 @@
             this.panel_fondoCeleste.Controls.Add(this.txtNombre);
             this.panel_fondoCeleste.Controls.Add(this.txtUsario);
             this.panel_fondoCeleste.Controls.Add(this.txtContrasenna);
-            this.panel_fondoCeleste.Location = new System.Drawing.Point(12, 94);
+            this.panel_fondoCeleste.Location = new System.Drawing.Point(16, 116);
+            this.panel_fondoCeleste.Margin = new System.Windows.Forms.Padding(4);
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
-            this.panel_fondoCeleste.Size = new System.Drawing.Size(860, 307);
+            this.panel_fondoCeleste.Size = new System.Drawing.Size(1147, 378);
             this.panel_fondoCeleste.TabIndex = 6;
             this.panel_fondoCeleste.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_fondoCeleste_Paint);
             // 
@@ -340,8 +362,9 @@
             this.panel_fondoRojo.Controls.Add(this.bt_atrás);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
             this.panel_fondoRojo.Location = new System.Drawing.Point(1, 2);
+            this.panel_fondoRojo.Margin = new System.Windows.Forms.Padding(4);
             this.panel_fondoRojo.Name = "panel_fondoRojo";
-            this.panel_fondoRojo.Size = new System.Drawing.Size(1031, 73);
+            this.panel_fondoRojo.Size = new System.Drawing.Size(1375, 90);
             this.panel_fondoRojo.TabIndex = 5;
             // 
             // bt_logout
@@ -352,9 +375,10 @@
             this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
             this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_logout.Location = new System.Drawing.Point(942, 16);
+            this.bt_logout.Location = new System.Drawing.Point(1256, 20);
+            this.bt_logout.Margin = new System.Windows.Forms.Padding(4);
             this.bt_logout.Name = "bt_logout";
-            this.bt_logout.Size = new System.Drawing.Size(55, 40);
+            this.bt_logout.Size = new System.Drawing.Size(73, 49);
             this.bt_logout.TabIndex = 27;
             this.bt_logout.UseVisualStyleBackColor = false;
             this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
@@ -365,9 +389,10 @@
             this.bt_atrás.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_atrás.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.bt_atrás.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bt_atrás.Location = new System.Drawing.Point(881, 16);
+            this.bt_atrás.Location = new System.Drawing.Point(1175, 20);
+            this.bt_atrás.Margin = new System.Windows.Forms.Padding(4);
             this.bt_atrás.Name = "bt_atrás";
-            this.bt_atrás.Size = new System.Drawing.Size(55, 40);
+            this.bt_atrás.Size = new System.Drawing.Size(73, 49);
             this.bt_atrás.TabIndex = 55;
             this.bt_atrás.Text = "<<";
             this.bt_atrás.UseVisualStyleBackColor = false;
@@ -379,9 +404,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(878, 302);
+            this.button3.Location = new System.Drawing.Point(1171, 372);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 34);
+            this.button3.Size = new System.Drawing.Size(183, 42);
             this.button3.TabIndex = 42;
             this.button3.Text = "VER USUARIOS";
             this.button3.UseVisualStyleBackColor = false;
@@ -393,9 +419,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(878, 251);
+            this.button1.Location = new System.Drawing.Point(1171, 309);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 34);
+            this.button1.Size = new System.Drawing.Size(183, 42);
             this.button1.TabIndex = 43;
             this.button1.Text = "VER USERNAMES";
             this.button1.UseVisualStyleBackColor = false;
@@ -407,9 +434,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(878, 201);
+            this.button2.Location = new System.Drawing.Point(1171, 247);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 34);
+            this.button2.Size = new System.Drawing.Size(183, 42);
             this.button2.TabIndex = 44;
             this.button2.Text = "ACTUALIAR USUARIO";
             this.button2.UseVisualStyleBackColor = false;
@@ -417,9 +445,9 @@
             // 
             // AgregarUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 419);
+            this.ClientSize = new System.Drawing.Size(1363, 516);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
@@ -427,7 +455,10 @@
             this.Controls.Add(this.panel_fondoCeleste);
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.btnAgregar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AgregarUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.image_logo)).EndInit();
             this.panel_fondoCeleste.ResumeLayout(false);

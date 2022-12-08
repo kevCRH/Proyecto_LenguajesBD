@@ -53,9 +53,10 @@
             this.txt_navBar.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold);
             this.txt_navBar.ForeColor = System.Drawing.SystemColors.Control;
             this.txt_navBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txt_navBar.Location = new System.Drawing.Point(17, 16);
+            this.txt_navBar.Location = new System.Drawing.Point(23, 20);
+            this.txt_navBar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txt_navBar.Name = "txt_navBar";
-            this.txt_navBar.Size = new System.Drawing.Size(544, 40);
+            this.txt_navBar.Size = new System.Drawing.Size(694, 50);
             this.txt_navBar.TabIndex = 0;
             this.txt_navBar.Text = "SISTEMA DE INGRESO DE DONACIONES";
             // 
@@ -65,8 +66,9 @@
             this.panel_fondoRojo.Controls.Add(this.bt_logout);
             this.panel_fondoRojo.Controls.Add(this.txt_navBar);
             this.panel_fondoRojo.Location = new System.Drawing.Point(0, 0);
+            this.panel_fondoRojo.Margin = new System.Windows.Forms.Padding(4);
             this.panel_fondoRojo.Name = "panel_fondoRojo";
-            this.panel_fondoRojo.Size = new System.Drawing.Size(802, 73);
+            this.panel_fondoRojo.Size = new System.Drawing.Size(1069, 90);
             this.panel_fondoRojo.TabIndex = 3;
             // 
             // bt_logout
@@ -77,9 +79,10 @@
             this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_logout.Image = global::proyectoLBD.Properties.Resources.logout;
             this.bt_logout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_logout.Location = new System.Drawing.Point(733, 16);
+            this.bt_logout.Location = new System.Drawing.Point(977, 20);
+            this.bt_logout.Margin = new System.Windows.Forms.Padding(4);
             this.bt_logout.Name = "bt_logout";
-            this.bt_logout.Size = new System.Drawing.Size(55, 42);
+            this.bt_logout.Size = new System.Drawing.Size(73, 52);
             this.bt_logout.TabIndex = 11;
             this.bt_logout.UseVisualStyleBackColor = false;
             this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
@@ -89,9 +92,10 @@
             this.panel_fondoCeleste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
             this.panel_fondoCeleste.Controls.Add(this.bt_donacion_especies);
             this.panel_fondoCeleste.Controls.Add(this.pictureBox1);
-            this.panel_fondoCeleste.Location = new System.Drawing.Point(89, 97);
+            this.panel_fondoCeleste.Location = new System.Drawing.Point(119, 119);
+            this.panel_fondoCeleste.Margin = new System.Windows.Forms.Padding(4);
             this.panel_fondoCeleste.Name = "panel_fondoCeleste";
-            this.panel_fondoCeleste.Size = new System.Drawing.Size(288, 316);
+            this.panel_fondoCeleste.Size = new System.Drawing.Size(384, 389);
             this.panel_fondoCeleste.TabIndex = 4;
             // 
             // bt_donacion_especies
@@ -101,9 +105,10 @@
             this.bt_donacion_especies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_donacion_especies.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_donacion_especies.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_donacion_especies.Location = new System.Drawing.Point(31, 228);
+            this.bt_donacion_especies.Location = new System.Drawing.Point(41, 281);
+            this.bt_donacion_especies.Margin = new System.Windows.Forms.Padding(4);
             this.bt_donacion_especies.Name = "bt_donacion_especies";
-            this.bt_donacion_especies.Size = new System.Drawing.Size(224, 61);
+            this.bt_donacion_especies.Size = new System.Drawing.Size(299, 75);
             this.bt_donacion_especies.TabIndex = 6;
             this.bt_donacion_especies.Text = "Donación en Especies";
             this.bt_donacion_especies.UseVisualStyleBackColor = false;
@@ -112,9 +117,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::proyectoLBD.Properties.Resources.DonaciónEspecies;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 27);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 224);
+            this.pictureBox1.Size = new System.Drawing.Size(345, 276);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -125,9 +131,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(118)))), ((int)(((byte)(149)))));
             this.panel1.Controls.Add(this.bt_donacion_dinero);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Location = new System.Drawing.Point(409, 97);
+            this.panel1.Location = new System.Drawing.Point(545, 119);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(287, 316);
+            this.panel1.Size = new System.Drawing.Size(383, 389);
             this.panel1.TabIndex = 5;
             // 
             // bt_donacion_dinero
@@ -137,9 +144,10 @@
             this.bt_donacion_dinero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_donacion_dinero.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_donacion_dinero.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_donacion_dinero.Location = new System.Drawing.Point(31, 228);
+            this.bt_donacion_dinero.Location = new System.Drawing.Point(41, 281);
+            this.bt_donacion_dinero.Margin = new System.Windows.Forms.Padding(4);
             this.bt_donacion_dinero.Name = "bt_donacion_dinero";
-            this.bt_donacion_dinero.Size = new System.Drawing.Size(224, 61);
+            this.bt_donacion_dinero.Size = new System.Drawing.Size(299, 75);
             this.bt_donacion_dinero.TabIndex = 7;
             this.bt_donacion_dinero.Text = "Donación Dinero";
             this.bt_donacion_dinero.UseVisualStyleBackColor = false;
@@ -148,9 +156,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::proyectoLBD.Properties.Resources.DonaciónDinero;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 22);
+            this.pictureBox2.Location = new System.Drawing.Point(19, 27);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(259, 224);
+            this.pictureBox2.Size = new System.Drawing.Size(345, 276);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -160,25 +169,30 @@
             this.image_logo.BackColor = System.Drawing.Color.Transparent;
             this.image_logo.Image = global::proyectoLBD.Properties.Resources.AOES_PNG;
             this.image_logo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.image_logo.Location = new System.Drawing.Point(677, 394);
+            this.image_logo.Location = new System.Drawing.Point(903, 485);
+            this.image_logo.Margin = new System.Windows.Forms.Padding(4);
             this.image_logo.Name = "image_logo";
-            this.image_logo.Size = new System.Drawing.Size(117, 45);
+            this.image_logo.Size = new System.Drawing.Size(156, 55);
             this.image_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.image_logo.TabIndex = 1;
             this.image_logo.TabStop = false;
             // 
-            // frm_tipo_Donacion
+            // TipoDonacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel_fondoCeleste);
             this.Controls.Add(this.panel_fondoRojo);
             this.Controls.Add(this.image_logo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frm_tipo_Donacion";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "TipoDonacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.TipoDonacion_Load);
             this.panel_fondoRojo.ResumeLayout(false);
             this.panel_fondoRojo.PerformLayout();
             this.panel_fondoCeleste.ResumeLayout(false);
