@@ -332,8 +332,10 @@
             this.Controls.Add(this.panel_fondoCeleste);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel_fondoRojo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ActualizarSede";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarSede";
             this.panel_fondoRojo.ResumeLayout(false);
             this.panel_fondoRojo.PerformLayout();

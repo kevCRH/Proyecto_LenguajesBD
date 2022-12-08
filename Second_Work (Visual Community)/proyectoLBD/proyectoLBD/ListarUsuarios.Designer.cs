@@ -84,10 +84,10 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvUsuarios.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvUsuarios.EnableHeadersVisualStyles = false;
-            this.dgvUsuarios.Location = new System.Drawing.Point(97, 17);
+            this.dgvUsuarios.Location = new System.Drawing.Point(30, 19);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.RowHeadersWidth = 51;
-            this.dgvUsuarios.Size = new System.Drawing.Size(642, 348);
+            this.dgvUsuarios.Size = new System.Drawing.Size(752, 348);
             this.dgvUsuarios.TabIndex = 0;
             // 
             // btnCargarUsuarios

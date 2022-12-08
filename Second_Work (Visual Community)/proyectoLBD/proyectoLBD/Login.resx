@@ -117,83 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;txt_user.Name" xml:space="preserve">
-    <value>txt_user</value>
-  </data>
-  <data name="&gt;&gt;txt_user.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_user.Parent" xml:space="preserve">
-    <value>panel_fondoCeleste</value>
-  </data>
-  <data name="&gt;&gt;txt_user.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txt_pass.Name" xml:space="preserve">
-    <value>txt_pass</value>
-  </data>
-  <data name="&gt;&gt;txt_pass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_pass.Parent" xml:space="preserve">
-    <value>panel_fondoCeleste</value>
-  </data>
-  <data name="&gt;&gt;txt_pass.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel_fondoCeleste</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;bt_login.Name" xml:space="preserve">
-    <value>bt_login</value>
-  </data>
-  <data name="&gt;&gt;bt_login.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bt_login.Parent" xml:space="preserve">
-    <value>panel_fondoCeleste</value>
-  </data>
-  <data name="&gt;&gt;bt_login.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panel_fondoCeleste.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 108</value>
-  </data>
-  <data name="panel_fondoCeleste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 292</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel_fondoCeleste.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoCeleste.Name" xml:space="preserve">
-    <value>panel_fondoCeleste</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoCeleste.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoCeleste.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_fondoCeleste.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="txt_user.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 18pt, style=Bold</value>
   </data>
   <data name="txt_user.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 41</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txt_user.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -307,6 +238,27 @@
   <data name="&gt;&gt;bt_login.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="panel_fondoCeleste.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 108</value>
+  </data>
+  <data name="panel_fondoCeleste.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 292</value>
+  </data>
+  <data name="panel_fondoCeleste.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel_fondoCeleste.Name" xml:space="preserve">
+    <value>panel_fondoCeleste</value>
+  </data>
+  <data name="&gt;&gt;panel_fondoCeleste.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_fondoCeleste.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_fondoCeleste.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="txt_inicial.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -317,14 +269,14 @@
     <value>430, 122</value>
   </data>
   <data name="txt_inicial.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 141</value>
+    <value>346, 141</value>
   </data>
   <data name="txt_inicial.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="txt_inicial.Text" xml:space="preserve">
     <value>Nuestra meta no es
-pedir, ¡Es contruir!
+ pedir, ¡Es construir!
 ¿Nos Ayuda?</value>
   </data>
   <data name="txt_inicial.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">

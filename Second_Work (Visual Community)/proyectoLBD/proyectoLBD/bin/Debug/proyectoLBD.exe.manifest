@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="proyectoLBD.exe" size="2812368">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="proyectoLBD.exe" size="2674640">
       <assemblyIdentity name="proyectoLBD" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tbspnzCI9QCq74HymJbmQadc3x/bOUOrTy851+c3ReY=</dsig:DigestValue>
+        <dsig:DigestValue>63o1TfTnypKDLvJRrdOTN+4BWZK8ZXLYe2WNNjv+yjQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
